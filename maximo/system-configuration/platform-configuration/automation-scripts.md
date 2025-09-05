@@ -24,12 +24,9 @@ Provide the following information in the _Create Script_ screen.
 
 ```python
 
-file_object = open("/home/admin/apps/wlp/usr/servers/maximo/", "w")
-
+file_object = open("/home/admin/apps/wlp/usr/servers/maximo/readme.txt", "w")
 # Write some content to the file
-file_object.write("This is the first line.\n")
-file_object.write("This is the second line.")
-
+file_object.write("Welcome to Maximo world !! ")
 # Close the file to save the changes
 file_object.close()
 
