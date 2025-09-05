@@ -2,6 +2,12 @@
 
 ### Author: Jawahar
 
+**Prerequiste**
+
+Maximo installed and manage application accessible.
+
+**Introduction**
+
 Automation Scripts are used to execute a custom logic at a configured interval period. Automation scripts are normally used in conjuction with cron task.
 
 **Create Automation Scripts**
@@ -38,3 +44,6 @@ file_object.close()
 
 On saving the configuration the following message should be displayed _BMXAA4205I - Record has been saved_.
 
+**Next Step**
+
+Create cron task.
