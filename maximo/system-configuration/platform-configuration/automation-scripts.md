@@ -11,10 +11,14 @@ Automation Scripts are used to execute a custom logic at a configured interval p
 
 Provide the following information in the _Create Script_ screen.
 
+|---------------------------------|--------------|
 | Script                          | create-file  |
+|---------------------------------|--------------|
 | Script Language                 | python       |
+|---------------------------------|--------------|
 | Active                          | Enable       |
+|---------------------------------|--------------|
 | Allow Invoking Script Function  | Enable       |
 
-- CLick Create
+- Click Create
 
