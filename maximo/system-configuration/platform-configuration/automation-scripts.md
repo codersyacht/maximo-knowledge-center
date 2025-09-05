@@ -18,4 +18,18 @@ Provide the following information in the _Create Script_ screen.
 | Active                          | Enable       |
 
 - Click Create
+- Once the the script is created, the script will be visible with the name in the Scripts list view.
+- Select the newly created script.
+- In the _test-area_ below the attribute settings, add the below content:
+
+```python
+file_object = open("/home/admin/apps/wlp/usr/servers/maximo/", "w")
+
+# Write some content to the file
+file_object.write("This is the first line.\n")
+file_object.write("This is the second line.")
+
+# Close the file to save the changes
+file_object.close()
+```
 
