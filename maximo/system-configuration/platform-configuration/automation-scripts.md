@@ -20,7 +20,7 @@ Provide the following information in the _Create Script_ screen.
 - Click Create
 - Once the the script is created, the script will be visible with the name in the Scripts list view.
 - Select the newly created script.
-- In the _test-area_ below the attribute settings, add the below content:
+- In the _text-area_ below the attribute settings, add the below content:
 
 ```python
 
@@ -32,3 +32,12 @@ file_object.close()
 
 ```
 
+- Save the configuration.
+
+**Testing the script**
+
+At the bottom of the page, there is a button "Test Script". Click the button.
+
+**Success Criteria**
+
+A new file named readme.txt will be created in the /home/admin/apps/wlp/usr/servers/maximo direcvtory with content _Welcome to Maximo world !!_.
