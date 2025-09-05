@@ -42,3 +42,8 @@ Provide the following information in the _Cron Task_ screen.
 
 - Save the configuration.
 
+**Success Criteria**
+
+- Navigate to the /home/admin/apps/wlp/usr/servers/maximo directory.
+- File readme.txt created with content Welcome to Maximo world !!
+
