@@ -19,7 +19,7 @@ Provide the following information in the _Create Script_ screen.
 
 | Attribute                       | Value        |
 |---------------------------------|--------------|
-| Script                          | create-file  |
+| Script                          | CREATE-FILE  |
 | Script Language                 | python       |
 | Active                          | Enable       |
 
