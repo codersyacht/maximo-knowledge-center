@@ -23,6 +23,7 @@ Provide the following information in the _Create Script_ screen.
 - In the _test-area_ below the attribute settings, add the below content:
 
 ```python
+
 file_object = open("/home/admin/apps/wlp/usr/servers/maximo/", "w")
 
 # Write some content to the file
@@ -31,5 +32,6 @@ file_object.write("This is the second line.")
 
 # Close the file to save the changes
 file_object.close()
+
 ```
 
