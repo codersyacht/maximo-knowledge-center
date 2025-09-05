@@ -16,8 +16,6 @@ Provide the following information in the _Create Script_ screen.
 | Script                          | create-file  |
 | Script Language                 | python       |
 | Active                          | Enable       |
-|---------------------------------|--------------|
-
 
 - Click Create
 
