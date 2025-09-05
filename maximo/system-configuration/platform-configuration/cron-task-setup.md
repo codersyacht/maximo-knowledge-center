@@ -20,7 +20,7 @@ Provide the following information in the _Cron Task_ screen.
 
 | Attribute                       | Value                                             |
 |---------------------------------|---------------------------------------------------|
-| Cron Task                       | create-readme                                     |
+| Cron Task                       | CREATE-README                                     |
 | Class                           | com.ibm.tivoli.maximo.script.ScriptCrontask       |
 | Access Level                    | FULL                                              |
 
@@ -28,7 +28,7 @@ Provide the following information in the _Cron Task_ screen.
   
 | Attribute                       | Value                                             |
 |---------------------------------|---------------------------------------------------|
-| Cron Task Instance Name         | create-readme                                     |
+| Cron Task Instance Name         | CREATE-README                                     |
 | Schedule                        | Every 1 minute(s)                                 |
 | Run as User                     | MAXADMIN                                          |
 | Active                          | Enable                                            |
