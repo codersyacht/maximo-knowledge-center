@@ -34,10 +34,7 @@ file_object.close()
 
 - Save the configuration.
 
-**Testing the script**
-
-At the bottom of the page, there is a button "Test Script". Click the button.
-
 **Success Criteria**
 
-A new file named readme.txt will be created in the /home/admin/apps/wlp/usr/servers/maximo direcvtory with content _Welcome to Maximo world !!_.
+On saving the configuration the following message should be displayed _BMXAA4205I - Record has been saved_.
+
