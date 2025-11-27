@@ -15,7 +15,8 @@ In Manage application,
 -Navigate to System Configuration -> Platform Configuration -> Cron Task Setup.
 -Click New Cron Task Definition.
 
-| Header 1 | Header 2 | Header 3 |
-| :------- | :------: | -------: |
-| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+| Attribute     | Value         |
+| :------------ | :-----------: |
+| Cron Task     | CronJob       |
+| Description   | CronJob       |
+| Class         | cron.CronJob  |
