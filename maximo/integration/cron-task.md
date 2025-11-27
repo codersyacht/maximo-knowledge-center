@@ -41,3 +41,23 @@ Create a new Cron Task Instance with the following properties:
 | QUEUETABLE                    | Local Queue       |
 
 Save the settings.
+
+### Success Criteria
+
+The Cron Task will be tirggerred eveey 30 seconds. The console log should display the following:
+
+```
+Sample Cron Task Execution Begin
+Current Date and Time: Thu Nov 27 05:15:36 UTC 2025
+Parameters: 
+Local Queue
+External System
+Sample Cron Task Execution End
+
+Sample Cron Task Execution Begin
+Current Date and Time: Thu Nov 27 05:16:06 UTC 2025
+Parameters: 
+Local Queue
+External System
+```
+Sample Cron Task Execution End
