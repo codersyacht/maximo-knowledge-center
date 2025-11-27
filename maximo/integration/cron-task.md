@@ -20,3 +20,15 @@ In Manage application,
 | Cron Task     | CronJob       |
 | Description   | CronJob       |
 | Class         | cron.CronJob  |
+
+### Cron Task Instance
+
+Create a new Cron Task Instance with the following properties:
+
+| Attribute                     | Value             |
+| :---------------------------- | :---------------: |
+| Cron Task Instance Name       | CronJob           |
+| Description                   | CronJob           |
+| Schedule                      | Every 30 seconds  |
+| Run as User                   | MAXADMIN          |
+| Active                        | Enable            |
