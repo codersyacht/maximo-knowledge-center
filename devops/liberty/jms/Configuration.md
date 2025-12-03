@@ -8,20 +8,24 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
 ```XML
 <server description="new server">
+
     <featureManager>
             <feature>webProfile-8.0</feature>
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
             <feature>wasJmsServer-1.0</feature>
     </featureManager>
+
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
     <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
+
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore"/>
         <queue id="localqueue1"/>
         <queue id="localqueue2"/>
     </messagingEngine>
+
  </server>
 ```
 
@@ -30,19 +34,17 @@ If you want to use a seperate server as jms client, use the following server.xml
 ```XML
 <server description="new server">
 
-    <!-- Enable features -->
     <featureManager>
             <feature>webProfile-8.0</feature>
             <feature>wasJmsClient-2.0</feature>
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
             <feature>jndi-1.0</feature>
+            <feature>jmsMdb-3.2</feature>
+            <feature>mdb-3.2</feature>
     </featureManager>
 
-    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"  httpPort="9091"  httpsPort="9454" host="*" />
-                  
-    <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true"/>
 
     <jmsQueueConnectionFactory jndiName="jms/QCF">
@@ -56,12 +58,15 @@ If you want to use a seperate server as jms client, use the following server.xml
        <properties.wasJms queueName="localqueue2"/>
     </jmsQueue>
 
-<jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
-    <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
-</jmsActivationSpec>
-<jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="1">
-    <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="1" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
-</jmsActivationSpec>
+    <jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
+        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5"
+        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+    </jmsActivationSpec>
+    <jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="5">
+        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="5"
+        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+    </jmsActivationSpec>
+
 </server>
 ```
 
@@ -69,6 +74,7 @@ If you want to the server itself as the client, embed the following into the ser
 
 ```XML
 <server description="new server">
+
     <featureManager>
             <feature>webProfile-8.0</feature>
             <feature>jaxrs-2.1</feature>
@@ -76,10 +82,14 @@ If you want to the server itself as the client, embed the following into the ser
             <feature>wasJmsServer-1.0</feature>
             <feature>wasJmsClient-2.0</feature>
             <feature>jndi-1.0/feature>
+            <feature>jmsMdb-3.2</feature>
+            <feature>mdb-3.2</feature>
     </featureManager>
+
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
     <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
+
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore"/>
         <queue id="localqueue1"/>
@@ -89,15 +99,23 @@ If you want to the server itself as the client, embed the following into the ser
     <jmsQueueConnectionFactory jndiName="jms/QCF">
        <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:9011:BootstrapBasicMessaging"/>
     </jmsQueueConnectionFactory>
-    <jmsQueue jndiName="jms/MyQueue">
-       <properties.wasJms queueName="QUEUE1"/>
+
+    <jmsQueue jndiName="jms/localqueue1">
+       <properties.wasJms queueName="localqueue1"/>
     </jmsQueue>
+    <jmsQueue jndiName="jms/localqueue2">
+       <properties.wasJms queueName="localqueue2"/>
+    </jmsQueue>
+
     <jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
-        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5"
+        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
     </jmsActivationSpec>
     <jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="1">
-        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="1" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="5"
+        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
     </jmsActivationSpec>
+
  </server>
 ```
 #### Maxinmo Speficic JMS Configuration for Liberty server.xml
@@ -110,6 +128,8 @@ If you want to the server itself as the client, embed the following into the ser
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
             <feature>wasJmsServer-1.0</feature>
+            <feature>jmsMdb-3.2</feature>
+            <feature>mdb-3.2</feature>
     </featureManager>
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
