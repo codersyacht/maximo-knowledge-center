@@ -2,7 +2,7 @@
 
 ### Author: Jawahar
 
-**Generic JMS Configuration for Liberty server.xml **
+#### Generic JMS Configuration for Liberty server.xml
 
 Most basic element for configuring JMS server in Liberty is as follows. This is generic and it is not the required configuration for Maximo.
 
@@ -24,7 +24,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
  </server>
 ```
 
-**Maxinmo Speficic JMS Configuration for Liberty server.xml **
+#### Maxinmo Speficic JMS Configuration for Liberty server.xml
 
 ```XML
 <server description="new server">
