@@ -49,10 +49,19 @@ If you want to use a seperate server as jms client, use the following server.xml
        <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:9011:BootstrapBasicMessaging"/>
     </jmsQueueConnectionFactory>
 
-    <jmsQueue jndiName="jms/MyQueue">
-       <properties.wasJms queueName="QUEUE1"/>
+    <jmsQueue jndiName="jms/localqueue1">
+       <properties.wasJms queueName="localqueue1"/>
+    </jmsQueue>
+    <jmsQueue jndiName="jms/localqueue2">
+       <properties.wasJms queueName="localqueue2"/>
     </jmsQueue>
 
+<jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
+    <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+</jmsActivationSpec>
+<jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="1">
+    <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="1" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+</jmsActivationSpec>
 </server>
 ```
 
@@ -83,6 +92,12 @@ If you want to the server itself as the client, embed the following into the ser
     <jmsQueue jndiName="jms/MyQueue">
        <properties.wasJms queueName="QUEUE1"/>
     </jmsQueue>
+    <jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
+        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+    </jmsActivationSpec>
+    <jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="1">
+        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="1" maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
+    </jmsActivationSpec>
  </server>
 ```
 #### Maxinmo Speficic JMS Configuration for Liberty server.xml
