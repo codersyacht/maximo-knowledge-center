@@ -21,7 +21,7 @@ Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-ce
 Most basic element for configuring JMS server in Liberty is as follows. This is generic and it is not the required configuration for Maximo.
 
 ```XML
-<server description="new server">
+<server description="jmsserver">
 
     <featureManager>
             <feature>webProfile-8.0</feature>
@@ -36,8 +36,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore"/>
-        <queue id="localqueue1"/>
-        <queue id="localqueue2"/>
+        <queue id="message-queue"/>
     </messagingEngine>
 
  </server>
@@ -46,7 +45,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 If you want to use a seperate server as jms client, use the following server.xml in a new server.
 
 ```XML
-<server description="new server">
+<server description="jmsclient">
 
     <featureManager>
             <feature>webProfile-8.0</feature>
@@ -62,22 +61,15 @@ If you want to use a seperate server as jms client, use the following server.xml
     <applicationManager autoExpand="true"/>
 
     <jmsQueueConnectionFactory jndiName="jms/QCF">
-       <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:9011:BootstrapBasicMessaging"/>
+       <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:7276:BootstrapBasicMessaging"/>
     </jmsQueueConnectionFactory>
 
-    <jmsQueue jndiName="jms/localqueue1">
-       <properties.wasJms queueName="localqueue1"/>
-    </jmsQueue>
-    <jmsQueue jndiName="jms/localqueue2">
-       <properties.wasJms queueName="localqueue2"/>
+    <jmsQueue jndiName="jms/message-queue">
+       <properties.wasJms queueName="message-queue"/>
     </jmsQueue>
 
-    <jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
-        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5"
-        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
-    </jmsActivationSpec>
-    <jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="5">
-        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="5"
+    <jmsActivationSpec id="jms-client/jms/message-queue" maxEndpoints="5">
+        <properties.wasJms destinationLookup="jms/message-queue" maxConcurrency="5"
         maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
     </jmsActivationSpec>
 
@@ -106,27 +98,23 @@ If you want to the server itself as the client, embed the following into the ser
 
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore"/>
-        <queue id="localqueue1"/>
-        <queue id="localqueue2"/>
+        <queue id="message-queue"/>
     </messagingEngine>
 
     <jmsQueueConnectionFactory jndiName="jms/QCF">
        <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:9011:BootstrapBasicMessaging"/>
     </jmsQueueConnectionFactory>
 
-    <jmsQueue jndiName="jms/localqueue1">
-       <properties.wasJms queueName="localqueue1"/>
-    </jmsQueue>
-    <jmsQueue jndiName="jms/localqueue2">
-       <properties.wasJms queueName="localqueue2"/>
+    <jmsQueueConnectionFactory jndiName="jms/QCF">
+       <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:7276:BootstrapBasicMessaging"/>
+    </jmsQueueConnectionFactory>
+
+    <jmsQueue jndiName="jms/message-queue">
+       <properties.wasJms queueName="message-queue"/>
     </jmsQueue>
 
-    <jmsActivationSpec id="jms/jmsconsumer/localqueue1" maxEndpoints="5">
-        <properties.wasJms destinationLookup="jms/localqueue1" maxConcurrency="5"
-        maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
-    </jmsActivationSpec>
-    <jmsActivationSpec id="jms/jmsconsumer/localqueue2" maxEndpoints="1">
-        <properties.wasJms destinationLookup="jms/localqueue2" maxConcurrency="5"
+    <jmsActivationSpec id="jms-client/jms/message-queue" maxEndpoints="5">
+        <properties.wasJms destinationLookup="jms/message-queue" maxConcurrency="5"
         maxBatchSize="20" connectionFactoryLookup="jms/QCF"/>
     </jmsActivationSpec>
 
