@@ -27,9 +27,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
 If you want to use a seperate server as jms client, use the following server.xml in a new server.
 
-```
-
-
+```XML
 <server description="new server">
 
     <!-- Enable features -->
