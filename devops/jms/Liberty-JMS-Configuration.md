@@ -12,15 +12,16 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
             <feature>webProfile-8.0</feature>
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
-<feature>wasJmsServer-1.0</feature>
+            <feature>wasJmsServer-1.0</feature>
     </featureManager>
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
+    <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore"/>
-        <queue id="QUEUE1"/>
+        <queue id="localqueue1"/>
+        <queue id="localqueue2"/>
     </messagingEngine>
-    <wasJmsEndpoint host="*" wasJmsPort="9011" wasJmsSSLPort="9100" />
  </server>
 ```
 
@@ -29,10 +30,13 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 ```XML
 <server description="new server">
     <!-- Enable features -->
-      <featureManager>
-        <feature>wasJmsSecurity-1.0</feature>
-        <feature>wasJmsServer-1.0</feature>
+    <featureManager>
+            <feature>webProfile-8.0</feature>
+            <feature>jaxrs-2.1</feature>
+            <feature>servlet-4.0</feature>
+            <feature>wasJmsServer-1.0</feature>
     </featureManager>
+    <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
     <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
     <messagingEngine>
