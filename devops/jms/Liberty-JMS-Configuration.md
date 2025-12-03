@@ -6,7 +6,7 @@
 
 Most basic element for configuring JMS server in Liberty is as follows. This is generic and it is not the required configuration for Maximo.
 
-```JMS
+```XML
 <server description="new server">
     <!-- Enable features -->
     <featureManager>
