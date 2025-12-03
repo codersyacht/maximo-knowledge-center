@@ -65,6 +65,8 @@ If you want to the server itself as the client, embed the following into the ser
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
             <feature>wasJmsServer-1.0</feature>
+            <feature>wasJmsClient-2.0</feature>
+            <feature>jndi-1.0/feature>
     </featureManager>
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
