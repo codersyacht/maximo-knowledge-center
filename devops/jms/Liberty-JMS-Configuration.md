@@ -37,8 +37,10 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
     <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
     <messagingEngine>
         <fileStore path="/jmsstore" fileStoreSize="4096" logFileSize="1024"/>
-        <queue id="sqoutbd" maintainStrictOrder="true" maxMessageDepth="100000" failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
-        <queue id="sqinbd" maintainStrictOrder="true" maxMessageDepth="200000" failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
+        <queue id="sqoutbd" maintainStrictOrder="true" maxMessageDepth="100000"
+        failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
+        <queue id="sqinbd" maintainStrictOrder="true" maxMessageDepth="200000"
+        failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
         <queue id="cqinerrbd" maxMessageDepth="100000" exceptionDestination="cqinerrbd"/>
         <queue id="cqinbd" maxMessageDepth="100000" exceptionDestination="cqinerrbd"/>
         <queue id="cqouterrbd" maxMessageDepth="100000" exceptionDestination="cqouterrbd"/>
