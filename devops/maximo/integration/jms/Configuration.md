@@ -1,4 +1,4 @@
-## IBM Liberty Server JMS Configuration
+# IBM Liberty Server JMS Configuration
 
 ### Author: Jawahar
 
@@ -19,11 +19,11 @@ Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-ce
 Refer [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/jms/JMSConfiguration1.md) to learn more about JMS configuration in WebSphere Liberty.
 
 
-#### Maxinmo Speficic JMS Configuration for Liberty server.xml
+### Maxinmo Speficic JMS Configuration for Liberty server.xml
 
 ```XML
-<server description="new server">
-    <!-- Enable features -->
+<server description="manage">
+
     <featureManager>
             <feature>webProfile-8.0</feature>
             <feature>jaxrs-2.1</feature>
@@ -32,9 +32,11 @@ Refer [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/de
             <feature>jmsMdb-3.2</feature>
             <feature>mdb-3.2</feature>
     </featureManager>
+
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
     <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
+
     <messagingEngine>
         <fileStore path="/jmsstore" fileStoreSize="4096" logFileSize="1024"/>
         <queue id="sqoutbd" maintainStrictOrder="true" maxMessageDepth="100000"
@@ -48,5 +50,6 @@ Refer [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/de
         <queue id="notferrbd" maxMessageDepth="100000" exceptionDestination="notferrbd"/>
         <queue id="notfbd" maxMessageDepth="100000" exceptionDestination="notferrbd"/>
     </messagingEngine>
+
 </server>
 ```
