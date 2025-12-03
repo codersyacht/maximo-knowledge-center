@@ -16,6 +16,8 @@ Feature install the folllowing on the Liberty Server.
 
 Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/Feature-Installation.md) to install the above features.
 
+Refer [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/jms/JMSConfiguration1.md) to learn more about JMS configuration in WebSphere Liberty.
+
 
 #### Maxinmo Speficic JMS Configuration for Liberty server.xml
 
