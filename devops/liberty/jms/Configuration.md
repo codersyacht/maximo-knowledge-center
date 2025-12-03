@@ -6,6 +6,14 @@ Prerequisite:
 
 Feature install the folllowing on the Liberty Server.
 
+- jaxrs-2.1
+- servlet-4.0
+- wasJmsServer-1.0
+- wasJmsClient-2.0
+- jndi-1.0
+- jmsMdb-3.2
+- mdb-3.2
+
 #### Generic JMS Configuration for Liberty server.xml
 
 Most basic element for configuring JMS server in Liberty is as follows. This is generic and it is not the required configuration for Maximo.
