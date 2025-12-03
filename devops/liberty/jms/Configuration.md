@@ -2,6 +2,10 @@
 
 ### Author: Jawahar
 
+Prerequisite:
+
+Feature install the folllowing on the Liberty Server.
+
 #### Generic JMS Configuration for Liberty server.xml
 
 Most basic element for configuring JMS server in Liberty is as follows. This is generic and it is not the required configuration for Maximo.
