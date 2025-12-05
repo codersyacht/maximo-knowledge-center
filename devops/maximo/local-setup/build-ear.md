@@ -5,7 +5,7 @@
 Navigate to the following location.
 
 ```CMD
-_/home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/maximouiweb/webmodule/WEB-INF_
+cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/maximouiweb/webmodule/WEB-INF_
 ```
 rename web.xml to web-original.xml
 
@@ -39,7 +39,7 @@ mv web.xml web-original.xml
 mv web-dev.xml web.xml
 ```
 ```CMD
-/home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/meaweb/webmodule/WEB-INF
+cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/meaweb/webmodule/WEB-INF
 ```
 ```CMD
 mv web.xml web-original.xml
