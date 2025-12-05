@@ -2,7 +2,8 @@
 
 ### Author: Jawahar
 
-Prerequisite:
+
+**Prerequisite:**
 
 Feature install the folllowing on the Liberty Server.
 
@@ -15,6 +16,8 @@ Feature install the folllowing on the Liberty Server.
 - mdb-3.2
 
  Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/Feature-Installation.md) to install the above features. 
+
+
 
 ## Generic JMS Configuration for Liberty server.xml
 
