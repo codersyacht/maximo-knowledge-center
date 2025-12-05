@@ -11,13 +11,16 @@
 
 **Initial Setup**
 
-The Maximo application need to be copied to _/home/admin/apps_. The filesystem should be in the following directory structure _/home/admin/apps/SMP_
+The Maximo application need to be copied to _/home/admin/apps_. The present-working-directory should be in the following directory structure _/home/admin/apps/SMP_
 
 ```
 cd /home/admin/apps
 ```
 ```CMD
-oc cp -n mas-max-manage max-max-manage-maxinst-7b8c49d96-nzcpp:/opt/IBM/SMP SMPV<Version>
+eval $(crc oc-env)
+```
+```CMD
+oc cp -n mas-max-manage max-max-manage-maxinst-5869bc54f7-lr4dd:/opt/IBM/SMP SMP
 ```
 
 Content of the _/home/admin/apps/SMP/maximo_ folder.
