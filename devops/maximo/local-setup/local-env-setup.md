@@ -7,7 +7,7 @@
 
 [Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
 
-[DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/db2/configuration.md)
+[DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/configuration.md)
 
 [Java Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
 
