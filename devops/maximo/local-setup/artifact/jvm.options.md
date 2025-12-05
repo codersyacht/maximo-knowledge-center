@@ -1,0 +1,5 @@
+-Dcom.ibm.mq.cfg.jmqi.useMQCSPauthentication=true
+-Dfile.encoding=UTF8
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000
+-Xms8192m
+-Xmx8192m
