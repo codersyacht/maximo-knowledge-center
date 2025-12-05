@@ -3,7 +3,7 @@
 
 **Prerequisite**
 
-[Change System Time](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/01-System-Date.md)
+[Change System Time](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/system-date.md)
 
 [Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
 
