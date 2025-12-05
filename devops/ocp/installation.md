@@ -104,7 +104,7 @@ crc config set cpus 12
 crc config set memory 49152
 ```
 ```CMD
-crc config set disk-size 200
+crc config set disk-size 500
 ```
 ```CMD
 crc config set enable-cluster-monitoring true
