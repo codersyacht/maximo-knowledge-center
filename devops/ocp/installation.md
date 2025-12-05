@@ -86,14 +86,6 @@ echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
 ```
 Run crc setup.
 
-```CMD
-crc cleanup
-```
-
-```CMD
-crc setup
-```
-
 **5. Configuring Code Ready Container.**
 
 Execute the following commands.
