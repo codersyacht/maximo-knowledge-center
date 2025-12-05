@@ -101,7 +101,7 @@ Execute the following commands.
 crc config set cpus 12
 ```
 ```CMD
-crc config set memory 57344
+crc config set memory 49152
 ```
 ```CMD
 crc config set disk-size 200
