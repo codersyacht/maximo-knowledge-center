@@ -29,7 +29,7 @@ rm webprofile-8.zip
 
 Root directory of Liberty server is /home/admin/apps/wlp.
 
-### Navigate to bin folder and create server
+### Create Server
 
 ```CMD
 cd /home/admin/apps/wlp/bin
