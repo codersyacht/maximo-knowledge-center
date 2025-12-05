@@ -6,7 +6,7 @@
 
 **Liberty Setup**
 
-[Liberty Installation](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/01-Liberty-Setup.md)
+[Liberty Installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/install.md)
 
 [Liberty Configuration](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/02-Liberty-Configuration.md)
 
