@@ -9,6 +9,10 @@
 
 [DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/db2/configuration.md)
 
+[Java Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
+
+[Java Path](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-path.md)
+
 **Initial Setup**
 
 The Maximo application need to be copied to _/home/admin/apps_. The present-working-directory should be in the following directory structure _/home/admin/apps/SMP_
@@ -75,10 +79,6 @@ mxe.db.password=LabMachine4@Training
 mxe.db.schemaowner=MAXIMO
 mxe.db.DB2sslConnection=false
 ```
-
-**Install Java**
-
-[Java Setup](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/manual-deployment/Java-Setup.md)
 
 **Generate DB Data**
 
