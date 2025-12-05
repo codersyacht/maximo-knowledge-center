@@ -3,7 +3,7 @@
 ### Author: Jawahar
 
 ## Prerequisite
-[Liberty Setup](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/01-Liberty-Setup.md)
+[Liberty Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/install.md)
 
 **Install Liberty Features**
 
