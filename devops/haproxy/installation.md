@@ -1,7 +1,7 @@
 ### HA Proxy Installation
 
 ```CMD
-sudo yum install haproxy
+sudo yum install -y haproxy
 ```
 The haproxy configuration file is located in /etc/haproxy/haproxy.cfg.
 
