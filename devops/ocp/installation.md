@@ -218,7 +218,7 @@ openshift-dns                                      dns-default-j79nc            
 ..
 ```
 
-**11. Install & Configure HA Proxy**
+## 11. Install & Configure HA Proxy
 
 [Install & Configure HA Proxy](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/HA_Proxy.md)
 
@@ -229,10 +229,14 @@ In the local machine from where browser is launched, add the following entry. He
 ```
 
 
-### OpenShift Console.
+## OpenShift Console.
 
 Access the Openshift hopepage using the following link.
 
 https://console-openshift-console.apps-crc.testing/
 
 uername is kubeadmin. Password is **rff2p-pKUA6-CtEZq-QAkjn** (Received at time of crc start).
+
+## Next Step:
+
+Install HA Proxy. Click [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/haproxy/installation.md)
