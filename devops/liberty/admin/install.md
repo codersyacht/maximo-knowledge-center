@@ -3,7 +3,11 @@
 
 ### Author: Jawahar
 
-## Prerequisite:
+### Prerequisite:
+
+[Java Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
+
+[Java Path](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-path.md)
 
 ## Download WebSphere Liberty
 
