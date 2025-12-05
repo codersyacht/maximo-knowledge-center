@@ -7,13 +7,7 @@
 
 [Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
 
-DB Installation and Setup
-
-[Install DB2](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/01-Setup.md)
-
-[Create DB](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/02-Create-DB.md)
-
-[Configure DB](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/03-Maximo-DB-Prerequisite-Configuration.md)
+[DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/db2/configuration.md)
 
 **Initial Setup**
 
