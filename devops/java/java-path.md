@@ -1,6 +1,6 @@
 ## Java Path
 
-Prerequisite [Install Java](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/03-Java_Install.md)
+Prerequisite [Install Java](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
 
 **Setting Java Path in Linux:**
 
