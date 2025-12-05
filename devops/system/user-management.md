@@ -13,7 +13,7 @@
 **Recommendation:** <br>
 Standardize the system time to UTC or EST. <br>
 
-[System Time](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/01-System-Date.md)
+[System Time](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/system-date.md)
 
 **Note :** The instruction is for creating user _admin_. Replace _admin_ with the intended user name.
 
