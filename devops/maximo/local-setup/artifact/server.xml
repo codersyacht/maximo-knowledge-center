@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+	<!-- Enable features -->
+	<featureManager>
+		<feature>javaMail-1.6</feature>
+		<feature>jdbc-4.2</feature>
+		<feature>jaxws-2.2</feature>
+		<feature>jndi-1.0</feature>
+		<feature>wasJmsClient-2.0</feature>
+		<feature>ssl-1.0</feature>
+		<feature>webProfile-8.0</feature>
+		<feature>wmqJmsClient-2.0</feature>
+		<feature>jmsMdb-3.2</feature>
+		<feature>ejbRemote-3.2</feature>
+		<feature>ejbHome-3.2</feature>
+		<feature>jsonp-1.1</feature>
+	</featureManager>
+	<!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+	<httpEndpoint id="defaultHttpEndpoint"  host="*" httpPort="9080"  httpsPort="9443" protocolVersion="http/1.1">
+		<compression serverPreferredAlgorithm="deflate|gzip|x-gzip|zlib|identity|none">
+			<types>+application/*</types>
+			<types>-text/plain</types>
+			<types>-application/zip</types>
+		</compression>
+	</httpEndpoint>
+	<webContainer  extractHostHeaderPort="true" trustHostHeaderPort="true" disableXPoweredBy="true" addstricttransportsecurityheader="max-age=31536000;includeSubDomains"/>
+	<cdi12 enableImplicitBeanArchives="false"/>
+	<!--httpSession cookieName="JSESSIONIDUI" invalidateOnUnauthorizedSessionRequestException ="true" cookieMaxAge="12h" invalidationTimeout="12h"/-->
+	<jndiEntry jndiName="maxappname" value="maximoui"/>
+	<application context-root="maximo" type="ear" id="maximoui" location="maximo-all.ear" name="maximoui">
+		<application-bnd>
+			<security-role name="any-authenticated">
+				<special-subject type="ALL_AUTHENTICATED_USERS" />
+			</security-role>
+			<security-role name="everyone">
+				<special-subject type="EVERYONE" />
+			</security-role>
+		</application-bnd>
+	</application>
+	<include optional="true" location="server-custom.xml" />
+	<ssl id="defaultSSLConfig" sslProtocol="TLSv1.2" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" clientAuthenticationSupported="true" />
+	<ssl id="controllerConnectionConfig" sslProtocol="TLSv1.2"/>
+	<ssl id="memberConnectionConfig" sslProtocol="TLSv1.2"/>
+	<applicationManager autoExpand="true"/>
+</server>
