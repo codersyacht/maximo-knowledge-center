@@ -8,37 +8,76 @@
 
 [Liberty Installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/install.md)
 
-Following the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/Feature-Installation.md) and install the following features.
+**Install Liberty Features**
 
-- javaMail-1.6
-- jdbc-4.2
-- installFeature jaxws-2.2
-- installFeature servlet-4.0
-- installFeature jndi-1.0
-- wasJmsServer-1.0
-- wasJmsClient-2.0
-- wmqJmsClient-2.0
-- ssl-1.0
-- jmsMdb-3.2
-- openidConnectClient-1.0
-- ejbRemote-3.2
-- ejbHome-3.2
-- jsonp-1.1
-- springBoot-3.0
+Navigate to /home/admin/apps/webprofile-8/bin.
 
+```CMD
+./featureUtility installFeature javaMail-1.6
+```
+```CMD
+./featureUtility installFeature jdbc-4.2
+```
+```CMD
+./featureUtility installFeature jaxws-2.2
+```
+```CMD
+./featureUtility installFeature servlet-4.0
+```
+```CMD
+./featureUtility installFeature jndi-1.0
+```
+```CMD
+./featureUtility installFeature wasJmsServer-1.0
+```
+```CMD
+./featureUtility installFeature wasJmsClient-2.0
+```
+```CMD
+./featureUtility installFeature wmqJmsClient-2.0
+```
+```CMD
+./featureUtility installFeature ssl-1.0
+```
+```CMD
+./featureUtility installFeature jmsMdb-3.2
+```
+```CMD
+./featureUtility installFeature openidConnectClient-1.0
+```
+```CMD
+./featureUtility installFeature ejbRemote-3.2
+```
+```CMD
+./featureUtility installFeature ejbHome-3.2
+```
+```CMD
+./featureUtility installFeature jsonp-1.1
+```
+```CMD
+./featureUtility installFeature springBoot-3.0
+```
 
-**Deploy the Application**
+**JVM Properties**
 
-[Deployment](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/03-Maximo-Deployment.md)
+Navigate to the following directory.
 
-**Start the Server**
+```CMD
+cd /home/admin/apps/wlp/usr/servers/manage
+```
 
-[Start Server](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/04-Server-Start-Stop.md)
+Create a file named jvm.options with the following content.
 
+[jvm.options](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/artifacts/jvm.options)
 
-Access the application.
+**Server Properties**
 
-_http://9.30.192.168:9080/maximo_
+Navigate to the following directory
 
-username: maxadmin
-password: maxadmin
+```CMD
+cd /home/admin/apps/wlp/usr/servers/manage
+```
+
+Update the server.xml with the following content.
+
+[server.xml](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/artifacts/server.xml)
