@@ -58,7 +58,7 @@ db2 get database configuration for MAXIMO | grep LOGSECOND
 ### Restart DB2
 
 ```CMD
-db2stop
+db2stop force
 ```
 ```
 db2start
