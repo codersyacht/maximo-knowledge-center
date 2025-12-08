@@ -50,12 +50,12 @@ sudo vi /etc/mongod.conf
 Modify bindIp value to **bindIp: 0.0.0.0**
 
 
-### Enabling TLS (Optional)
+### Enabling TLS
 
 Enabliing TLS for secure connection. This is a **mandatory** step for Maximo connection
 
 - In the instruction that follows, tls certificate is created to enable tls for mongodb server.
-- Follow the instruction [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Enable-TLS.md)
+- Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/ssl.md)
 
 ### Start MongoDB
 
