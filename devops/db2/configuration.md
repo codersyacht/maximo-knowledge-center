@@ -54,3 +54,12 @@ db2 get database configuration for MAXIMO | grep LOGPRIMARY
 ```CMD
 db2 get database configuration for MAXIMO | grep LOGSECOND
 ```
+
+### Restart DB2
+
+```CMD
+db2stop
+```
+```
+db2start
+```
