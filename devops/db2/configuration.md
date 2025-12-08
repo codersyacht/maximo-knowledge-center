@@ -10,7 +10,11 @@ Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-ce
 Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/create-db.md) to create db.
 
 
-## Maximo DB Configuration 
+## Maximo DB Configuration
+
+Login to the machine with the db2 user (db2inst1).
+
+Execure the following command:
 
 ```CMD
 db2 connect to MAXIMO
