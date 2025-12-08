@@ -26,7 +26,7 @@ cd /etc/ssl/
 sudo mkdir mongo
 ```
 ```CMD
-sudo chmod 777 -R mongo
+sudo chmod 775 -R mongo
 ```
 ```
 cd mongo
