@@ -32,7 +32,7 @@ keytool -import -trustcacerts -keystore mongo-truststore.jks -storepass password
 ### Change Owner
 
 ```CMD
-sudo chmod 777 ./*
+sudo chmod 775 ./*
 ```
 ```CMD
 sudo chown mongo:mongo ./*
