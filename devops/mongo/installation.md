@@ -10,7 +10,7 @@
 ### Prerequisite
 
 - Create a new user called mongo. 
-- Note: In the instruction that follows, user is created with name _admin_. Replace admin user with mongo during the user creation process. Follow the instruction [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md).
+- Note: In the instruction that follows, user is created with name _admin_. Replace admin user with mongo during the user creation process. Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/user-management.md).
 - Type hostname command and use the hostname in all the instruction marked as &lt;host&gt;.
 ```CMD
 hostname
