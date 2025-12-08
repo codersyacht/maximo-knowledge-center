@@ -67,11 +67,11 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 ```
 
-### Create MongoDB User (Optional)
+### Create MongoDB User
 
 Enabling admin user for MongoDB connectivity. This ia a **mandatory** step for Maximo connection.
 
-Follow the instruction [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-User-Creation.md)
+Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/user.md)
 
 ### Stop MongoDB
 
