@@ -32,7 +32,7 @@ sudo chmod 775 -R mongo
 cd mongo
 ```
 
-Follow the instructuon [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/Create-TLS-Certificate.md) to create the certificate.
+Follow the instructuon [here](https://github.com/codersyacht/maximo-knowledge-center/tree/main/devops/system) to create the certificate.
 
 **Edit /etc/mongod.conf, network interfaces section**
 
