@@ -1,15 +1,27 @@
-## Building Maximo EAR
+# Building Maximo EAR
 
-**Setting up environment for development mode**
+### Author: Jawahar
 
-Navigate to the following location.
+### Outline:
+
+There are 5 webmodules located in the directory _/home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all_.
+
+Modules:
+- maximouiweb
+- maxrestweb
+- mboejb
+- mboweb
+- meaweb
+
+The maximouiweb, maxrestweb, mboweb, meaweb are web modules. The mboejb is an ejb module. The 4 web modules have files web-dev.xml and web.xml. The web.xml has to be replaced with web-dev.xml in each of these modules to deploy maximo in development mode.
+
+### Setting up environment for development mode
+
+**maximouiweb**
 
 ```CMD
-cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/maximouiweb/webmodule/WEB-INF_
+cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/maximouiweb/webmodule/WEB-INF
 ```
-rename web.xml to web-original.xml
-
-rename web-dev.xml to web.xml.
 
 ```CMD
 mv web.xml web-original.xml
@@ -18,7 +30,7 @@ mv web.xml web-original.xml
 mv web-dev.xml web.xml
 ```
 
-Perform the same action under the following directories as well. 
+**maxrestweb**
 
 ```CMD
 cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/maxrestweb/webmodule/WEB-INF
@@ -29,6 +41,9 @@ mv web.xml web-original.xml
 ```CMD
 mv web-dev.xml web.xml
 ```
+
+**mboweb**
+
 ```CMD
 cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/mboweb/webmodule/WEB-INF
 ```
@@ -38,6 +53,9 @@ mv web.xml web-original.xml
 ```CMD
 mv web-dev.xml web.xml
 ```
+
+**meaweb**
+
 ```CMD
 cd /home/admin/apps/SMP/maximo/deployment/was-liberty-default/config-deployment-descriptors/maximo-all/meaweb/webmodule/WEB-INF
 ```
