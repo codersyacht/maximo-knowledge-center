@@ -54,7 +54,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 ```
 
 ```XML
-<server description="new server">
+<server description="jmsclient">
 
     <featureManager>
             <feature>webProfile-8.0</feature>
