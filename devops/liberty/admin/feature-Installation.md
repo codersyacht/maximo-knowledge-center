@@ -56,5 +56,5 @@ Navigate to /home/admin/apps/webprofile-8/bin.
 ./featureUtility installFeature springBoot-3.0
 ```
 ```CMD
-./featureUtility wasjmssecurity-1.0
+./featureUtility installFeature wasjmssecurity-1.0
 ```
