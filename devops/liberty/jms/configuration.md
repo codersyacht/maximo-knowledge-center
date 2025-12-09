@@ -60,7 +60,6 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
             <feature>webProfile-8.0</feature>
             <feature>jaxrs-2.1</feature>
             <feature>servlet-4.0</feature>
-            <feature>wasJmsServer-1.0</feature>
             <feature>wasJmsClient-2.0</feature>
             <feature>jndi-1.0/feature>
             <feature>jmsMdb-3.2</feature>
@@ -92,7 +91,6 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
     maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/maximo/int/cf/intcf"/></jmsActivationSpec>
     <jmsActivationSpec id="maximo-all/mboejb/JMSContOutQueueProcessor-2" maxEndpoints="1"><properties.wasJms destinationLookup="jms/maximo/int/queues/cqouterr"
     maxConcurrency="1" maxBatchSize="20" connectionFactoryLookup="jms/maximo/int/cf/intcf"/></jmsActivationSpec>
-</server>
 
  </server>
 ```
