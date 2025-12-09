@@ -72,6 +72,11 @@ drwxr-xr-x 5 admin admin     43 May 22 07:31 tools
 -rwxr-xr-x 1 admin admin    812 Mar 14 04:06 update-masimageidfull.sh
 ```
 
+**Install Java**
+
+[Java Setup](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/manual-deployment/Java-Setup.md)
+
+
 **Update DB Properties**
 
 Navigate to _/home/admin/apps/SMP/maximo/applications/maximo/properties_
