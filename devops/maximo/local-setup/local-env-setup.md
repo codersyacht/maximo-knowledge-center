@@ -27,6 +27,14 @@ eval $(crc oc-env)
 oc cp -n mas-max-manage max-max-manage-maxinst-5869bc54f7-lr4dd:/opt/IBM/SMP SMP
 ```
 
+Set the permission of the SMP.
+```cmd
+cd /home/admin/apps
+```
+```cmd
+chmod 775 -R SMP
+```
+
 Content of the _/home/admin/apps/SMP/maximo_ folder.
 
 ```CMD
