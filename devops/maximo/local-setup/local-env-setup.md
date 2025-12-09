@@ -72,9 +72,31 @@ drwxr-xr-x 5 admin admin     43 May 22 07:31 tools
 -rwxr-xr-x 1 admin admin    812 Mar 14 04:06 update-masimageidfull.sh
 ```
 
-**Install Java**
+### Copy Java into Maximo Runtime
 
-[Java Setup](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/manual-deployment/Java-Setup.md)
+Navigate to _/home/admin/apps/SMP/maximo/tools_
+
+```CMD
+cd /home/admin/apps/SMP/maximo/tools
+```
+```CMD
+mkdir -p java/jre
+```
+```CMD
+cd java
+```
+
+```CMD
+cp -r /home/admin/apps/jdk17/* ./jre
+```
+
+**Set Java Path Specific For Maximo:**
+```CMD
+export JAVA_HOME=/home/admin/apps/SMP/maximo/tools/java/jre
+```
+```CMD
+export PATH=$JAVA_HOME/bin:$PATH  
+```
 
 
 **Update DB Properties**
@@ -93,7 +115,9 @@ mxe.db.schemaowner=MAXIMO
 mxe.db.DB2sslConnection=false
 ```
 
-**Generate DB Data**
+**Generate DB Data (optional)**
+
+**Note:** This step is only required if DB is not populated. During container based deployment, if the tables are generated, then this step can be skipped.
 
 Navigate to _/home/admin/apps/SMP/maximo/tools/maximo_
 
