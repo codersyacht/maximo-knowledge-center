@@ -69,7 +69,6 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
     <applicationManager autoExpand="true"/>
-    <wasJmsEndpoint host="*" wasJmsSSLPort="7286" wasJmsPort="7276" />
 
     <jmsQueueConnectionFactory jndiName="jms/maximo/int/cf/intcf" connectionManagerRef="mifjmsconfact">
           <properties.wasJms remoteServerAddress="codehub1.fyre.ibm.com:7276:BootstrapBasicMessaging"/></jmsQueueConnectionFactory>
