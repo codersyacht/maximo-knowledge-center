@@ -10,3 +10,6 @@
 
 [Feature Installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/feature-Installation.md)
 
+**Maximo Application Deployment**
+
+[Deployment](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/application-deployment.md)
