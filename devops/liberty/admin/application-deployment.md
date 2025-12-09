@@ -8,4 +8,4 @@ mv /home/admin/apps/SMPV<version>/maximo/deployment/was-liberty-default/deployme
 ```
 **Start the Server**
 
-[Start Server](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/liberty/04-Server-Start-Stop.md)
+[Start Server](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/server-start-stop.md)
