@@ -97,10 +97,6 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
  </server>
 ```
-
-
-
-
     
 
    
