@@ -4,7 +4,7 @@ Setup directory /home/admin/apps (This is subjective to the user and environment
 
 **Set Java Path**
 
-[Set Java Path](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/04-Java-Path.md)
+[Set Java Path](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-path.md)
 
 **Start**
 ```CMD
