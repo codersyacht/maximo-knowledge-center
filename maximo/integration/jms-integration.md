@@ -1,18 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```XML
 <SyncMXITEM xmlns="http://www.ibm.com/maximo">
   <MXITEMSet>
     <ITEM>
@@ -22,3 +9,4 @@
     </ITEM>
   </MXITEMSet>
 </SyncMXITEM>
+```
