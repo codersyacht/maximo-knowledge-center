@@ -9,3 +9,7 @@ Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-ce
 ## Generate API Key
 
 Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/api-keys.md)
+
+## Object Accesses
+
+Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/api-keys.md)
