@@ -113,6 +113,7 @@ mxe.db.user=db2inst1
 mxe.db.password=LabMachine4@Training
 mxe.db.schemaowner=MAXIMO
 mxe.db.DB2sslConnection=false
+mxe.logging.CorrelationEnabled=0
 ```
 
 **Generate DB Data (optional)**
