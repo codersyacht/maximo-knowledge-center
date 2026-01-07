@@ -25,12 +25,14 @@ API can be accessed via two methods.
 
 ```JSON
 {
-    "prefixes": {
+    "prefixes":
+    {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "oslc:responseInfo": {
+    "oslc:responseInfo":
+    {
         "rdf:about": "http://localhost/maximo/oslc/os/mxapisets"
     },
     "rdfs:member": [
@@ -53,5 +55,3 @@ API can be accessed via two methods.
     "rdf:about": "http://localhost/maximo/oslc/os/mxapisets"
 }
 ```
-
-
