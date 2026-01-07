@@ -18,4 +18,4 @@ Login to the application using the following url: _http://codehub1.fyre.ibm.com:
 
 ## Next Steps
 
-Change maximo user password [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/security/change-password.md)
+Follow the instruction [here]()
