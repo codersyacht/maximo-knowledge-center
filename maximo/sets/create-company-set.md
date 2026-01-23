@@ -12,9 +12,9 @@ Method: Post
 Body:
 ```JSON
 {
-    "spi:settype_description": "IBM",
-    "spi:setid": "IBM",
-    "spi:description": "IBM",
+    "spi:settype_description": "Apples",
+    "spi:setid": "Apple",
+    "spi:description": "Apple",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:langcode": "EN",
