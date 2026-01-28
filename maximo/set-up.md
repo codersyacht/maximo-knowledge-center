@@ -17,5 +17,6 @@ Enable access to the following object structures.
 - MXITEM
 - MXVENDORMSTR
 - MXVENDOR
+- MXGLCOMP
   
 Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/api-keys.md)
