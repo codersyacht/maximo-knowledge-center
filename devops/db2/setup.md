@@ -1,4 +1,4 @@
-### DB2 Setup
+# DB2 Setup
 
 **1. Download the relevant version of DB2.**
 
