@@ -57,3 +57,13 @@ docker stop sql2022
 ```
 docker start sql2022
 ```
+```CMD
+docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
+```
+```CMD
+SELECT FULLTEXTSERVICEPROPERTY('IsFullTextInstalled');
+```
+```
+GO
+```
+Output should be 1.
