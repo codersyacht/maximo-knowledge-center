@@ -8,8 +8,11 @@ Login to MSSQ_ command mode using the following command:
 docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
 ```
 
-In SQL command mode, execute the following 2 commands.
+In SQL command mode, execute the following 3 commands.
 
+```CMD
+USE master;
+```
 ```CMD
 CREATE DATABASE Maximo;
 ```
