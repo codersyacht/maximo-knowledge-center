@@ -9,21 +9,32 @@ docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "Lab
 ```
 
 ```CMD
-
 USE master;
-
+```
+```CMD
 ALTER DATABASE [Maximo] ADD FILEGROUP [MAXDATA];
+```
+```CMD
 GO
-
+```
+```CMD
 ALTER DATABASE [Maximo] ADD FILEGROUP [MAXINDEX];
+```
+```CMD
 GO
-
+```
+```CMD
 ALTER DATABASE [Maximo] ADD FILE ( NAME = N'Maximo_MAXDATA', FILENAME = N'/var/opt/mssql/data/Maximo_MAXDATA.ndf', SIZE = 1024MB, FILEGROWTH = 256MB )TO FILEGROUP [MAXDATA];
+```
+```CMD
 GO
-
+```
+```CMD
 ALTER DATABASE [Maximo] ADD FILE ( NAME = N'Maximo_MAXINDEX', FILENAME = N'/var/opt/mssql/data/Maximo_MAXINDEX.ndf', SIZE = 512MB, FILEGROWTH = 128MB) TO FILEGROUP [MAXINDEX];
+```
+```CMD
 GO
-
+```
+```CMD
 exit
-
 ```
