@@ -9,7 +9,7 @@ Docker setup. To install docker follow the instructions [here](https://github.co
 ## Install MSSQL
 
 ```CMD
-docker pull mcr.microsoft.com/mssql/rhel/server:2022-latest
+docker pull mcr.microsoft.com/mssql/server:2022-latest
  ```
 ```CMD
 docker run -d --name sql2022 --hostname sql2022 -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=LabMachine4@Training" -e "MSSQL_ENABLE_FTS=1" -e "MSSQL_PID=Developer" -p 1433:1433 mcr.microsoft.com/mssql/server:2022-latest
