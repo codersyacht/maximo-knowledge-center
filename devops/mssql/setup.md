@@ -17,3 +17,6 @@ docker run -d --name sql2022 --hostname sql2022 -e "ACCEPT_EULA=Y" -e "MSSQL_SA_
 
 For MQSQL command code, execute the following command
 
+```CMD
+docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
+```
