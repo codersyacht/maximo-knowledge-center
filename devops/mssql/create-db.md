@@ -20,12 +20,14 @@ CREATE DATABASE Maximo;
 GO
 ```
 
+## Client Connection Details
 
-jdbc:sqlserver://9.30.87.54:1433;databaseName=MyTestDB;
+| Field                | Value                                                              |
+|----------------------|--------------------------------------------------------------------|
+| Host                 | 9.30.87.54                                                         |
+| Database/Schema Name | Maximo                                                             |
+| Port                 | 1433                                                               |
+| Username             | sa                                                                 |
+| Password             | LabMachine4@Training                                               |
+| JDBC URL             | jdbc:sqlserver://9.30.87.54:1433;databaseName=Maximo;              |
 
-
-
-SELECT DISTINCT TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'MAXOBJECT';
-
-
-SELECT TABLE_SCHEMA, TABLE_NAME FROM sys.tables WHERE TABLE_NAME = 'MAXOBJECT'
