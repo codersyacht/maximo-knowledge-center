@@ -12,6 +12,9 @@ docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "Lab
 USE master;
 ```
 ```CMD
+GO
+```
+```CMD
 ALTER DATABASE [Maximo] ADD FILEGROUP [MAXDATA];
 ```
 ```CMD
