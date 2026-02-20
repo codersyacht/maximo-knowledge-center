@@ -39,5 +39,13 @@ ALTER DATABASE [Maximo] ADD FILE ( NAME = N'Maximo_MAXINDEX', FILENAME = N'/var/
 GO
 ```
 ```CMD
+ALTER DATABASE Maximo
+```
+```CMD
+COLLATE Latin1_General_100_CI_AS_KS_SC_UTF8;
+```
+```CMD
+GO
+```
 exit
 ```
