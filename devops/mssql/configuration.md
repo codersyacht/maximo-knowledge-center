@@ -48,5 +48,8 @@ COLLATE Latin1_General_100_CI_AS_KS_SC_UTF8;
 GO
 ```
 ```CMD
+SELECT name, collation_name FROM sys.databases WHERE name = 'Maximo';
+```
+```CMD
 exit
 ```
