@@ -63,7 +63,7 @@ Result:
 }
 ```
 
-## Get Sets
+## Get Set
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_REVWSUNFUw--?
 ```
