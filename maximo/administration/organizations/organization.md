@@ -1,14 +1,16 @@
-## Organizations
+# Organizations
+
+### Author: Mohamed Jawahar Hussain
 
 ### Prerequisite
 
 Maximo installed and manage application accessible. 
 
-### Introduction
+## Introduction
 
 n IBM Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
 
-### Create Organization
+## Create Organization
 
 ```URL
 http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?_lid=maxadmin&_lpwd=maxadmin
@@ -30,7 +32,7 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?_lid=maxadmin&
 }
 ```
 
-### Success Criteria
+## Success Criteria
 API executed successfully.
 Organization IBM created.
 
