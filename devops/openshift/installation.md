@@ -26,7 +26,8 @@ Download the secret alone following the instruction below.
 - Click "_Red Hat OpenShift_". 
 - Click on "_Create Cluster_" under _Red Hat OpenShift Container Platform_.
 - Under "_Select an OpenShift cluster type to create_" select "_Local_".
-- <span style="color:#d73a49;"> Optional only if latest version is being downloaded. </span> Choose Linux or the right operating system and click on "Download OpenShift Local".
+  ```diff
+- Optional only if latest version is being downloaded. Choose Linux or the right operating system and click on "Download OpenShift Local".
 - Get the secret by clicking the "Download Pull secret".
 - This would have downloaded 2 files into your local system namely crc-linux-amd64.tar.xz and pull-secret.txt.
 - Move the downloaded files to the linux server under the non-root (admin) user. I have moved the files into /home/admin/apps/ocp.
