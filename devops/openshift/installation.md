@@ -26,6 +26,7 @@ Download the secret alone following the instruction below.
 - Click "_Red Hat OpenShift_". 
 - Click on "_Create Cluster_" under _Red Hat OpenShift Container Platform_.
 - Under "_Select an OpenShift cluster type to create_" select "_Local_".
+  
   ```diff
 - Optional only if latest version is being downloaded. Choose Linux or the right operating system and click on "Download OpenShift Local".
 - Get the secret by clicking the "Download Pull secret".
