@@ -244,4 +244,4 @@ uername is kubeadmin. Password is **rff2p-pKUA6-CtEZq-QAkjn** (Received at time 
 
 ## Next Step:
 
-Install HA Proxy. Click [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/haproxy/installation.md)
+Install HA Proxy. Click [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/ha-proxy.md)
