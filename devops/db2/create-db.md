@@ -3,7 +3,7 @@
 ### Create DB MAXIMO
 
 If DB2 is not yet installed, then following the below link to set it up. <br>
-[DB2 Installation](https://github.com/codersyacht/private/blob/main/db2/Setup.md)
+[DB2 Installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/setup.md)
 
 Login to the machine with the db2 user (db2inst1). <br>
 
