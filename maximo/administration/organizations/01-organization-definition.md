@@ -37,13 +37,12 @@ n IBM Maximo, an Organization is a foundational data structure that defines how 
 API executed successfully.
 Organization IBM created.
 
-### Get Organization 
-
-All Organization:
+## Get Organization 
 
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?_lid=maxadmin&_lpwd=maxadmin
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="IBM"
 ```
+Method: Get
 
 Result:
 ```JSON
@@ -54,45 +53,7 @@ Result:
         "oslc": "http://open-services.net/ns/core#"
     },
     "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?_lid=maxadmin&_lpwd=maxadmin"
-    },
-    "rdfs:member": [
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_RUFHTEVOQQ--"
-        },
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_RUFHTEVTQQ--"
-        },
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_RUFHTEVVSw--"
-        },
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_TEdUOTk5"
-        },
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_SUJN"
-        }
-    ],
-    "rdf:about": "http://localhost/maximo/oslc/os/mxorganization"
-}
-```
-
-Specific Organization:
-
-```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="IBM"&_lid=maxadmin&_lpwd=maxadmin
-```
-
-Result:
-```JSON
-{
-    "prefixes": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "oslc": "http://open-services.net/ns/core#"
-    },
-    "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22IBM%22&_lid=maxadmin&_lpwd=maxadmin"
+        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22IBM%22"
     },
     "rdfs:member": [
         {
@@ -103,14 +64,58 @@ Result:
 }
 ```
 
-### Get Organization By Id
+## Get Specific Organization:
+
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN?_lid=maxadmin&_lpwd=maxadmin
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN
 ```
+Method: Get
 
 Result:
 ```JSON
 {
+    "spi:site": [
+        {
+            "localref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/0-37",
+            "spi:siteuid": 37,
+            "spi:description": "BL",
+            "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/0-37/billtoshipto",
+            "spi:changeby": "MAXADMIN",
+            "rdf:about": "http://childkey#T1JHQU5JWkFUSU9OL1NJVEUvQkw-",
+            "spi:enterdate": "2026-02-21T14:07:28+00:00",
+            "spi:enterby": "MAXADMIN",
+            "prefixes": {
+                "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+                "oslc": "http://open-services.net/ns/core#"
+            },
+            "_rowstamp": "5517301",
+            "spi:active": false,
+            "spi:contact": "MAXADMIN",
+            "spi:changedate": "2026-02-21T14:07:28+00:00",
+            "spi:siteid": "BL"
+        },
+        {
+            "localref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/1-40",
+            "spi:siteuid": 40,
+            "spi:description": "TEL",
+            "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/1-40/billtoshipto",
+            "spi:changeby": "MAXADMIN",
+            "rdf:about": "http://childkey#T1JHQU5JWkFUSU9OL1NJVEUvVEVM",
+            "spi:enterdate": "2026-02-21T14:30:11+00:00",
+            "spi:enterby": "MAXADMIN",
+            "prefixes": {
+                "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+                "oslc": "http://open-services.net/ns/core#"
+            },
+            "_rowstamp": "5518403",
+            "spi:active": false,
+            "spi:contact": "MAXADMIN",
+            "spi:changedate": "2026-02-21T14:30:28+00:00",
+            "spi:siteid": "TEL"
+        }
+    ],
     "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/address",
     "spi:itemsetid": "DEVICES",
     "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site",
@@ -119,18 +124,18 @@ Result:
     "spi:dfltitemstatus": "ACTIVE",
     "spi:orgid": "IBM",
     "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_SUJN",
-    "spi:enterdate": "2025-09-08T05:29:39+00:00",
+    "spi:enterdate": "2026-02-21T14:04:58+00:00",
     "spi:enterby": "MAXADMIN",
     "prefixes": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "_rowstamp": "1378887",
+    "_rowstamp": "5516274",
     "spi:category": "STK",
-    "spi:companysetid": "APPLE",
+    "spi:companysetid": "IBMCOMP",
     "spi:active": false,
-    "spi:organizationid": 8,
+    "spi:organizationid": 12,
     "spi:basecurrency1": "USD"
 }
 ```
