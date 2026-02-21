@@ -6,11 +6,11 @@
 
 Manage application installed and running.
 
-### Introduction
+## Introduction
 
 A Company Set is a collection of company records that can be accessed by multiple organizations. This allows centralized control over vendor and business partner information, improving consistency and reducing duplication.
 
-### Create Company Set
+## Create Company Set
 
 ```URL
 http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd=maxadmin
@@ -30,14 +30,14 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 }
 ```
 
-### Success Criteria
+## Success Criteria
 
 - API executed successfully.
 - Company Set named Apple created.
 
   Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for IBMComp set. If the API is successfully executed, the IBMComp set will be visible.
 
-### Get Sets Query
+## Get Sets Query
 
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="IBMComp"
@@ -63,7 +63,7 @@ Result:
 }
 ```
 
-### Get Set
+## Get Set
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_SUJNQ09NUA--
 ```
