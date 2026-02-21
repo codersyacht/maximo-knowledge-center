@@ -34,7 +34,7 @@ _https://console.redhat.com/_
 - Get the secret by clicking the "Download Pull secret".
 - This will download two files into your local system: crc-linux-amd64.tar.xz and pull-secret.txt.
 - Move the downloaded files to the Linux server under the non-root (admin) user. Example: /home/admin/apps/ocp
-
+```
 ```CMD
 mkdir -p /home/admin/apps/ocp
 ```
