@@ -5,7 +5,7 @@
 ### Prerequisite:
 Manage application installed and running.
 
-### Introduction
+## Introduction
 
 Item Sets are collections of item master records—like parts, materials, tools, and services—that can be shared among different organizations in Maximo.
 
@@ -29,7 +29,7 @@ Body:
 }
 ```
 
-### Success Criteria
+## Success Criteria
 
 - API executed successfully.
 - Item Set named Devices created.
@@ -37,7 +37,7 @@ Body:
 Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Devices. If the API is successfully executed, the device set will be visible,
 
 
-### Get Sets Query
+## Get Sets Query
 
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="DEVICES"
@@ -63,7 +63,7 @@ Result:
 }
 ```
 
-### Get Sets
+## Get Sets
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_REVWSUNFUw--?
 ```
