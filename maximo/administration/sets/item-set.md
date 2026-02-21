@@ -1,22 +1,23 @@
-## Item Sets
+# Create Item Set
 
-### Prerequisite
+### Author: Mohamed Jawahar Hussain
 
-Maximo installed and manage application accessible. 
+### Prerequisite:
+Manage application installed and running.
 
 ### Introduction
 
 Item Sets are collections of item master records—like parts, materials, tools, and services—that can be shared among different organizations in Maximo.
 
-### Create Item Set
 
-```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd=maxadmin
-```
+## Steps to Create Item Set
 
+URL: http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets
+Method: Post
+Body:
 ```JSON
 {
-    "spi:settype_description": "Item Sets",
+    "spi:settype_description": "Deviced",
     "spi:setid": "Devices",
     "spi:description": "Devices",
     "spi:dfltitemstatus_description": "Active",
@@ -29,13 +30,17 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 ```
 
 ### Success Criteria
-API executed successfully.
-Item Set named Devices created.
 
-### Het Sets Query
+- API executed successfully.
+- Item Set named Devices created.
+
+Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Devices. If the API is successfully executed, the device set will be visible,
+
+
+### Get Sets Query
 
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd=maxadmin&oslc.where=setid="DEVICES"
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="DEVICES"
 ```
 
 Result:
@@ -60,7 +65,7 @@ Result:
 
 ### Get Sets
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_REVWSUNFUw--?_lid=maxadmin&_lpwd=maxadmin
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_REVWSUNFUw--?
 ```
 
 Result:
