@@ -32,7 +32,7 @@ sudo chmod 775 -R mongo
 cd mongo
 ```
 
-Follow the instructuon [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/ssl.md) to create the certificate.
+Follow the instructuon [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/ssl-setup.md) to create the certificate.
 
 **Edit /etc/mongod.conf, network interfaces section**
 
