@@ -10,7 +10,7 @@ Manage application installed and running.
 Item Sets are collections of item master records—like parts, materials, tools, and services—that can be shared among different organizations in Maximo.
 
 
-## Steps to Create Item Set
+## Create Item Set
 
 URL: http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets
 Method: Post
