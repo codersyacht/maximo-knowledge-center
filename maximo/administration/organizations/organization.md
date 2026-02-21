@@ -12,9 +12,10 @@ n IBM Maximo, an Organization is a foundational data structure that defines how 
 
 ## Create Organization
 
-```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?_lid=maxadmin&_lpwd=maxadmin
-```
+| Field  | Value |
+|--------|-------|
+| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization |
+| Method | POST  |
 
 ```JSON
 {
