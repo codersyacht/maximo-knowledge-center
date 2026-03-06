@@ -17,7 +17,7 @@ sudo yum update -y
 
 **3. Logging into Red Hat website to download the installables.**
 
-
+wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
  
 - Due to a limitation with catalog compatibility in latest Openshift version, recommending CRC version 2.54.0 to be downloaded from [here](https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/2.54.0).
 Download the secret alone following the instruction below.
