@@ -8,13 +8,13 @@ Maximo installed and manage application accessible.
 
 ## Introduction
 
-n IBM Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
+n CDY Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
 
 ## Create Organization
 
 | Field  | Value |
 |--------|-------|
-| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization |
+| URL    | http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization |
 | Method | POST  |
 
 ```JSON
@@ -22,10 +22,10 @@ n IBM Maximo, an Organization is a foundational data structure that defines how 
 
     "spi:itemsetid": "Devices",
     "spi:companysetid": "Apple",
-    "spi:description": "IBM",
+    "spi:description": "CDY",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
-    "spi:orgid": "IBM",
+    "spi:orgid": "CDY",
     "spi:enterby": "MAXADMIN",
     "spi:category": "STK",
     "spi:active": false,
@@ -35,12 +35,12 @@ n IBM Maximo, an Organization is a foundational data structure that defines how 
 
 ## Success Criteria
 API executed successfully.
-Organization IBM created.
+Organization CDY created.
 
 ## Get Organization 
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="IBM"
+http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
 ```
 Method: Get
 
@@ -53,7 +53,7 @@ Result:
         "oslc": "http://open-services.net/ns/core#"
     },
     "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22IBM%22"
+        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22CDY%22"
     },
     "rdfs:member": [
         {
@@ -67,7 +67,7 @@ Result:
 ## Get Specific Organization:
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN
+http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization/_SUJN
 ```
 Method: Get
 
@@ -119,10 +119,10 @@ Result:
     "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/address",
     "spi:itemsetid": "DEVICES",
     "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site",
-    "spi:description": "IBM",
+    "spi:description": "CDY",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
-    "spi:orgid": "IBM",
+    "spi:orgid": "CDY",
     "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_SUJN",
     "spi:enterdate": "2026-02-21T14:04:58+00:00",
     "spi:enterby": "MAXADMIN",
@@ -133,7 +133,7 @@ Result:
     },
     "_rowstamp": "5516274",
     "spi:category": "STK",
-    "spi:companysetid": "IBMCOMP",
+    "spi:companysetid": "CDYCOMP",
     "spi:active": false,
     "spi:organizationid": 12,
     "spi:basecurrency1": "USD"
