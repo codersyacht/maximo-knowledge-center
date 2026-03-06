@@ -17,17 +17,26 @@ sudo yum update -y
 
 **3. Logging into Red Hat website to download the installables.**
 
-wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
- 
+
 - Due to a limitation with catalog compatibility in latest Openshift version, recommending CRC version 2.54.0 to be downloaded from [here](https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/2.54.0).
-Download the secret alone following the instruction below.
+- 
+```CMD
+wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/2.54.0/crc-linux-amd64.tar.xz
+```
+
+To download the latest version of CRC:
+
+```CMD
+wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
+ ```
+
 - Login or, if not registered, register at the following Red Hat website:  
 _https://console.redhat.com/_
 - Click "_Red Hat OpenShift_".
 - Click on "_Create Cluster_" under _Red Hat OpenShift Container Platform_.
 - Under "_Select an OpenShift cluster type to create_" select "_Local_".
-- **Do not execute this step as the previois version is already download in the first step.** Choose Linux or the right operating system and click on "Download OpenShift Local".
-- Get the secret by clicking the "Download Pull secret".
+- **Do not execute this step as we already downloaded directly using wget command** Choose Linux or the right operating system and click on "Download OpenShift Local". 
+- Get the secret by clicking the "_Download Pull secret_".
 - This will download two files into your local system: crc-linux-amd64.tar.xz and pull-secret.txt.
 - Move the downloaded files to the Linux server under the non-root (admin) user. Example: /home/admin/apps/ocp
 
