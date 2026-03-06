@@ -18,9 +18,9 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 
 ```JSON
 {
-    "spi:settype_description": "IBMComp",
-    "spi:setid": "IBMComp",
-    "spi:description": "IBMComp",
+    "spi:settype_description": "Apple",
+    "spi:setid": "Apple",
+    "spi:description": "Apple",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:langcode": "EN",
@@ -35,12 +35,12 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 - API executed successfully.
 - Company Set named Apple created.
 
-  Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for IBMComp set. If the API is successfully executed, the IBMComp set will be visible.
+  Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Apple set. If the API is successfully executed, the Apple set will be visible.
 
 ## Get Sets Query
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="IBMComp"
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="Apple"
 ```
 
 Result:
@@ -52,7 +52,7 @@ Result:
         "oslc": "http://open-services.net/ns/core#"
     },
     "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22IBMComp%22"
+        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22Apple%22"
     },
     "rdfs:member": [
         {
@@ -72,8 +72,8 @@ Result:
 ```JSON
 {
     "spi:settype_description": "Company Sets",
-    "spi:setid": "IBMCOMP",
-    "spi:description": "IBMComp",
+    "spi:setid": "Apple",
+    "spi:description": "Apple",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:setsid": 10,
