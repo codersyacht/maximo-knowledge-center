@@ -40,7 +40,7 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 ## Get Sets Query
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="Apple"
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="CDYCSET"
 ```
 
 Result:
@@ -52,11 +52,11 @@ Result:
         "oslc": "http://open-services.net/ns/core#"
     },
     "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22Apple%22"
+        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22CDYCSET%22"
     },
     "rdfs:member": [
         {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxapisets/_SUJNQ09NUA--"
+            "rdf:resource": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZQ1NFVA--"
         }
     ],
     "rdf:about": "http://localhost/maximo/oslc/os/mxapisets"
@@ -65,28 +65,28 @@ Result:
 
 ## Get Set
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_SUJNQ09NUA--
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_Q0RZQ1NFVA--
 ```
 
 Result:
 ```JSON
 {
     "spi:settype_description": "Company Sets",
-    "spi:setid": "Apple",
-    "spi:description": "Apple",
+    "spi:setid": "CDYCSET",
+    "spi:description": "CDYCSET",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
-    "spi:setsid": 10,
-    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_SUJNQ09NUA--",
+    "spi:setsid": 9,
+    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZQ1NFVA--",
     "spi:langcode": "EN",
-    "spi:enterdate": "2026-02-21T13:43:11+00:00",
+    "spi:enterdate": "2026-03-06T04:25:56+00:00",
     "spi:enterby": "MAXADMIN",
     "prefixes": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "_rowstamp": "5515324",
+    "_rowstamp": "2679786",
     "spi:hasld": false,
     "spi:settype": "COMPANY",
     "spi:autoupdate": false
