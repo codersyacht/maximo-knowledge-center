@@ -14,7 +14,7 @@ A site is a division within an organization that maintains certain data independ
 
 | Field  | Value |
 |--------|-------|
-| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN |
+| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ |
 | Method | POST  |
 
 ```JSON
@@ -72,23 +72,23 @@ Method: Get
 Result:
 ```JSON
 {
-    "spi:siteuid": 37,
+    "spi:siteuid": 35,
     "spi:description": "BL",
     "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxapisite/_Qkw-/billtoshipto",
     "spi:changeby": "MAXADMIN",
-    "spi:orgid": "IBM",
+    "spi:orgid": "CDY",
     "rdf:about": "http://localhost/maximo/oslc/os/mxapisite/_Qkw-",
-    "spi:enterdate": "2026-02-21T14:07:28+00:00",
+    "spi:enterdate": "2026-03-06T04:39:00+00:00",
     "spi:enterby": "MAXADMIN",
     "prefixes": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "_rowstamp": "5517301",
+    "_rowstamp": "2683737",
     "spi:active": false,
     "spi:contact": "MAXADMIN",
-    "spi:changedate": "2026-02-21T14:07:28+00:00",
+    "spi:changedate": "2026-03-06T04:39:00+00:00",
     "spi:siteid": "BL"
 }
 ```
