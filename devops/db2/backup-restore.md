@@ -20,5 +20,5 @@ mkdir -p dbbackup/manage/V1
   **Restore Database**
 
   ```CMD
-  db2 restore db MAXIMO from /home/db2inst1/dbbackup/V1
+  db2 restore db MAXIMO from /home/db2inst1/dbbackup/manage/V1
   ```
