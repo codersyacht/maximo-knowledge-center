@@ -17,9 +17,9 @@ Method: Post
 Body:
 ```JSON
 {
-    "spi:settype_description": "Deviced",
-    "spi:setid": "Devices",
-    "spi:description": "Devices",
+    "spi:settype_description": "CDYISET",
+    "spi:setid": "CDYISET",
+    "spi:description": "CDYISET",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:langcode": "EN",
@@ -40,7 +40,7 @@ Navigate to the following location in the manage application: Administration -> 
 ## Get Sets Query
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="DEVICES"
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET"
 ```
 
 Result:
@@ -52,11 +52,11 @@ Result:
         "oslc": "http://open-services.net/ns/core#"
     },
     "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd=maxadmin&oslc.where=setid=%22DEVICES%22"
+        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22CDYISET%22"
     },
     "rdfs:member": [
         {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxapisets/_REVWSUNFUw--"
+            "rdf:resource": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--"
         }
     ],
     "rdf:about": "http://localhost/maximo/oslc/os/mxapisets"
@@ -65,28 +65,28 @@ Result:
 
 ## Get Set
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_REVWSUNFUw--?
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--
 ```
 
 Result:
 ```JSON
 {
     "spi:settype_description": "Item Sets",
-    "spi:setid": "DEVICES",
-    "spi:description": "Devices",
+    "spi:setid": "CDYISET",
+    "spi:description": "CDYISET",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
-    "spi:setsid": 8,
-    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_REVWSUNFUw--",
+    "spi:setsid": 10,
+    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--",
     "spi:langcode": "EN",
-    "spi:enterdate": "2025-09-08T05:20:01+00:00",
+    "spi:enterdate": "2026-03-06T04:29:38+00:00",
     "spi:enterby": "MAXADMIN",
     "prefixes": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "_rowstamp": "1376471",
+    "_rowstamp": "2680652",
     "spi:hasld": false,
     "spi:settype": "ITEM",
     "spi:autoupdate": false
