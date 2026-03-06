@@ -1,5 +1,5 @@
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN?_lid=maxadmin&_lpwd=maxadmin
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
 ```
 
 ```JSON
