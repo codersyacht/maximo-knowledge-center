@@ -30,7 +30,7 @@ http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
   "spi:userid": "MAXADMIN",
   "spi:orgid": "CDY",
   "spi:glorder": 1,
-  "spi:comptext": "000"
+  "spi:comptext": "100"
 }
 ```
 ### Create GL Component Resource
@@ -46,7 +46,7 @@ http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
   "spi:userid": "MAXADMIN",
   "spi:orgid": "CDY",
   "spi:glorder": 2,
-  "spi:comptext": "000"
+  "spi:comptext": "100"
 }
 ```
 ### Create GL Account
