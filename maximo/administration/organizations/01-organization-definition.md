@@ -14,14 +14,14 @@ n CDY Maximo, an Organization is a foundational data structure that defines how 
 
 | Field  | Value |
 |--------|-------|
-| URL    | http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization |
+| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization |
 | Method | POST  |
 
 ```JSON
 {
 
-    "spi:itemsetid": "Devices",
-    "spi:companysetid": "Apple",
+    "spi:itemsetid": "CDYISET",
+    "spi:companysetid": "CDYCSET",
     "spi:description": "CDY",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
@@ -40,7 +40,7 @@ Organization CDY created.
 ## Get Organization 
 
 ```URL
-http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
 ```
 Method: Get
 
@@ -57,7 +57,7 @@ Result:
     },
     "rdfs:member": [
         {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_SUJN"
+            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ"
         }
     ],
     "rdf:about": "http://localhost/maximo/oslc/os/mxorganization"
@@ -67,75 +67,33 @@ Result:
 ## Get Specific Organization:
 
 ```URL
-http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization/_SUJN
+http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
 ```
 Method: Get
 
 Result:
 ```JSON
 {
-    "spi:site": [
-        {
-            "localref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/0-37",
-            "spi:siteuid": 37,
-            "spi:description": "BL",
-            "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/0-37/billtoshipto",
-            "spi:changeby": "MAXADMIN",
-            "rdf:about": "http://childkey#T1JHQU5JWkFUSU9OL1NJVEUvQkw-",
-            "spi:enterdate": "2026-02-21T14:07:28+00:00",
-            "spi:enterby": "MAXADMIN",
-            "prefixes": {
-                "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
-                "oslc": "http://open-services.net/ns/core#"
-            },
-            "_rowstamp": "5517301",
-            "spi:active": false,
-            "spi:contact": "MAXADMIN",
-            "spi:changedate": "2026-02-21T14:07:28+00:00",
-            "spi:siteid": "BL"
-        },
-        {
-            "localref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/1-40",
-            "spi:siteuid": 40,
-            "spi:description": "TEL",
-            "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site/1-40/billtoshipto",
-            "spi:changeby": "MAXADMIN",
-            "rdf:about": "http://childkey#T1JHQU5JWkFUSU9OL1NJVEUvVEVM",
-            "spi:enterdate": "2026-02-21T14:30:11+00:00",
-            "spi:enterby": "MAXADMIN",
-            "prefixes": {
-                "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
-                "oslc": "http://open-services.net/ns/core#"
-            },
-            "_rowstamp": "5518403",
-            "spi:active": false,
-            "spi:contact": "MAXADMIN",
-            "spi:changedate": "2026-02-21T14:30:28+00:00",
-            "spi:siteid": "TEL"
-        }
-    ],
-    "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/address",
-    "spi:itemsetid": "DEVICES",
-    "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_SUJN/site",
+    "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/address",
+    "spi:itemsetid": "CDYISET",
+    "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/site",
     "spi:description": "CDY",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:orgid": "CDY",
-    "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_SUJN",
-    "spi:enterdate": "2026-02-21T14:04:58+00:00",
+    "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ",
+    "spi:enterdate": "2026-03-06T04:33:10+00:00",
     "spi:enterby": "MAXADMIN",
     "prefixes": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
         "oslc": "http://open-services.net/ns/core#"
     },
-    "_rowstamp": "5516274",
+    "_rowstamp": "2681555",
     "spi:category": "STK",
-    "spi:companysetid": "CDYCOMP",
+    "spi:companysetid": "CDYCSET",
     "spi:active": false,
-    "spi:organizationid": 12,
+    "spi:organizationid": 8,
     "spi:basecurrency1": "USD"
 }
 ```
