@@ -13,11 +13,11 @@ Configure GL Account. Follow the instructions [here](https://github.com/codersya
 ## Introduction
 
 ```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN?_lid=maxadmin&_lpwd=maxadmin
+codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
 ```
 
 ```JSON
 {
-    "spi:clearingacct": "00000-000-000"
+    "spi:clearingacct": "1000-100-100-100"
 }
 ```
