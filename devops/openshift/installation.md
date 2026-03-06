@@ -252,7 +252,3 @@ Access the Openshift hopepage using the following link.
 https://console-openshift-console.apps-crc.testing/
 
 uername is kubeadmin. Password is **rff2p-pKUA6-CtEZq-QAkjn** (Received at time of crc start).
-
-## Next Step:
-
-Install HA Proxy. Click [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/ha-proxy.md)
