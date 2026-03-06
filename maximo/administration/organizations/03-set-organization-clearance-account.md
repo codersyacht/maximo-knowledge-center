@@ -13,7 +13,7 @@ Configure GL Account. Follow the instructions [here](https://github.com/codersya
 ## Introduction
 
 ```URL
-codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
+http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
 ```
 
 ```JSON
