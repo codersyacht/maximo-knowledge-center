@@ -1,4 +1,16 @@
+# Set Clearance Account
 
+### Author: Mohamed Jawahar Hussain
+
+### Prerequisite
+
+Configure GL Components. Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/finance/chart-of-accounts/01-gl-components.md)
+
+Configure GL Account. Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/finance/chart-of-accounts/02-gl-account.md)
+
+
+
+## Introduction
 
 ```URL
 http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_SUJN?_lid=maxadmin&_lpwd=maxadmin
