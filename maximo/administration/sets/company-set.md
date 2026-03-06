@@ -18,9 +18,9 @@ http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?_lid=maxadmin&_lpwd
 
 ```JSON
 {
-    "spi:settype_description": "Apple",
-    "spi:setid": "Apple",
-    "spi:description": "Apple",
+    "spi:settype_description": "CDYCSET",
+    "spi:setid": "CDYCSET",
+    "spi:description": "CDYCSET",
     "spi:dfltitemstatus_description": "Active",
     "spi:dfltitemstatus": "ACTIVE",
     "spi:langcode": "EN",
