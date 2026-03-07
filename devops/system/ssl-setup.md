@@ -13,7 +13,7 @@ hostname
 
 
 ```CMD
-sudo openssl req -newkey rsa:2048 -new -x509 -days 3650 -nodes -subj '/C=IN/ST=KA/L=BL/O=Personal/OU=Personal/emailAddress=md.jawahar@ibm.com/CN=<codehub1.fyre.ibm.com' -out mongodb-cert.crt -keyout mongodb-cert.key
+sudo openssl req -newkey rsa:2048 -new -x509 -days 3650 -nodes -subj '/C=IN/ST=KA/L=BL/O=Personal/OU=Personal/emailAddress=md.jawahar@ibm.com/CN=codehub1.fyre.ibm.com' -out mongodb-cert.crt -keyout mongodb-cert.key
 ```
 
 ```CMD
