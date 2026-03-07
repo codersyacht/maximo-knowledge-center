@@ -25,21 +25,46 @@ tmpfs                6.3G     0  6.3G   0% /run/user/0
 
 ```CMD
 fdisk /dev/vda
-
+```
+```CMD
 n (new partition)
+```
+```CMD
 enter (primary default)
+```
+```CMD
 enter (new partition number default)
+```
+```CMD
 enter (first sector default)
+```
+```CMD
 enter (last sector default)
+```
+```CMD
 t (partition type)
+```
+```CMD
 enter (new partition number default)
+```
+```CMD
 8e (linux lvm)
+```
+```CMD
 w (write and quit)
-
+```
+```CMD
 lsblk (now we should see new /dev/vda3)
-
+```
+```CMD
 sudo pvcreate /dev/vda3
+```
+```CMD
 sudo vgextend /dev/mapper/rhel /dev/vda3
+```
+```CMD
 sudo lvextend -l +100%FREE /dev/mapper/rhel-root
+```
+```CMD
 sudo xfs_growfs /
 ```
