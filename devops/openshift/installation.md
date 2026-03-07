@@ -81,7 +81,7 @@ tar -xvf crc-linux-amd64.tar.xz
 ```
 Rename the extracted folder to crc.
 ```CMD
-mv crc-linux-2.36.0-amd64 crc
+mv crc-linux-2.54.0-amd64 crc
 ```
 Navigate to user home durectory. 
 ```CMD
