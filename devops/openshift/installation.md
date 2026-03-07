@@ -79,7 +79,7 @@ Extract the tar file.
 ```CMD
 tar -xvf crc-linux-amd64.tar.xz
 ```
-Rename the extracted folder to openshiftlocal.
+Rename the extracted folder to crc.
 ```CMD
 mv crc-linux-2.36.0-amd64 crc
 ```
