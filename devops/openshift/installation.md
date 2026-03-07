@@ -244,7 +244,7 @@ openshift-dns                                      dns-default-j79nc            
 
 ## 11. Install & Configure HA Proxy
 
-[Install & Configure HA Proxy](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/HA_Proxy.md)
+[Install & Configure HA Proxy](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/ha-proxy.md)
 
 In the local machine from where browser is launched, add the following entry. Here, the IP 9.30.188.69 is the actual IP of the linux machine where HAProxy and Openshift is installed.
 
