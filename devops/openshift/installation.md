@@ -28,15 +28,20 @@ Two files are required to install OpenShift local.
 
 ## Download crc-linux-amd64.tar.xz
 
-- Due to a limitation with catalog compatibility in latest Openshift version, recommending CRC version 2.54.0 to be downloaded from [here](https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/2.54.0).
+**Note: **
+Due to a recently observed issue in using the latest CRC, recommending to use CRC version 2.54.0. In the latest CRC version Operators are not displayed in the UI under catalog though the catalogs are loaded and operators can be installed. CRC git issue has been raised.
 
-  The following command can be executed dorectly on the linux machine.
+**Download CRC 2.54.0.**
+
+Execute the following command from /home/admin/apps/ocp.
 
 ```CMD
 wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/2.54.0/crc-linux-amd64.tar.xz
 ```
 
-To download the latest version of CRC:
+**Download Ltest version of CRC.**
+
+Execute the following command from /home/admin/apps/ocp.
 
 ```CMD
 wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
@@ -44,7 +49,7 @@ wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/re
 
 The above command will download crc-linux-amd64.tar.xz.
 
-**3. Logging into Red Hat website to download the pull secret.**
+**3. Download the pull secret.**
 
 
 - Login or, if not registered, register at the following Red Hat website:  
@@ -52,10 +57,11 @@ _https://console.redhat.com/_
 - Click "_Red Hat OpenShift_".
 - Click on "_Create Cluster_" under _Red Hat OpenShift Container Platform_.
 - Under "_Select an OpenShift cluster type to create_" select "_Local_".
-- Choose Linux or the right operating system and click on "Download OpenShift Local". **Note: This action is already performed in the previous step _Download crc-linux-amd64.tar.xz_.This can be skipped. the previous step _Download crc-linux-amd64.tar.xz_ was not executed, then download this file manually and move it tho the linix machine along with the pull secret** 
-- Get the secret by clicking the "_Download Pull secret_". Or click on _Copy Pull Secret_. Create a file called pull-secret.txt under /home/admin/apps/ocp and paste the secret into it.
-- This will download two files into your local system: crc-linux-amd64.tar.xz and pull-secret.txt.
-- If you have doenloaeed both of from browser, move the downloaded files to the Linux server under the non-root (admin) user. Example: /home/admin/apps/ocp
+- **Note: The following action is already performed in the previous step _Download crc-linux-amd64.tar.xz_.This can be skipped. If the previous step _Download crc-linux-amd64.tar.xz_ was not executed, then download this file manually and move it tho the linux machine along with the pull secret to /home/admin/apps/ocp**
+   Choose Linux or the right operating system and click on "Download OpenShift Local".  
+- Click on _Copy Pull Secret_. Create a file called pull-secret.txt under /home/admin/apps/ocp and paste the secret into it. Or Get the secret by clicking the "_Download Pull secret_". 
+- If you have chosen to download, two files will be downloaded: crc-linux-amd64.tar.xz and pull-secret.txt.
+- Move the downloaded files to the Linux server under /home/admin/apps/ocp
 
 **4. Installing OpenShift Local**
 
