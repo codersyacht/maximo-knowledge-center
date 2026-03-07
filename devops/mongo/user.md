@@ -2,13 +2,15 @@
 
 **Connect to admin db**
 
+**Note: ** Replace codehub1.fyre.ibm.com with appropriate hostname.
+
 Without TLS:
 ```CMD
-mongosh --host <host> --port 27017 admin
+mongosh --host codehub1.fyre.ibm.com --port 27017 admin
 ```
 With TLS:
 ```CMD
-mongosh --tls --host <host> --port 27017 --tlsCAFile mongodb-cert.crt admin
+mongosh --tls --host codehub1.fyre.ibm.com --port 27017 --tlsCAFile mongodb-cert.crt admin
 ```
 
 **Create mongodb user**
@@ -31,11 +33,11 @@ db.createUser
 
 Without TLS:
 ```CMD
-mongosh --host <host> --port 27017  -u "admin" -p "password" admin
+mongosh --host codehub1.fyre.ibm.com --port 27017  -u "admin" -p "password" admin
 ```
 With TLS:
 ```CMD
-mongosh --tls --host <host> --port 27017 --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt --authenticationDatabase "admin" -u "admin" -p "password" admin
+mongosh --tls --host codehub1.fyre.ibm.com --port 27017 --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt --authenticationDatabase "admin" -u "admin" -p "password" admin
 ```
 
 **Connecting with credentials to be different db**
