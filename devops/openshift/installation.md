@@ -106,7 +106,9 @@ export PATH=$PATH:$HOME/bin
 ```CMD
 echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
 ```
-Run crc setup.
+```CMD
+crc setup
+```
 
 **5. Configuring Code Ready Container.**
 
