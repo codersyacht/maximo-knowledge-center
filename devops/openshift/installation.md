@@ -39,7 +39,7 @@ Execute the following command from /home/admin/apps/ocp.
 wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/2.54.0/crc-linux-amd64.tar.xz
 ```
 
-**Download Ltest version of CRC.**
+**Download Latest version of CRC.**
 
 Execute the following command from /home/admin/apps/ocp.
 
