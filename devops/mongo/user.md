@@ -2,7 +2,7 @@
 
 **Connect to admin db**
 
-**Note: ** Replace codehub1.fyre.ibm.com with appropriate hostname.
+**Note:** Replace codehub1.fyre.ibm.com with appropriate hostname.
 
 Without TLS:
 ```CMD
