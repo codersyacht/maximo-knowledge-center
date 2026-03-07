@@ -66,7 +66,7 @@ If there are any issues check the log at /var/log/mongodb/mongod.log.
 without authentication.
 
 ```CMD
-mongosh --host <host> --tls --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt admin
+mongosh --host codehub1.fyre.ibm.com --tls --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt admin
 ``` 
 with authentication:
 
