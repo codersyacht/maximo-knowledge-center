@@ -31,10 +31,10 @@ mas_max_core           948.00 KiB
 admin> use mas_max_core
 switched to db mas_max_core
 mas_max_core> db.User.find({username: 'maxadmin'}) 
-..
-...
+```
+```
 token: '1000:e8ebdcd2427a5409009bd64748cad0fa3f60ae70a16c13dd:cd3e3b06af13ecf1a827cbc1c782d88866d149ec9f543b6d'
-...
+```
 
 ## Login to Manage application
 
