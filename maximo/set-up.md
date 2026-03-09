@@ -38,10 +38,9 @@ Navigate to _System Properties_ under _Platform Configuration_
 | mxe.adminEmai  | `<valid email id>` |
 
 - Navigate to Database Configuration under Platform Configuration. Select "_Manage Admin Mode_".
-- Set _Number of Administrative Sessions Allowed_ and _Number of Minutes for User Logout_ to 100.
+- Set _Number of Administrative Sessions Allowed_ and _Number of Minutes for User Logout_ to 5.
 - Update Properties.
-- Click Turn Admin Mode On.
-- Provide user _password_ and the _reason for change_.
+
 
 ### Disabe E-signature
 
@@ -59,3 +58,4 @@ Server restart is required.
 
 - Navigate to _Database Configuration_. Select _Manage Admin Mode_.
 - Click _Turn Admin Mode On_.
+- Provide user _password_ and the _reason for change_.
