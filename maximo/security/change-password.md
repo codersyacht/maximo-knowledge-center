@@ -4,7 +4,7 @@
   ```URL
   https://admin.codehub1.fyre.ibm.com/
   ```
-- On the left hand sidebar, user Suite -> Security -> Users(Manage).
+- On the left hand sidebar, navigate to Suite -> Security -> Users.
 - Search for MAXADMIN user and select the user.
 - Click onto the edit icon.
 - By default the Authentication type under the Authentication section will be set to Local. Expand the authentication.
