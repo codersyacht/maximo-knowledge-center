@@ -1,6 +1,9 @@
 # Change Password
 
 - Login to Manage application using super user.
+  ```URL
+  https://admin.codehub1.fyre.ibm.com/
+  ```
 - On the left hand sidebar, user Suite -> Security -> Users(Manage).
 - Search for MAXADMIN user and select the user.
 - Click onto the edit icon.
