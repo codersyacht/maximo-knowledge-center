@@ -6,7 +6,7 @@
 
 Configure GL Components. Follow the instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md)
 
-Configure GL Account. Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/finance/chart-of-accounts/02-gl-account.md)
+Configure GL Account. Follow the instructions [here](maximo/finance/chart-of-accounts/02-gl-account.md)
 
 
 
