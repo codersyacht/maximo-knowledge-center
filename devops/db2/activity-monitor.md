@@ -7,6 +7,10 @@ All queries are executed as db2 commands.
 ```SQL
 db2
 ```
+
+```CMD
+db2 connect to MAXIMO;
+```
 To execute them in a specific schemma set the following.
 
 ```SQL
