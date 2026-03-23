@@ -61,10 +61,10 @@ Provide user _password_ and the _reason for change_.
 
 ```mermaid
 graph LR
-A[Begin]->B[Company Set]
-A[Begin]->C[Item Set]
-A[Begin]->D[GLA Account]
+A[Begin]-->B[Company Set]
+A[Begin]-->C[Item Set]
+A[Begin]-->D[GLA Account]
 D-->E[Organization]
 D-->E
 E-->E
-E-> F[Sites]
+E--> F[Sites]
