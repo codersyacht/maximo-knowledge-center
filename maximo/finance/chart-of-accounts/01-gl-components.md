@@ -1,6 +1,26 @@
-## Chart of Accounts
+# Chart of Accounts
+
+## Introduction
+
+Maximo GL components are segments that structure the General Ledger (GL) account code, allowing for detailed cost tracking and integration with financial systems.
+
+## Prerequisite
+
+No prerequisite required.
+
+## Process Diagram
+
+```mermaid
+graph LR
+A[Begin] --> B[Create Component Cost Center]
+B --> C[Create Componenet Activity]
+C --> D[Componenet Resource]
+D --> E[Component Element]
+E --> F[End]
 
 ### Create GL Componenet Cost Center
+
+## Execution Steps
 
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
