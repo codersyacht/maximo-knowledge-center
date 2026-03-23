@@ -8,7 +8,7 @@ In IBM Maximo, an Organization is the top-level entity that defines the business
 
 ## Prerequisite
 
-| Requirement  | Reference |
+| Action  | Reference |
 |--------|-------|
 |Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
 |Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
@@ -33,7 +33,9 @@ H--> I[End]
 
 ### Create Organization
 
-| Field  | Value |
+**API**
+
+| Attribute  | Value |
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization |
 | Method | GET  |
@@ -45,7 +47,9 @@ Organization CDY created.
 
 ### Get Organization 
 
-| Field  | Value |
+**API**
+
+| Attribute  | Value |
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization?oslc.where=orgid="CDY" |
 | Method | GET  |
@@ -53,7 +57,9 @@ Organization CDY created.
 
 ### Get Specific Organization
 
-| Field  | Value |
+**API**
+
+| Attribute  | Value |
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization/_Q0RZ |
 | Method | GET  |
@@ -63,7 +69,7 @@ Organization CDY created.
 ## Next Step
 
 
-|Reqururement| Refecence |
+|Action | Refecence |
 |------------|-----------|
 |Configure Clearance Account.|[here](maximo/administration/organizations/03-set-organization-clearance-account.md)|
 |Activate Organization.|[here](maximo/administration/organizations/04-organization-activation.md)|
