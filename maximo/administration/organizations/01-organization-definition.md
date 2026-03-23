@@ -8,10 +8,8 @@
 |--------|-------|
 |Maximo installed and manage application accessible.||
 |Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
- Follow instructions <br>
-Create Company Set. Follow instructions [here](/maximo/administration/sets/02-company-set.md)<br>
-Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md) <br>
-
+|Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
+Create GLA Account.|[here](/maximo/finance/chart-of-accounts/01-gl-components.md)|
 ## Introduction
 
 In Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
