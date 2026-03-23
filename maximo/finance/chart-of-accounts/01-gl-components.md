@@ -17,6 +17,7 @@ B --> C[Create Componenet Activity]
 C --> D[Componenet Resource]
 D --> E[Component Element]
 E --> F[End]
+```
 
 ### Create GL Componenet Cost Center
 
