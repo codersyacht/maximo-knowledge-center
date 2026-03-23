@@ -23,74 +23,19 @@ E --> F[End]
 
 ### Create GL Components
 
-| Steps    | Reference  |
+| Action    | Reference  |
 |----------|------------|
 | Create GL Component Cost Center | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-cost-center.json) |
 | Create GL Component Activity | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-activity.json) |
 | Create GL Component Resource | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-resource.json) |
 | Create GL Component Element | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-element.json) |
 
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
-```
+## Success Metric
 
-```JSON
-{
-  "spi:active": true,
-  "spi:compvalue": "1000",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 0,
-  "spi:comptext": "1000"
-}
-```
 
-### Create GL Component Activity
+## Next Step
 
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
-```
+| Action | Reference |
+|----|----|
+|Create GL Account|/maximo/finance/chart-of-accounts/02-gl-account.md |
 
-```JSON
-{
-  "spi:active": true,
-  "spi:compvalue": "100",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 1,
-  "spi:comptext": "100"
-}
-```
-### Create GL Component Resource
-
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
-```
-
-```JSON
-{
-  "spi:active": true,
-  "spi:compvalue": "100",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 2,
-  "spi:comptext": "100"
-}
-```
-
-### Create GL Component Element
-
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
-```
-
-```JSON
-{
-  "spi:active": true,
-  "spi:compvalue": "100",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 3,
-  "spi:comptext": "100"
-}
-```
