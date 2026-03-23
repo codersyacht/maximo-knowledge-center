@@ -30,7 +30,7 @@ H--> I[End]
 
 | Field  | Value |
 |--------|-------|
-| URL    | http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization |
+| URL    | /maximo/oslc/os/mxorganization |
 | Method | POST  |
 
 ```JSON
