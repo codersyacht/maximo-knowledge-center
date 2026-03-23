@@ -2,7 +2,7 @@
 
 
 ```mermaid
-graph LR
+graph TB
 A[Begin]-->B[Choose Item Set]
 B-->C[Create Item]
 C-->D{Completed?}
