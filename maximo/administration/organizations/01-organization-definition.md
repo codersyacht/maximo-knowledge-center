@@ -27,7 +27,9 @@ G --> H[Activate Site]
 H--> I[End]
 ```
 
-## Create Organization
+## Execution
+
+### Create Organization
 
 | Field  | Value |
 |--------|-------|
@@ -54,7 +56,7 @@ H--> I[End]
 API executed successfully.
 Organization CDY created.
 
-## Get Organization 
+### Get Organization 
 
 | Field  | Value |
 |--------|-------|
@@ -81,7 +83,7 @@ Result:
 }
 ```
 
-## Get Specific Organization:
+### Get Specific Organization:
 
 | Field  | Value |
 |--------|-------|
