@@ -59,19 +59,12 @@ Server restart is required.
 - Click _Turn Admin Mode On_.
 Provide user _password_ and the _reason for change_.
 
-
 ```mermaid
 graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
-
-```mermaid
-graph LR
-A[Company Set]-->D[Organization]
-B[Item Set]-->D
-C[GLA Account]-->D
-D--> E[Sites]
-```
+A[Begin]->B[Company Set]
+A[Begin]->C[Item Set]
+A[Begin]->D[GLA Account]
+D-->E[Organization]
+D-->E
+E-->E
+E-> F[Sites]
