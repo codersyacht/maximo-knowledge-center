@@ -12,8 +12,10 @@ A[Begin] --> B[Choose organization]
 B --> C[Create site]
 C --> D{Is Org Active?}
 D --> |Yes| E[Activate Site]
-D --> |No| F[End]
+D --> |No| F{Continue?}
 E --> F
+F --> |Yes|B
+F --> |No| G[End]
 ```
 
 ## Introduction
