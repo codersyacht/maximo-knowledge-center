@@ -3,7 +3,7 @@
 ### Author: Mohamed Jawahar Hussain
 
 ## Prerequisite:
-No prerequisite required,
+No prerequisite required.
 
 ## Introduction
 
