@@ -4,7 +4,7 @@
 
 ### Prerequisite
 
-| Field  | Value |
+| Requirement  | Reference |
 |--------|-------|
 |Maximo installed and manage application accessible.||
 |Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
