@@ -50,7 +50,7 @@ Navigate to the following location in the manage application: Administration -> 
 |--------|-------|
 | URL    | /maximo/oslc/os/mxapisets/_Q0RZSVNFVA-- |
 | Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-specific-set-response.json) |
+| Response | [here](/maximo/administration/sets/api/get-specific-item-set-response.json) |
 
 ## Next Steps
 
