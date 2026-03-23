@@ -31,10 +31,7 @@ H--> I[End]
 
 ## Execution Steps
 
-Create Organization
-
-URL:  /maximo/oslc/os/mxorganization
-Method: POST
+### Create Organization
 
 | Field  | Value |
 |--------|-------|
@@ -52,6 +49,7 @@ Organization CDY created.
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization?oslc.where=orgid="CDY" |
 | Method | GET  |
+| Payload | NA  |
 
 Result:
 ```JSON
