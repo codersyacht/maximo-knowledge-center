@@ -4,9 +4,9 @@
 
 ### Prerequisite
 
-Maximo installed and manage application accessible. 
-Create Item Set. Follow instructions [here](/blob/main/maximo/administration/sets/01-item-set.md)
-Create Xompany Set. Follow instructions [here](/blob/main/maximo/administration/sets/01-company-set.md)
+Maximo installed and manage application accessible.<br>
+Create Item Set. Follow instructions [here](/maximo/administration/sets/01-item-set.md)<br>
+Create Xompany Set. Follow instructions [here](/maximo/administration/sets/01-company-set.md)<br>
 
 ## Introduction
 
