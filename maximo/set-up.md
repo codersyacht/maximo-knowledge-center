@@ -60,10 +60,13 @@ Server restart is required.
 Provide user _password_ and the _reason for change_.
 
 
-```mermaid
-graph LR
-A[Company Set]
-B[Item Set]
-A --> C[Organization]
-B --> C
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
 ```
