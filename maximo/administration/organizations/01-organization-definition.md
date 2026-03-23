@@ -116,7 +116,10 @@ Result:
 ```
 ## Next Step
 
-Configure Clearance Account. Follow instructions [here](maximo/administration/organizations/03-set-organization-clearance-account.md)<br>
-Activate Organization. Follow instructions [here](maximo/administration/organizations/04-organization-activation.md) <br>
-Create Site. Follow instructions [here](/maximo/administration/organizations/02-site-definition.md) <br>
-Activate Site. Follow instructions [here](main/maximo/administration/organizations/05-organization-site-activation.md)
+
+|Reqururement| Refecence |
+|------------|-----------|
+|Configure Clearance Account.|[here](maximo/administration/organizations/03-set-organization-clearance-account.md)|
+|Activate Organization.|[here](maximo/administration/organizations/04-organization-activation.md|
+|Create Site. |[here](/maximo/administration/organizations/02-site-definition.md)|
+|Activate Site.|[here](main/maximo/administration/organizations/05-organization-site-activation.md)|
