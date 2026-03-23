@@ -31,28 +31,7 @@ H--> I[End]
 
 ## Execution Steps
 
-### Create Organization
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxorganization |
-| Method | POST  |
-
-```JSON
-{
-
-    "spi:itemsetid": "CDYISET",
-    "spi:companysetid": "CDYCSET",
-    "spi:description": "CDY",
-    "spi:dfltitemstatus_description": "Active",
-    "spi:dfltitemstatus": "ACTIVE",
-    "spi:orgid": "CDY",
-    "spi:enterby": "MAXADMIN",
-    "spi:category": "STK",
-    "spi:active": false,
-    "spi:basecurrency1": "USD"
-}
-```
 
 ## Success Metric
 API executed successfully.
