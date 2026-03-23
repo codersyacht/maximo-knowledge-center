@@ -5,13 +5,13 @@
 
 ## Introduction
 
+GL Account (General Ledger Account) is the full accounting string that identifies where financial transactions should be posted in your organization’s financial system. It’s essentially the combination of GL Components (segments like company, department, cost center, and account type) arranged in a defined sequence.
+
 ## Prerequisite
 
 | Action | Reference |
 |----|----|
 |Create GL Components|[here](/maximo/finance/chart-of-accounts/01-gl-components.md)|
-
-## Process Diagram
 
 ## Process Diagram
 
@@ -27,6 +27,7 @@ F --> G[Create GL Account]
 ## Execution Steps
 
 **API**
+
 |Attribute|Value|
 |---------|-----|
 |URL|/maximo/oslc/os/mxglcomp|
