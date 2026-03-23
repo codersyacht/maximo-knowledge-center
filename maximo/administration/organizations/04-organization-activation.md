@@ -1,7 +1,7 @@
 
 
 ```mermaid
-gragh LR
+graph LR
 A[Begin] --> B[Choose Organization]
 B --> C{Clearing Account Selected?}
 C --> |Yes|D[Activate Organization]
