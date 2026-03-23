@@ -2,8 +2,8 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-### Prerequisite:
-Manage application installed and running.
+## Prerequisite:
+No prerequisite required,
 
 ## Introduction
 
@@ -18,22 +18,12 @@ C --> E[End]
 
 ## Create Item Set
 
-URL: http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets
-Method: Post
-Body:
-```JSON
-{
-    "spi:settype_description": "CDYISET",
-    "spi:setid": "CDYISET",
-    "spi:description": "CDYISET",
-    "spi:dfltitemstatus_description": "Active",
-    "spi:dfltitemstatus": "ACTIVE",
-    "spi:langcode": "EN",
-    "spi:enterby": "MAXADMIN",
-    "spi:settype": "ITEM"
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapisets |
+| Method | POST  |
+| Payload | [here](/maximo/inventory/api/create-item-payload.json) |
 
-}
-```
 
 ## Success Criteria
 
@@ -45,29 +35,11 @@ Navigate to the following location in the manage application: Administration -> 
 
 ## Get Sets Query
 
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET"
-```
-
-Result:
-```JSON
-{
-    "prefixes": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "oslc": "http://open-services.net/ns/core#"
-    },
-    "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets?oslc.where=setid=%22CDYISET%22"
-    },
-    "rdfs:member": [
-        {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--"
-        }
-    ],
-    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets"
-}
-```
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET" |
+| Method | GET  |
+| Response | [here](/maximo/inventory/api/get-item-response.json) |
 
 ## Get Set
 ```URL
