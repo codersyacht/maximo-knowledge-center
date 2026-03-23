@@ -114,5 +114,5 @@ Result:
 ```
 ## Next Step
 
-Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md)
+Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md) <br>
 Create Sites. Follow instructions [here](/maximo/administration/organizations/02-site-definition.md)
