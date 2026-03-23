@@ -2,7 +2,11 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-### Prerequisite
+## Introduction
+
+In IBM Maximo, an Organization is the top-level entity that defines the business or operational unit responsible for managing assets, locations, financial records, and related data. It provides the hierarchical structure for your company and controls how data is shared across divisions, departments, and external partners.
+
+## Prerequisite
 
 | Requirement  | Reference |
 |--------|-------|
@@ -10,9 +14,7 @@
 |Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
 Create GLA Account.|[here](/maximo/finance/chart-of-accounts/01-gl-components.md)|
 
-## Introduction
-
-In Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
+## Process Diagram
 
 ```mermaid
 graph LR
@@ -27,7 +29,7 @@ G --> H[Activate Site]
 H--> I[End]
 ```
 
-## Execution
+## Execution Steps
 
 ### Create Organization
 
@@ -52,7 +54,7 @@ H--> I[End]
 }
 ```
 
-## Success Criteria
+## Success Metric
 API executed successfully.
 Organization CDY created.
 
