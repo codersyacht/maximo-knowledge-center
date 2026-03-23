@@ -25,7 +25,7 @@ C --> E[End]
 |--------|-------|
 | URL    | /maximo/oslc/os/mxapisets |
 | Method | POST  |
-| Payload | [here](maximo/administration/sets/api/create-item-payload.json) |
+| Payload | [here](/maximo/administration/sets/api/create-item-payload.json) |
 
 
 ### Success Criteria
