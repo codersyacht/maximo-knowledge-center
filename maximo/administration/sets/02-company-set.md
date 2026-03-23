@@ -36,23 +36,25 @@ C --> E[End]
 
   Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Apple set. If the API is successfully executed, the Apple set will be visible.
 
-## Get Sets Query
+ ### Get Sets
 
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets?oslc.where=setid="CDYCSET"
-```
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYCSET" |
+| Method | GET  |
+| Response | [here](/maximo/administration/sets/api/get-company-set-response.json) |
 
-Result:
-```JSON
+### Get Specific Set
 
-```
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapisets/_Q0RZQ1NFVA-- |
+| Method | GET  |
+| Response | [here](/maximo/administration/sets/api/get-specific-company-set-response.json) | 
 
-## Get Set
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxapisets/_Q0RZQ1NFVA--
-```
+## Next Steps
 
-Result:
-```JSON
+|Requirement| Refecence |
+|------------|-----------|
+|Configure Organization|[here](/maximo/administration/organizations/01-organization-definition.md)|
 
-```
