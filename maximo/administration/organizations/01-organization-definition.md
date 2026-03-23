@@ -21,7 +21,7 @@ C-->D
 D-->E[Choose GLA Account]
 E-->F[Activate Organization]
 F --> G[Create Site]
-F --> H[Activate Site]
+G --> H[Activate Site]
 H--> I[End]
 ```
 
