@@ -71,7 +71,7 @@ Organization CDY created.
 
 |Action | Refecence |
 |------------|-----------|
-|Configure Clearance Account.|[here](maximo/administration/organizations/03-set-organization-clearance-account.md)|
-|Activate Organization.|[here](maximo/administration/organizations/04-organization-activation.md)|
-|Create Site. |[here](/maximo/administration/organizations/02-site-definition.md)|
-|Activate Site.|[here](main/maximo/administration/organizations/05-organization-site-activation.md)|
+|Configure Clearance Account.|[here](/maximo/administration/organizations/03-set-organization-clearance-account.md)|
+|Activate Organization.|[here](/maximo/administration/organizations/04-organization-activation.md)|
+|Create Site. |[here](//maximo/administration/organizations/02-site-definition.md)|
+|Activate Site.|[here](/main/maximo/administration/organizations/05-organization-site-activation.md)|
