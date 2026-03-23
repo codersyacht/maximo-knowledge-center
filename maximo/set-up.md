@@ -55,15 +55,19 @@ BMXAA3840E - The electronic signature entered is not valid for the user currentl
 - Click OK and Save.
 
 Server restart is required.
+- Navigate to _Database Configuration_. Select _Manage Admin Mode_.
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
 ```
-
-- Navigate to _Database Configuration_. Select _Manage Admin Mode_.
 - Click _Turn Admin Mode On_.
-- Provide user _password_ and the _reason for change_.
+Provide user _password_ and the _reason for change_.
