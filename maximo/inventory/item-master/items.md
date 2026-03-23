@@ -7,7 +7,7 @@ A[Begin]-->B[Choose Item Set]
 B-->C[Create Item]
 C-->D{Completed?}
 D--> |Yes| E[End]
-D--> |No| B  
+D--> |No| A 
 ```
 
 ```URL
