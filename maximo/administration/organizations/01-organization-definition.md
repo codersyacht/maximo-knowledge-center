@@ -6,10 +6,10 @@
 
 | Requirement  | Reference |
 |--------|-------|
-|Maximo installed and manage application accessible.||
 |Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
 |Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
 Create GLA Account.|[here](/maximo/finance/chart-of-accounts/01-gl-components.md)|
+
 ## Introduction
 
 In Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
@@ -56,10 +56,10 @@ Organization CDY created.
 
 ## Get Organization 
 
-```URL
-/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
-```
-Method: Get
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxorganization?oslc.where=orgid="CDY" |
+| Method | GET  |
 
 Result:
 ```JSON
@@ -83,10 +83,10 @@ Result:
 
 ## Get Specific Organization:
 
-```URL
-/maximo/oslc/os/mxorganization/_Q0RZ
-```
-Method: Get
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxorganization/_Q0RZ |
+| Method | GET  |
 
 Result:
 ```JSON
