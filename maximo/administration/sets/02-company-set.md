@@ -2,9 +2,8 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-### Prerequisite
-
-Manage application installed and running.
+## Prerequisite
+No prerequisite required.
 
 ## Introduction
 
