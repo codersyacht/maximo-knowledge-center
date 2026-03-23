@@ -1,11 +1,8 @@
-### Create Organization
+Create Organization
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxorganization |
-| Method | POST  |
+URL:  /maximo/oslc/os/mxorganization |
+Method: POST
 
-```JSON
 {
 
     "spi:itemsetid": "CDYISET",
@@ -19,4 +16,3 @@
     "spi:active": false,
     "spi:basecurrency1": "USD"
 }
-```
