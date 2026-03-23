@@ -6,6 +6,16 @@
 
 Organization defined.
 
+```mermaid
+graph LR
+A[Begin] --> B[Choose organization]
+B --> C[Create site]
+C --> D{Is Org Active?}
+D --> |Yes| E[Activate Site]
+D --> |No| F[End]
+E --> F
+```
+
 ## Introduction
 
 A site is a division within an organization that maintains certain data independently from other sites.”
