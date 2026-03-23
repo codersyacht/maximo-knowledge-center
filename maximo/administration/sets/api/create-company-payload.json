@@ -1,0 +1,11 @@
+{
+    "spi:settype_description": "CDYCSET",
+    "spi:setid": "CDYCSET",
+    "spi:description": "CDYCSET",
+    "spi:dfltitemstatus_description": "Active",
+    "spi:dfltitemstatus": "ACTIVE",
+    "spi:langcode": "EN",
+    "spi:enterby": "MAXADMIN",
+    "spi:settype": "COMPANY"
+
+}
