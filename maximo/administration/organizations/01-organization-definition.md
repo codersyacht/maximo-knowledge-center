@@ -113,3 +113,6 @@ Result:
     "spi:basecurrency1": "USD"
 }
 ```
+## Next Step
+
+Create Sites. Follow instructions [here](/maximo/administration/organizations/02-site-definition.md)
