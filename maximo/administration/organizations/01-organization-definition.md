@@ -16,14 +16,14 @@ In Maximo, an Organization is a foundational data structure that defines how you
 graph LR
 A[Begin]-->B[Choose Company Set]
 A[Begin]-->C[Choose Item Set]
-B-->E[Create Organization]
-C-->E
-D-->E
-E-->F[Create Site]
-F-->G[Choose GLA Account]
-G-->H[Activate Organization]
-H-->I[Activate Site]
-I--> J[End]
+B-->D[Create Organization]
+C-->D
+D-->E[Create Site]
+D-->F[Choose GLA Account]
+F-->G[Activate Organization]
+E-->H[Activate Site]
+G--> I[End]
+H--> I[End]
 ```
 
 ## Create Organization
