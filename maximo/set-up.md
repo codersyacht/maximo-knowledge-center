@@ -57,12 +57,12 @@ BMXAA3840E - The electronic signature entered is not valid for the user currentl
 Server restart is required.
 - Navigate to _Database Configuration_. Select _Manage Admin Mode_.
 
-flowchart TD
-    A[Start] --> B{Is it sunny?};
-    B -->|Yes| C[Go to the beach];
-    B -->|No| D[Stay indoors];
-    C --> E[Have fun!];
-    D --> E;
-    E[End];
+```mermaid
+graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
 - Click _Turn Admin Mode On_.
 Provide user _password_ and the _reason for change_.
