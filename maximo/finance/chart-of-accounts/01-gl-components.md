@@ -19,9 +19,16 @@ D --> E[Component Element]
 E --> F[End]
 ```
 
-### Create GL Component Cost Center
-
 ## Execution Steps
+
+### Create GL Components
+
+| Steps    | Reference  |
+-------------------------
+| Create GL Component Cost Center | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-cost-center.json) |
+| Create GL Component Activity | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-activity.json) |
+| Create GL Component Resource | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-resource.json) |
+| Create GL Component Element | [here](maximo/finance/chart-of-accounts/api/create-gl-component-element.json) |
 
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
