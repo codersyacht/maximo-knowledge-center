@@ -11,7 +11,7 @@ Maximo installed and manage application accessible.
 In Maximo, an Organization is a foundational data structure that defines how your company—or multiple companies—are represented within the system. It’s not just a label; it’s a container for business rules, financial settings, and operational data.
 
 ```mermaid
-graph TB
+graph LR
 A[Begin]-->B[Choose Company Set]
 A[Begin]-->C[Choose Item Set]
 A[Begin]-->D[Choose GLA Account]
