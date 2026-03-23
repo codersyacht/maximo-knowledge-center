@@ -28,7 +28,7 @@ C --> E[End]
 | Payload | [here](/maximo/administration/sets/api/create-item-payload.json) |
 
 
-### Success Criteria
+## Success Metric
 
 - API executed successfully.
 - Item Set named Devices created.
