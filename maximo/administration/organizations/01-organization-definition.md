@@ -57,7 +57,7 @@ Organization CDY created.
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization/_Q0RZ |
 | Method | GET  |
-| Response | [here](/maximo/administration/organizations/api/get-specific-organization-response.json) |
+| Response | [here](/maximo/administration/organizations/api/get-specific-organization-resppnse.json) |
 
 
 ## Next Step
