@@ -42,7 +42,7 @@ Navigate to the following location in the manage application: Administration -> 
 |--------|-------|
 | URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET" |
 | Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-item-response.json) |
+| Response | [here](/maximo/administration/sets/api/get-item-set-response.json) |
 
 ### Get Specific Set
 
