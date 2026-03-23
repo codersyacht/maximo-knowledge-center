@@ -49,7 +49,9 @@ Organization CDY created.
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization?oslc.where=orgid="CDY" |
 | Method | GET  |
-| Payload | NA  |
+| Payload |     |
+| Response | [here](maximo/administration/organizations/api/get-organization-response.json) |
+
 
 Result:
 ```JSON
