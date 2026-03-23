@@ -10,7 +10,7 @@ Manage application installed and running.
 Item Sets are collections of item master records—like parts, materials, tools, and services—that can be shared among different organizations in Maximo.
 
 ```mermaid
-graph LR
+graph TB
 A[Begin] -->B[ Choose Set Type as Item]
 B --> C[Create Item Set]
 C --> E[End]
