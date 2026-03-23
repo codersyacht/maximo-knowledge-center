@@ -19,6 +19,8 @@ B-->E[Organization]
 C-->E
 D-->E
 E-->F[Create Site]
+F-->G[Activate Organization]
+G-->H[Activate Site]
 ```
 
 ## Create Organization
