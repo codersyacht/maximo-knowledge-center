@@ -25,7 +25,7 @@ C --> E[End]
 |--------|-------|
 | URL    | /maximo/oslc/os/mxapisets |
 | Method | POST  |
-| Payload | [here](/maximo/sets/api/create-item-payload.json) |
+| Payload | [here](maximo/administration/sets/api/create-item-payload.json) |
 
 
 ### Success Criteria
@@ -42,7 +42,7 @@ Navigate to the following location in the manage application: Administration -> 
 |--------|-------|
 | URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET" |
 | Method | GET  |
-| Response | [here](/maximo/sets/api/get-item-response.json) |
+| Response | [here](/maximo/administration/sets/api/get-item-response.json) |
 
 ### Get Specific Set
 
@@ -53,8 +53,6 @@ Navigate to the following location in the manage application: Administration -> 
 | Response | [here](/maximo/administration/sets/api/get-specific-set-response.json) |
 
 ## Next Steps
-
-## Next Step
 
 |Requirement| Refecence |
 |------------|-----------|
