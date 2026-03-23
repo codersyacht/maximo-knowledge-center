@@ -19,7 +19,7 @@ D --> E[Component Element]
 E --> F[End]
 ```
 
-### Create GL Componenet Cost Center
+### Create GL Component Cost Center
 
 ## Execution Steps
 
@@ -38,7 +38,7 @@ http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
 }
 ```
 
-### Create GL Componenet Activity
+### Create GL Component Activity
 
 ```URL
 http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxglcomp
