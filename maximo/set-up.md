@@ -64,7 +64,7 @@ Provide user _password_ and the _reason for change_.
 
 ```mermaid
 graph LR
-A[Company Set conpany 1, company 2 .. conpany n] -->B(Round edge)
+A[Company Set conpany 1 <br >company 2 <br> conpany n] -->B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
