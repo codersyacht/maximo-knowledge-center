@@ -83,7 +83,7 @@ Result:
 }
 ```
 
-### Get Specific Organization:
+### Get Specific Organization
 
 | Field  | Value |
 |--------|-------|
