@@ -17,7 +17,7 @@ graph LR
 A[Begin]-->B[Choose Company Set]
 A[Begin]-->C[Choose Item Set]
 A[Begin]-->D[Choose GLA Account]
-B-->E[Organization]
+B-->E[Create Organization]
 C-->E
 D-->E
 E-->F[Create Site]
