@@ -18,7 +18,7 @@ A[Begin]-->D[Choose GLA Account]
 B-->E[Organization]
 C-->E
 D-->E
-E-->F[Create Site]
+E-->F[Site]
 
 ## Create Organization
 
