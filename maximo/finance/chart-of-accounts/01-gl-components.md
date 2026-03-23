@@ -24,7 +24,7 @@ E --> F[End]
 ### Create GL Components
 
 | Steps    | Reference  |
--------------------------
+|----------|------------|
 | Create GL Component Cost Center | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-cost-center.json) |
 | Create GL Component Activity | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-activity.json) |
 | Create GL Component Resource | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-resource.json) |
