@@ -14,7 +14,7 @@ C --> D{Is Org Active?}
 D --> |Yes| E[Activate Site]
 D --> |No| F{Continue?}
 E --> F
-F --> |Yes|B
+F --> |Yes|C
 F --> |No| G[End]
 ```
 
