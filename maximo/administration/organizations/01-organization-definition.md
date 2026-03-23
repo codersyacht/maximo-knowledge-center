@@ -31,7 +31,16 @@ H--> I[End]
 
 ## Execution Steps
 
+Create Organization
 
+URL:  /maximo/oslc/os/mxorganization
+Method: POST
+
+| Field  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxorganization |
+| Method | GET  |
+| Payload | [here](maximo/administration/organizations/api/organization-definition.json) |
 
 ## Success Metric
 API executed successfully.
