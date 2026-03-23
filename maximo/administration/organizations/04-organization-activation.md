@@ -3,7 +3,7 @@
 ```mermaid
 graph LR
 A[Begin] --> B[Choose Organization]
-B --> C{Clearing Account Selected?}
+B --> C{Clearing Account?}
 C --> |Yes|D[Activate Organization]
 C--> |No| E[Exit]
 D --> E
