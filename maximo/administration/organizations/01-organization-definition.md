@@ -12,7 +12,7 @@ In IBM Maximo, an Organization is the top-level entity that defines the business
 |--------|-------|
 |Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
 |Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
-Create GLA Account.|[here](/maximo/finance/chart-of-accounts/01-gl-components.md)|
+Create GLA Account.|[here](/maximo/finance/chart-of-accounts/02-gl-account.md)|
 
 ## Process Diagram
 
