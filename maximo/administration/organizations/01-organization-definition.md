@@ -4,8 +4,11 @@
 
 ### Prerequisite
 
-Maximo installed and manage application accessible.<br>
-Create Item Set. Follow instructions [here](/maximo/administration/sets/01-item-set.md)<br>
+| Field  | Value |
+|--------|-------|
+|Maximo installed and manage application accessible.||
+|Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
+ Follow instructions <br>
 Create Company Set. Follow instructions [here](/maximo/administration/sets/02-company-set.md)<br>
 Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md) <br>
 
