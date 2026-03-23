@@ -56,7 +56,7 @@ Organization CDY created.
 ## Get Organization 
 
 ```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
+/maximo/oslc/os/mxorganization?oslc.where=orgid="CDY"
 ```
 Method: Get
 
@@ -83,7 +83,7 @@ Result:
 ## Get Specific Organization:
 
 ```URL
-http://codehub1.fyre.CDY.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
+/maximo/oslc/os/mxorganization/_Q0RZ
 ```
 Method: Get
 
