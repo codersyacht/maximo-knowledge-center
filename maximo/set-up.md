@@ -59,12 +59,4 @@ Server restart is required.
 - Click _Turn Admin Mode On_.
 Provide user _password_ and the _reason for change_.
 
-```mermaid
-graph LR
-A[Begin]-->B[Company Set]
-A[Begin]-->C[Item Set]
-A[Begin]-->D[GLA Account]
-B-->E[Organization]
-C-->E
-D-->E
-E--> F[Sites]
+
