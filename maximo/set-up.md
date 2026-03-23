@@ -56,13 +56,14 @@ BMXAA3840E - The electronic signature entered is not valid for the user currentl
 
 Server restart is required.
 - Navigate to _Database Configuration_. Select _Manage Admin Mode_.
+- Click _Turn Admin Mode On_.
+Provide user _password_ and the _reason for change_.
+
 
 ```mermaid
 graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+A[Company Set]
+B[Item Set]
+A --> C[Organization]
+B --> C
 ```
-- Click _Turn Admin Mode On_.
-Provide user _password_ and the _reason for change_.
