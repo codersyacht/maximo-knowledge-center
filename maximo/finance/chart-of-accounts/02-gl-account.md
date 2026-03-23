@@ -31,7 +31,7 @@ F --> G[Create GL Account]
 |---------|-----|
 |URL|/maximo/oslc/os/mxglcomp|
 |Method|Post|
-|Payload|/maximo/finance/chart-of-accounts/api/create-gl-account.json|
+|Payload| [here](/maximo/finance/chart-of-accounts/api/create-gl-account.json)|
 
 ## Next Step
 
