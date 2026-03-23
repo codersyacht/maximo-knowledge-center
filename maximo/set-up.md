@@ -73,5 +73,5 @@ graph LR
 A[Company Set]-->D[Organization]
 B[Item Set]-->D
 C[GLA Account]-->D
-D-> E[Sites]
+D--> E[Sites]
 ```
