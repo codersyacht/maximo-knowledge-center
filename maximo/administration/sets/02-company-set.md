@@ -2,12 +2,12 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-## Prerequisite
-No prerequisite required.
-
 ## Introduction
 
 A Company Set is a collection of company records that can be accessed by multiple organizations. This allows centralized control over vendor and business partner information, improving consistency and reducing duplication.
+
+## Prerequisite
+No prerequisite required.
 
 ## Process Diagram
 
