@@ -7,6 +7,7 @@
 Maximo installed and manage application accessible.<br>
 Create Item Set. Follow instructions [here](/maximo/administration/sets/01-item-set.md)<br>
 Create Company Set. Follow instructions [here](/maximo/administration/sets/02-company-set.md)<br>
+Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md) <br>
 
 ## Introduction
 
@@ -114,5 +115,6 @@ Result:
 ```
 ## Next Step
 
-Create GLA Account. Follow instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md) <br>
+
 Create Sites. Follow instructions [here](/maximo/administration/organizations/02-site-definition.md)
+Configure Clearance Account. Follow instructions [here](maximo/administration/organizations/03-set-organization-clearance-account.md)
