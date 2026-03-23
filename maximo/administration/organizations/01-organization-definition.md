@@ -18,11 +18,10 @@ A[Begin]-->B[Choose Company Set]
 A[Begin]-->C[Choose Item Set]
 B-->D[Create Organization]
 C-->D
-D-->E[Create Site]
-D-->F[Choose GLA Account]
-F-->G[Activate Organization]
-E-->H[Activate Site]
-G--> I[End]
+D-->E[Choose GLA Account]
+E-->F[Activate Organization]
+F --> G[Create Site]
+F --> H[Activate Site]
 H--> I[End]
 ```
 
