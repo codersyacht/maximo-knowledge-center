@@ -2,12 +2,12 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-## Prerequisite:
-No prerequisite required.
-
 ## Introduction
 
 Item Sets are collections of item master records—like parts, materials, tools, and services—that can be shared among different organizations in Maximo.
+
+## Prerequisite:
+No prerequisite required.
 
 ## Process Diagram
 
