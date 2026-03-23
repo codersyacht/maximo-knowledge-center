@@ -1,8 +1,3 @@
-Create Organization
-
-URL:  /maximo/oslc/os/mxorganization
-Method: POST
-
 {
 
     "spi:itemsetid": "CDYISET",
