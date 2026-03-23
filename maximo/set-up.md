@@ -64,7 +64,7 @@ graph LR
 A[Begin]-->B[Company Set]
 A[Begin]-->C[Item Set]
 A[Begin]-->D[GLA Account]
-D-->E[Organization]
+B-->E[Organization]
+C-->E
 D-->E
-E-->E
 E--> F[Sites]
