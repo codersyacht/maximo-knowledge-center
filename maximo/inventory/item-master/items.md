@@ -6,8 +6,8 @@ graph TB
 A[Begin]-->B[Choose Item Set]
 B-->C[Create Item]
 C-->D{Completed?}
-D--> |Yes| E[End]
 D--> |No| A 
+D--> |Yes| E[End]
 ```
 
 ```URL
