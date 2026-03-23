@@ -10,6 +10,13 @@ Manage application installed and running.
 
 A Company Set is a collection of company records that can be accessed by multiple organizations. This allows centralized control over vendor and business partner information, improving consistency and reducing duplication.
 
+```mermaid
+graph TB
+A[Begin] -->B[ Choose Set Type as Company]
+B --> C[Create Company Set]
+C --> E[End]
+```
+
 ## Create Company Set
 
 ```URL
