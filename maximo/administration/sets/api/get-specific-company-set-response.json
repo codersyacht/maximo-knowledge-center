@@ -1,0 +1,21 @@
+{
+    "spi:settype_description": "Company Sets",
+    "spi:setid": "CDYCSET",
+    "spi:description": "CDYCSET",
+    "spi:dfltitemstatus_description": "Active",
+    "spi:dfltitemstatus": "ACTIVE",
+    "spi:setsid": 9,
+    "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZQ1NFVA--",
+    "spi:langcode": "EN",
+    "spi:enterdate": "2026-03-06T04:25:56+00:00",
+    "spi:enterby": "MAXADMIN",
+    "prefixes": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+        "oslc": "http://open-services.net/ns/core#"
+    },
+    "_rowstamp": "2679786",
+    "spi:hasld": false,
+    "spi:settype": "COMPANY",
+    "spi:autoupdate": false
+}
