@@ -38,7 +38,7 @@ H--> I[End]
 | Attribute  | Value |
 |--------|-------|
 | URL    | /maximo/oslc/os/mxorganization |
-| Method | GET  |
+| Method | POST  |
 | Payload | [here](/maximo/administration/organizations/api/create-organization-payload.json) |
 
 ## Success Metric
