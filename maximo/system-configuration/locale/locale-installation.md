@@ -69,7 +69,6 @@ cd /home/admin/apps/SMP/maximo/tools/maximo
 
 ## Next Step
 
-|-------------|-------------|
 |Action       | Reference   |
 |-------------|-------------|
 | Rebuld ear    | [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/build-ear.md)
