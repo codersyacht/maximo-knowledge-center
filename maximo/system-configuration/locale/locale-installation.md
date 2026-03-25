@@ -12,7 +12,16 @@ lang.zip should be downloaded and be made available for installation in the foll
 
 ## Process Diagram
 
+```mermaid
+graph LR
+A[Get Language pack zip] --> B[Extract the pack]
+B --> C[Copy the required language to maximo directory]
+C --> D[Install]
+```
+
 ## Execution Steps
+
+### Preparing for the Installation
 
 ```CMD
 cd /home/admin/apps/langpack
@@ -35,10 +44,24 @@ cp MaximoLangPkgXliff_Ar.zip /home/admin/apps/SMP/maximo/lang
 cp MaximoLangPkgXliff_Ar.zip /home/admin/apps/SMP/maximo
 ```
 
-There will be two folders namely ar and cs under /home/admin/apps/langpack/lang/tools/maximo.
+Navigate to cp  /home/admin/apps/SMP/maximo, and unpack the file.
 
-Copy the ar foldere into 
+```CMD
+cd /home/admin/apps/SMP/maximo
+```
+```CMD
+unzip  MaximoLangPkgXliff_Ar.zip
+```
 
+This will create configuration files under /home/admin/apps/SMP/maximo/tools/maximo/ar
+
+### Language Pack Installation
+
+Before executing the languange pack installation, note that L_MAXMENU table has no arabic language populated.
+
+```CMD
+cd /home/admin/apps/SMP/maximo/tools/maximo
+```
 
 ```CMD
 ./TDToolkit.sh -addlangar
