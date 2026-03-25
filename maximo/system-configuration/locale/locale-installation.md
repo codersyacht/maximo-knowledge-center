@@ -71,7 +71,7 @@ cd /home/admin/apps/SMP/maximo/tools/maximo
 
 |Action       | Reference   |
 |-------------|-------------|
-| Rebuld ear    | [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/build-ear.md)
+| Rebuild ear | [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/build-ear.md)
 | Deploy ear |[here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/maximo-deployment.md)|
 | Enable the language|[](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/maximo-deployment.md)|
 
