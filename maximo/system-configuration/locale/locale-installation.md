@@ -26,10 +26,13 @@ unzip lang.zip
 cd lang
 ```
 
-Unzip the required language pack. For example, to install arabic locale, extract MaximoLangPkgXliff_Ar.zip.
+Copy the required language pack to the maximo lang directory and to the maximo directory. For example, for arabic locale, MaximoLangPkgXliff_Ar.zip.
 
 ```CMD
-unzip MaximoLangPkgXliff_Ar.zip
+cp MaximoLangPkgXliff_Ar.zip /home/admin/apps/SMP/maximo/lang
+```
+```CMD
+cp MaximoLangPkgXliff_Ar.zip /home/admin/apps/SMP/maximo
 ```
 
 There will be two folders namely ar and cs under /home/admin/apps/langpack/lang/tools/maximo.
