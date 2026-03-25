@@ -15,7 +15,9 @@ Modules:
 
 The maximouiweb, maxrestweb, mboweb, meaweb are web modules. The mboejb is an ejb module. The 4 web modules have files web-dev.xml and web.xml. The web.xml has to be replaced with web-dev.xml in each of these modules to deploy maximo in development mode.
 
-### Setting up environment for development mode
+### Setting up environment for development mode 
+
+Note: This is a one time activity. Need not be executed for every build. If this has already been performed move to the **EAR Build** section.
 
 **maximouiweb**
 
