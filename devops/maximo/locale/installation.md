@@ -67,12 +67,20 @@ cd /home/admin/apps/SMP/maximo/tools/maximo
 ./TDToolkit.sh -addlangar
 ```
 
+### Enabling Language
+
+**Prerequisite**
+
+- Complete the actions in the **Next Step** below before proceeding.
+- Login to manage application. Launch Default Information in the top right side corner.
+- Change the Locale and Language to ar.
+
+
 ## Next Step
 
 |Action       | Reference   |
 |-------------|-------------|
 | Rebuild ear | [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/build-ear.md)
 | Deploy ear |[here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/application-deployment.md)|
-| Enable the language|[](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/maximo-deployment.md)|
 
 
