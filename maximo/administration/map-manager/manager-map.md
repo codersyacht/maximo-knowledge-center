@@ -10,7 +10,7 @@ Create a Map Manager
 
 | Action       |  Reference    |
 |--------------|---------------|
-|Provide full access to the following object resources: <br> - MXMAPMAN - MXAPIMAPMANAGER - MXAPIMESSAGE - MAXMESSAGES| [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/object-structures/access.md)|
+|Provide full access to the following object resources: <br> - MXMAPMAN <br> - MXAPIMAPMANAGER <br> - MXAPIMESSAGE <br> - MAXMESSAGES| [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/object-structures/access.md)|
 
 ## Process Diagram
 
