@@ -31,4 +31,4 @@ A[Set Content Security Policy] --> B[Grant Object Structure Permission]
 img-src 'self' d2qhvajt3imc89.cloudfront.net data: *.openstreetmap.org *.walkme.com *.{{DOMAIN_NAME}} *.trustarc.com *.qualtrics.com
 ```
 - Save
-
+- Live refresh or restart the server
