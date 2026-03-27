@@ -28,7 +28,7 @@ A[Set Content Security Policy] --> B[Grant Object Structure Permission]
 - Edit the default value, add *.openstreetmap.org to the img-src parameter.
 - Example:
 ```PROP
-img-src 'self' d2qhvajt3imc89.cloudfront.net data: _*.openstreetmap.org_ *.walkme.com *.{{DOMAIN_NAME}} *.trustarc.com *.qualtrics.com
+img-src 'self' d2qhvajt3imc89.cloudfront.net data: *.openstreetmap.org *.walkme.com *.{{DOMAIN_NAME}} *.trustarc.com *.qualtrics.com
 ```
 - Save
 
