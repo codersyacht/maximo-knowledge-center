@@ -9,7 +9,7 @@ Create a Map Manager
 ## Prerequisite
 ```mermaid
 graph LR
-A[Set Content Security Policy] -> B[Grant Object Structure Permission]
+A[Set Content Security Policy] --> B[Grant Object Structure Permission]
 
 ## Process Diagram
 
