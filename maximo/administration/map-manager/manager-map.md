@@ -7,7 +7,9 @@
 Create a Map Manager
 
 ## Prerequisite
-NA
+```mermaid
+graph LR
+A[Set Content Security Policy] -> B[Grant Object Structure Permission]
 
 ## Process Diagram
 
@@ -23,3 +25,5 @@ NA
 img-src 'self' d2qhvajt3imc89.cloudfront.net data: _*.openstreetmap.org_ *.walkme.com *.{{DOMAIN_NAME}} *.trustarc.com *.qualtrics.com
 ```
 - Save
+
+### Object Resouce Permission
