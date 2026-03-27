@@ -32,4 +32,3 @@ img-src 'self' d2qhvajt3imc89.cloudfront.net data: _*.openstreetmap.org_ *.walkm
 ```
 - Save
 
-### Object Resouce Permission
