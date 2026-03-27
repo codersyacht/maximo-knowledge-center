@@ -8,6 +8,9 @@ Create a Map Manager
 
 ## Prerequisite
 
+| Action       |  Reference    |
+|--------------|---------------|
+|Provide full access to the following object resources: <br> - MXMAPMAN - MXAPIMAPMANAGER - MXAPIMESSAGE - MAXMESSAGES| [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/integration/object-structures/access.md)|
 
 ## Process Diagram
 
