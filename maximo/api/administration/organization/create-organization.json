@@ -1,6 +1,8 @@
 {
+    "api":
     {
-            "api": "/maximo/oslc/os/mxorganization",
+            "name": "Create Map Manager",
+            "url": "/maximo/oslc/os/mxorganization",
             "method": "post"
     },
     "payload": 
