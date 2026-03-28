@@ -1,3 +1,10 @@
+
+| Attribute  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapimapmanager |
+| Method | POST  |
+
+```json
 {
     "spi:mapsites": [
         {
@@ -20,4 +27,4 @@
     "spi:openmapprovider": "OPENSTREETOMAPS",
     "spi:bmapshttps": false
 }
-
+```
