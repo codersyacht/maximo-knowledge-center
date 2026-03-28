@@ -16,7 +16,7 @@ Create a Map Manager
 
 ```mermaid
 graph LR
-A[Grant Object Structure Permission] --> B[Set Content Security Policy]
+A[Object Structure Access] --> B[Set Content Security Policy]
 B --> C[Create Map Manager]
 ```
 
