@@ -38,8 +38,4 @@ img-src 'self' d2qhvajt3imc89.cloudfront.net data: *.openstreetmap.org *.walkme.
 
 **API**
 
-| Attribute  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapimapmanager |
-| Method | POST  |
-| Payload | [here](/maximo/api/administration/map-manager/create-map-manager.json) 
+ Payload [here](/maximo/api/administration/map-manager/create-map-manager.json) 
