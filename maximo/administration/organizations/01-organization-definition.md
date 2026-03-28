@@ -33,9 +33,7 @@ H--> I[End]
 
 ### Create Organization
 
-**API**
-
-Payload [here](/maximo/administration/organizations/api/create-organization-payload.json)
+**API [Payload](/maximo/api/administration/organization/create-organization.json)
 
 ## Success Metric
 API executed successfully.
