@@ -3,7 +3,7 @@
     "api":
     {
             "name": "Create Map Manager",
-            "api": "/maximo/oslc/os/mxapimapmanager",
+            "url": "/maximo/oslc/os/mxapimapmanager",
             "method": "POST"
     },
     "payload": 
