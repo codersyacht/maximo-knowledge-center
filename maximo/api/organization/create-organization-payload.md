@@ -1,3 +1,4 @@
+```json
 {
 
     "spi:itemsetid": "CDYISET",
@@ -11,3 +12,4 @@
     "spi:active": false,
     "spi:basecurrency1": "USD"
 }
+```
