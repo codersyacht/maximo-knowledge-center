@@ -16,7 +16,8 @@ Create a Map Manager
 
 ```mermaid
 graph LR
-A[Set Content Security Policy] --> B[Grant Object Structure Permission]
+A[Grant Object Structure Permission] --> B[Set Content Security Policy]
+B --> C[Create Map Manager]
 ```
 
 ## Execution Steps
@@ -32,3 +33,13 @@ img-src 'self' d2qhvajt3imc89.cloudfront.net data: *.openstreetmap.org *.walkme.
 ```
 - Save
 - Live refresh or restart the server
+
+### Create Map Manager
+
+**API**
+
+| Attribute  | Value |
+|--------|-------|
+| URL    | /maximo/oslc/os/mxapimapmanager |
+| Method | POST  |
+| Payload | [here](/maximo/api/administration/map-manager/create-map-manager.json) 
