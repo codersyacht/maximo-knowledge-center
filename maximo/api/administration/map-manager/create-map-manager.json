@@ -1,0 +1,22 @@
+{
+    "spi:mapsites": [
+        {
+            "spi:initialy": 1207810.96771803,
+            "spi:initialx": 8760869.57772869,
+            "spi:zoomlevel": 15.0,
+            "spi:siteid": "BEDFORD"
+        }
+    ],
+    "spi:mapname": "1003",
+    "spi:openmapurl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "spi:ismobile": true,
+    "spi:openmapprovider_description": "Open Street",
+    "spi:lengthunit": "KILOMETERS",
+    "spi:mapprovider_description": "Open Map",
+    "spi:mapprovider": "OPENMAPS",
+    "spi:description": "1003",
+     "spi:lengthunit_description": "Kilometers",
+    "spi:active": true,
+    "spi:openmapprovider": "OPENSTREETOMAPS",
+    "spi:bmapshttps": false
+}
