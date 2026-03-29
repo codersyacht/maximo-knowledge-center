@@ -34,11 +34,14 @@ D--> |Yes| E[End]
 API executed successfully.
 Item created.
 
-### Find Organization 
+### Find Item 
 
 [**API**](/maximo/api/inventory/find-item.json)
 
-### Get Organization
+### Get Item
 
 [**API**](/maximo/api/inventory/get-item.json)
 
+## Next Steps
+
+Not Applicable
