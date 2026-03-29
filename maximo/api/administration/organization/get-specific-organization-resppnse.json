@@ -1,23 +1,36 @@
 {
-    "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/address",
-    "spi:itemsetid": "CDYISET",
-    "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/site",
-    "spi:description": "CDY",
-    "spi:dfltitemstatus_description": "Active",
-    "spi:dfltitemstatus": "ACTIVE",
-    "spi:orgid": "CDY",
-    "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ",
-    "spi:enterdate": "2026-03-06T04:33:10+00:00",
-    "spi:enterby": "MAXADMIN",
-    "prefixes": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
-        "oslc": "http://open-services.net/ns/core#"
+    "api":
+    {
+            "name": "Get Organization",
+            "url": "/maximo/docs/oslc/os/mxorganization/_Q0RZ",
+            "method": "GET"
     },
-    "_rowstamp": "2681555",
-    "spi:category": "STK",
-    "spi:companysetid": "CDYCSET",
-    "spi:active": false,
-    "spi:organizationid": 8,
-    "spi:basecurrency1": "USD"
+    "headers":
+    {
+            "apikey": "",
+    },
+    "response": 
+    {
+        "address_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/address",
+        "spi:itemsetid": "CDYISET",
+        "site_collectionref": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ/site",
+        "spi:description": "CDY",
+        "spi:dfltitemstatus_description": "Active",
+        "spi:dfltitemstatus": "ACTIVE",
+        "spi:orgid": "CDY",
+        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ",
+        "spi:enterdate": "2026-03-06T04:33:10+00:00",
+        "spi:enterby": "MAXADMIN",
+        "prefixes": {
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+            "oslc": "http://open-services.net/ns/core#"
+        },
+        "_rowstamp": "2681555",
+        "spi:category": "STK",
+        "spi:companysetid": "CDYCSET",
+        "spi:active": false,
+        "spi:organizationid": 8,
+        "spi:basecurrency1": "USD"
+    }
 }
