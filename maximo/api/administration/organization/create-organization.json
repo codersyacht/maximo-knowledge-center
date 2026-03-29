@@ -5,6 +5,10 @@
             "url": "/maximo/oslc/os/mxorganization",
             "method": "post"
     },
+    "headers":
+    {
+            "apikey": "",
+    },
     "payload": 
     {
 
@@ -19,4 +23,5 @@
             "spi:active": false,
             "spi:basecurrency1": "USD"
     }
+
 }
