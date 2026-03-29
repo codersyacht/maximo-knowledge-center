@@ -30,3 +30,15 @@ D--> |Yes| E[End]
 [**API**](/maximo/api/inventory/create-item.json)
 
 ## Success Metric
+
+API executed successfully.
+Item created.
+
+### Find Organization 
+
+[**API**](/maximo/api/inventory/find-item.json)
+
+### Get Organization
+
+[**API**](/maximo/api/inventory/get-item.json)
+
