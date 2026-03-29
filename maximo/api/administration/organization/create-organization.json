@@ -1,9 +1,9 @@
 {
     "api":
     {
-            "name": "Create Map Manager",
+            "name": "Create Organization",
             "url": "/maximo/oslc/os/mxorganization",
-            "method": "post"
+            "method": "POST"
     },
     "headers":
     {
