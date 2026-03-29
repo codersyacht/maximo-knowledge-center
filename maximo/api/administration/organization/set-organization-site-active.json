@@ -3,7 +3,7 @@
     "api":
     {
             "name": "Set Organizaton Site Active",
-            "url": "/maximo/oslc/os/mxorganization/_Q0RZ,
+            "url": "/maximo/oslc/os/mxorganization/_Q0RZ",
             "method": "POST"
     },
     "headers":
