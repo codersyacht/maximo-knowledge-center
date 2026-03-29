@@ -1,10 +1,24 @@
 {
-    "spi:accountname": "1000 + 100 + 100 + 100",
-    "spi:orgid": "CDY",
-    "spi:glcomp01": "1000",
-    "spi:glcomp02": "100",
-    "spi:glcomp03": "100",
-    "spi:glcomp04": "100",
-    "spi:active": true,
-    "spi:glaccount": "1000-100-100-100"
+    "api":
+    {
+            "name": "Create GL Account",
+            "url": "/maximo/oslc/os/mxcoa",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+            "spi:accountname": "1000 + 100 + 100 + 100",
+            "spi:orgid": "CDY",
+            "spi:glcomp01": "1000",
+            "spi:glcomp02": "100",
+            "spi:glcomp03": "100",
+            "spi:glcomp04": "100",
+            "spi:active": true,
+            "spi:glaccount": "1000-100-100-100"
+    }
+
 }
