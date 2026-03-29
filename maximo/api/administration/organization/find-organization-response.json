@@ -1,7 +1,7 @@
 {
     "api":
     {
-            "name": "Search Organization",
+            "name": "Find Organization",
             "url": "/maximo/api/oslc/os/mxorganization?oslc.where=orgid=\"CDY\"",
             "method": "GET"
     },
