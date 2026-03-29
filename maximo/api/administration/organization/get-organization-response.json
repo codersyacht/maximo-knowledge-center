@@ -2,7 +2,7 @@
     "api":
     {
             "name": "Search Organization",
-            "url": "/maximo/api/oslc/os/mxorganization?oslc.where=orgid="CDY"",
+            "url": "/maximo/api/oslc/os/mxorganization?oslc.where=orgid=CDY'",
             "method": "GET"
     },
     "headers":
