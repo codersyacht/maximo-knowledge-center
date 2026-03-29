@@ -37,3 +37,9 @@ Site BL created.
 ### Get Site:
 
 [**API**](/maximo/api/administration/organization/get-site.json)
+
+## Next Step
+
+|Action|Reference|
+|------|---------|
+|Activate Site| /maximo/docs/administration/organization/05-organization-site-activation.md |
