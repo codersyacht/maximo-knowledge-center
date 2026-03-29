@@ -47,7 +47,7 @@ Organization CDY created.
 |--------|-------|
 | URL    | /maximo/api/oslc/os/mxorganization?oslc.where=orgid="CDY" |
 | Method | GET  |
-| Response | [here](/maximo/api/administration/organizations/api/get-organization-response.json) |
+| Response | [here](/maximo/api/administration/organizations/get-organization-response.json) |
 
 ### Get Specific Organization
 
@@ -57,7 +57,7 @@ Organization CDY created.
 |--------|-------|
 | URL    | /maximo/docs/oslc/os/mxorganization/_Q0RZ |
 | Method | GET  |
-| Response | [here](/maximo/api/administration/organizations/api/get-specific-organization-resppnse.json) |
+| Response | [here](/maximo/api/administration/organizations/get-specific-organization-resppnse.json) |
 
 
 ## Next Step
