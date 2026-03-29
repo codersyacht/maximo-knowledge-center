@@ -1,0 +1,24 @@
+{
+    "api":
+    {
+            "name": "Create Item Set",
+            "url": "/maximo/oslc/os/mxapisets",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+        "spi:settype_description": "CDYISET",
+        "spi:setid": "CDYISET",
+        "spi:description": "CDYISET",
+        "spi:dfltitemstatus_description": "Active",
+        "spi:dfltitemstatus": "ACTIVE",
+        "spi:langcode": "EN",
+        "spi:enterby": "MAXADMIN",
+        "spi:settype": "ITEM"
+    
+    }
+}
