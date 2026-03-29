@@ -21,11 +21,7 @@ C --> E[End]
 
 ### Create Item Set
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets |
-| Method | POST  |
-| Payload | [here](/maximo/administration/sets/api/create-item-payload.json) |
+[**API**](/maximo/api/administration/sets/api/create-item.json)
 
 
 ## Success Metric
@@ -36,24 +32,16 @@ C --> E[End]
 Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Devices. If the API is successfully executed, the device set will be visible,
 
 
-### Get Sets
+### Find Sets
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYISET" |
-| Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-item-set-response.json) |
+[**API**](/maximo/api/administration/sets/api/find-item-set.json) |
 
 ### Get Specific Set
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets/_Q0RZSVNFVA-- |
-| Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-specific-item-set-response.json) |
+[**API**](/maximo/api/administration/sets/api/get-item-set.json)
 
 ## Next Steps
 
 |Requirement| Refecence |
 |------------|-----------|
-|Configure Organization|[here](/maximo/administration/organizations/01-organization-definition.md)|
+|Configure Organization|[here](/maximo/docs/administration/organizations/01-organization-definition.md)|
