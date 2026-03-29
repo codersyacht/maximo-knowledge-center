@@ -2,7 +2,7 @@
     "api":
     {
             "name": "Create Site",
-            "url": "/maximo/oslc/os/mxorganization/_Q0RZ,
+            "url": "/maximo/oslc/os/mxorganization/_Q0RZ",
             "method": "POST"
     },
     "headers":
