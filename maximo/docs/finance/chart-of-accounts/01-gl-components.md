@@ -37,4 +37,4 @@ E --> F[End]
 
 | Action | Reference |
 |----|----|
-|Create GL Account|[here](/maximo/finance/chart-of-accounts/02-gl-account.md)|
+|Create GL Account|[here](/maximo/doc/finance/chart-of-accounts/02-gl-account.md)|
