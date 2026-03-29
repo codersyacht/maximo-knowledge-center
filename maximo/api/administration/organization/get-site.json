@@ -1,0 +1,37 @@
+
+{
+    "api":
+    {
+            "name": "Get Site",
+            "url": "/maximo/oslc/os/mxapisite/_Qkw-",
+            "method": "GET"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "response": 
+    {
+          "spi:siteuid": 35,
+          "spi:description": "BL",
+          "billtoshipto_collectionref": "http://localhost/maximo/oslc/os/mxapisite/_Qkw-/billtoshipto",
+          "spi:changeby": "MAXADMIN",
+          "spi:orgid": "CDY",
+          "rdf:about": "http://localhost/maximo/oslc/os/mxapisite/_Qkw-",
+          "spi:enterdate": "2026-03-06T04:39:00+00:00",
+          "spi:enterby": "MAXADMIN",
+          "prefixes": 
+          {
+              "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+              "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+              "oslc": "http://open-services.net/ns/core#"
+          },
+          "_rowstamp": "2683737",
+          "spi:active": false,
+          "spi:contact": "MAXADMIN",
+          "spi:changedate": "2026-03-06T04:39:00+00:00",
+          "spi:siteid": "BL"
+  }
+
+}
+
