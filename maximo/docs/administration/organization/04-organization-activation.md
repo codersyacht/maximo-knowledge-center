@@ -34,4 +34,4 @@ Check if get organization shows organization as active. [**API**](/maximo/api/ad
 
 ## Next Step
 
-Not Applicable
+Not Applicable.
