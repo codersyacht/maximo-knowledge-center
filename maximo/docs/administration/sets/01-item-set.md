@@ -21,7 +21,7 @@ C --> E[End]
 
 ### Create Item Set
 
-[**API**](/maximo/api/administration/sets/api/create-item.json)
+[**API**](/maximo/api/administration/sets/create-item.json)
 
 
 ## Success Metric
@@ -34,11 +34,11 @@ Navigate to the following location in the manage application: Administration -> 
 
 ### Find Sets
 
-[**API**](/maximo/api/administration/sets/api/find-item-set.json)
+[**API**](/maximo/api/administration/sets/find-item-set.json)
 
 ### Get Specific Set
 
-[**API**](/maximo/api/administration/sets/api/get-item-set.json)
+[**API**](/maximo/api/administration/sets/get-item-set.json)
 
 ## Next Steps
 
