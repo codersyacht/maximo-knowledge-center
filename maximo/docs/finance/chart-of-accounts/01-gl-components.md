@@ -25,10 +25,10 @@ E --> F[End]
 
 | Action    | Reference  |
 |----------|------------|
-| Create GL Component Cost Center | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-cost-center.json) |
-| Create GL Component Activity | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-activity.json) |
-| Create GL Component Resource | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-resource.json) |
-| Create GL Component Element | [here](/maximo/finance/chart-of-accounts/api/create-gl-component-element.json) |
+| Create GL Component Cost Center | [**API**](/maximo/api/finance/chart-of-accounts/create-gl-component-cost-center.json) |
+| Create GL Component Activity | [**API**](/maximo/api/finance/chart-of-accounts/create-gl-component-activity.json) |
+| Create GL Component Resource | [**API**](/maximo/finance/chart-of-accounts/create-gl-component-resource.json) |
+| Create GL Component Element | [**API**](/maximo/api/finance/chart-of-accounts/create-gl-component-element.json) |
 
 ## Success Metric
 
