@@ -1,0 +1,19 @@
+{
+  "api":
+  {
+            "name": "Create Item",
+            "url": "/maximo/oslc/os/mxitem",
+            "method": "POST"
+  },
+  "headers":
+  {
+            "apikey": "",
+  },
+  "payload":
+  {
+          "spi:status": "ACTIVE",
+          "spi:itemsetid": "DEVICES",
+          "spi:itemnum": "IPhone15",
+          "spi:rotating": "Y"
+  }
+}
