@@ -10,9 +10,9 @@ In IBM Maximo, an Organization is the top-level entity that defines the business
 
 | Action  | Reference |
 |--------|-------|
-|Create Item Set.|[here](/maximo/administration/sets/01-item-set.md)|
-|Create Company Set.| [here](/maximo/administration/sets/02-company-set.md)|
-Create GLA Account.|[here](/maximo/finance/chart-of-accounts/02-gl-account.md)|
+|Create Item Set.|[here](/maximo/docs/administration/sets/01-item-set.md)|
+|Create Company Set.| [here](/maximo/docs/administration/sets/02-company-set.md)|
+Create GLA Account.|[here](/maximo/docs/finance/chart-of-accounts/02-gl-account.md)|
 
 ## Process Diagram
 
@@ -33,7 +33,7 @@ H--> I[End]
 
 ### Create Organization
 
-**API** [Payload](/maximo/api/administration/organization/create-organization.json)
+**API** [Payload](/maximo/api/api/administration/organization/create-organization.json)
 
 ## Success Metric
 API executed successfully.
@@ -45,9 +45,9 @@ Organization CDY created.
 
 | Attribute  | Value |
 |--------|-------|
-| URL    | /maximo/oslc/os/mxorganization?oslc.where=orgid="CDY" |
+| URL    | /maximo/api/oslc/os/mxorganization?oslc.where=orgid="CDY" |
 | Method | GET  |
-| Response | [here](/maximo/administration/organizations/api/get-organization-response.json) |
+| Response | [here](/maximo/api/administration/organizations/api/get-organization-response.json) |
 
 ### Get Specific Organization
 
@@ -55,9 +55,9 @@ Organization CDY created.
 
 | Attribute  | Value |
 |--------|-------|
-| URL    | /maximo/oslc/os/mxorganization/_Q0RZ |
+| URL    | /maximo/docs/oslc/os/mxorganization/_Q0RZ |
 | Method | GET  |
-| Response | [here](/maximo/administration/organizations/api/get-specific-organization-resppnse.json) |
+| Response | [here](/maximo/api/administration/organizations/api/get-specific-organization-resppnse.json) |
 
 
 ## Next Step
@@ -65,7 +65,7 @@ Organization CDY created.
 
 |Action | Refecence |
 |------------|-----------|
-|Configure Clearance Account.|[here](/maximo/administration/organizations/03-set-organization-clearance-account.md)|
-|Activate Organization.|[here](/maximo/administration/organizations/04-organization-activation.md)|
-|Create Site. |[here](/maximo/administration/organizations/02-site-definition.md)|
-|Activate Site.|[here](/main/maximo/administration/organizations/05-organization-site-activation.md)|
+|Configure Clearance Account.|[here](/maximo/docs/administration/organizations/03-set-organization-clearance-account.md)|
+|Activate Organization.|[here](/maximo/docs/administration/organizations/04-organization-activation.md)|
+|Create Site. |[here](/maximo/docs/administration/organizations/02-site-definition.md)|
+|Activate Site.|[here](/main/maximo/docs/administration/organizations/05-organization-site-activation.md)|
