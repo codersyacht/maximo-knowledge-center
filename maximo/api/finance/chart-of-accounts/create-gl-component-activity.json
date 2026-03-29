@@ -1,8 +1,22 @@
 {
-  "spi:active": true,
-  "spi:compvalue": "100",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 1,
-  "spi:comptext": "100"
+    "api":
+    {
+            "name": "Create GL Component Activity",
+            "url": "/maximo/oslc/os/mxglcomp",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+          "spi:active": true,
+          "spi:compvalue": "100",
+          "spi:userid": "MAXADMIN",
+          "spi:orgid": "CDY",
+          "spi:glorder": 1,
+          "spi:comptext": "100"
+    }
+
 }
