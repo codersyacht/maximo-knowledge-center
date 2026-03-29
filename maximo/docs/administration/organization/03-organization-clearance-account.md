@@ -23,6 +23,8 @@ B --> C[Save]
 
 ## Execution Steps
 
+### Set Clearance Account
+
 [**API**](/maximo/api/administration/organization/set-clearance-account.json)
 
 ## Next Step
