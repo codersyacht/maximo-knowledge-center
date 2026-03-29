@@ -1,0 +1,26 @@
+{
+    "api":
+    {
+            "name": "Create Site",
+            "url": "/maximo/oslc/os/mxorganization/_Q0RZ,
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+      "spi:site": 
+      [
+        {
+            "spi:description": "BL",
+            "spi:changeby": "MAXADMIN",
+            "spi:enterby": "MAXADMIN",
+            "spi:active": false,
+            "spi:contact": "MAXADMIN",
+            "spi:siteid": "BL"
+        }
+    ]
+  }
+}
