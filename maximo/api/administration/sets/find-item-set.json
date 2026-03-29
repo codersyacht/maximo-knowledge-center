@@ -2,7 +2,7 @@
     "api":
     {
             "name": "Find Item Set",
-            "url": "/maximo/oslc/os/mxapisets?oslc.where=setid=\"CDYCSET\"",
+            "url": "/maximo/oslc/os/mxapisets?oslc.where=setid=\"CDYISET\"",
             "method": "GET"
     },
     "headers":
