@@ -42,4 +42,4 @@ Site BL created.
 
 |Action|Reference|
 |------|---------|
-|Activate Site| /maximo/docs/administration/organization/05-organization-site-activation.md |
+|Activate Site| [here](/maximo/docs/administration/organization/05-organization-site-activation.md) |
