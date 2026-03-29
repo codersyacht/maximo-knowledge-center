@@ -32,11 +32,11 @@ C --> E[End]
 Navigate to the following location in the manage application: Administration -> Sets. In the Sets search for Devices. If the API is successfully executed, the device set will be visible,
 
 
-### Find Sets
+### Find Item Sets
 
 [**API**](/maximo/api/administration/sets/find-item-set.json)
 
-### Get Specific Set
+### Get Item Set
 
 [**API**](/maximo/api/administration/sets/get-item-set.json)
 
@@ -44,4 +44,4 @@ Navigate to the following location in the manage application: Administration -> 
 
 |Requirement| Refecence |
 |------------|-----------|
-|Configure Organization|[here](/maximo/docs/administration/organizations/01-organization-definition.md)|
+|Configure Organization|[here](/maximo/docs/administration/organization/01-organization-definition.md)|
