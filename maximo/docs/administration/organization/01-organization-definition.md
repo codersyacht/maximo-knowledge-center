@@ -39,13 +39,13 @@ H--> I[End]
 API executed successfully.
 Organization CDY created.
 
-### Get Organization 
+### Find Organization 
 
-[**API**](/maximo/api/administration/organization/get-organization-response.json)
+[**API**](/maximo/api/administration/organization/find-organization-response.json)
 
 ### Get Specific Organization
 
-[**API**](/maximo/api/administration/organization/get-specific-organization-resppnse.json)
+[**API**](/maximo/api/administration/organization/get-organization-resppnse.json)
 
 
 ## Next Step
