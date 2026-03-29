@@ -15,6 +15,12 @@ Set clearance account for the orgaqnization
 
 ## Process Diagram
 
+```mermaid
+graph LR
+A[Find Organization] --> B[Set Clearance Account]
+B --> C[Save]
+```
+
 ## Execution Steps
 
 [**API**](/maximo/api/administration/organization/set-clearance-account.json)
