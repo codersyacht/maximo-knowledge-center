@@ -1,0 +1,36 @@
+{
+    "api":
+    {
+            "name": "Get Item Set",
+            "url": "/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--",
+            "method": "GET"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "response": 
+    {
+        "spi:settype_description": "Item Sets",
+        "spi:setid": "CDYISET",
+        "spi:description": "CDYISET",
+        "spi:dfltitemstatus_description": "Active",
+        "spi:dfltitemstatus": "ACTIVE",
+        "spi:setsid": 10,
+        "rdf:about": "http://localhost/maximo/oslc/os/mxapisets/_Q0RZSVNFVA--",
+        "spi:langcode": "EN",
+        "spi:enterdate": "2026-03-06T04:29:38+00:00",
+        "spi:enterby": "MAXADMIN",
+        "prefixes": 
+        {
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+            "oslc": "http://open-services.net/ns/core#"
+        },
+        "_rowstamp": "2680652",
+        "spi:hasld": false,
+        "spi:settype": "ITEM",
+        "spi:autoupdate": false
+    }
+
+}
