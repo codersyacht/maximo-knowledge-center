@@ -1,0 +1,33 @@
+
+{
+    "api":
+    {
+            "name": "Find Item",
+            "url": "/maximo/oslc/os/mxitem?oslc.where=itemnum=\"MacBookPro16\"",
+            "method": "GET"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "response": 
+    {
+      "prefixes": 
+      {
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+          "oslc": "http://open-services.net/ns/core#"
+      },
+    "oslc:responseInfo": 
+    {
+        "rdf:about": "http://localhost/maximo/oslc/os/mxitem?oslc.where=itemnum=%22MacBookPro16%22"
+    },
+    "rdfs:member": 
+    [
+        {
+            "rdf:resource": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-"
+        }
+    ],
+    "rdf:about": "http://localhost/maximo/oslc/os/mxitem"
+   }
+}
