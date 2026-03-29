@@ -1,5 +1,18 @@
-## Create Item
+# Item Definition
 
+### Author: Mohamed Jawahar Hussain
+
+## Introduction
+
+Define a new item
+
+## Prerequisite
+
+|Action|Reference|
+|--|--|
+|Define item set|[here](/maximo/docs/administration/sets/01-item-set.md)|
+
+## Process Diagram
 
 ```mermaid
 graph LR
@@ -10,15 +23,10 @@ D--> |No| A
 D--> |Yes| E[End]
 ```
 
-```URL
-http://maxserver1.fyre.ibm.com:9080/maximo/oslc/os/mxitem?_lid=maxadmin&_lpwd=maxadmin
-```
+## Execution Steps
 
-```JSON
-{
-    "spi:status": "ACTIVE",
-    "spi:itemsetid": "DEVICES",
-    "spi:itemnum": "IPhone15",
-    "spi:rotating": "Y"
-}
-```
+### Define Item
+
+[**API**](/maximo/api/inventory/create-item.json)
+
+## Success Metric
