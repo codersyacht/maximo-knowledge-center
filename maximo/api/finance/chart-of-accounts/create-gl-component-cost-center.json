@@ -1,8 +1,22 @@
 {
-  "spi:active": true,
-  "spi:compvalue": "1000",
-  "spi:userid": "MAXADMIN",
-  "spi:orgid": "CDY",
-  "spi:glorder": 0,
-  "spi:comptext": "1000"
+    "api":
+    {
+            "name": "Create GL Component Cost Center",
+            "url": "/maximo/oslc/os/mxglcomp",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+          "spi:active": true,
+          "spi:compvalue": "1000",
+          "spi:userid": "MAXADMIN",
+          "spi:orgid": "CDY",
+          "spi:glorder": 0,
+          "spi:comptext": "1000"
+    }
+
 }
