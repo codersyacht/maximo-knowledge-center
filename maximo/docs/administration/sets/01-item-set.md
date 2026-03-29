@@ -34,7 +34,7 @@ Navigate to the following location in the manage application: Administration -> 
 
 ### Find Sets
 
-[**API**](/maximo/api/administration/sets/api/find-item-set.json) |
+[**API**](/maximo/api/administration/sets/api/find-item-set.json)
 
 ### Get Specific Set
 
