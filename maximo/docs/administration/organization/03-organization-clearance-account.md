@@ -2,22 +2,26 @@
 
 ### Author: Mohamed Jawahar Hussain
 
-### Prerequisite
-
-Configure GL Components. Follow the instructions [here](/maximo/finance/chart-of-accounts/01-gl-components.md)
-
-Configure GL Account. Follow the instructions [here](/maximo/finance/chart-of-accounts/02-gl-account.md)
-
-
-
 ## Introduction
 
-```URL
-http://codehub1.fyre.ibm.com:9080/maximo/oslc/os/mxorganization/_Q0RZ
-```
+Set clearance account for the orgaqnization
 
-```JSON
-{
-    "spi:clearingacct": "1000-100-100-100"
-}
-```
+### Prerequisite
+
+|Action|Reference|
+|------|---------|
+| Configure GL Components. | [here](/maximo/finance/chart-of-accounts/01-gl-components.md) |
+| Configure GL Account. | [here](/maximo/finance/chart-of-accounts/02-gl-account.md) |
+
+## Process Diagram
+
+## Execution Steps
+
+[**API**](/maximo/api/administration/organization/set-clearance-account.json)
+
+## Next Step
+
+|Action|Reference|
+|------|---------|
+| Activate Organization. | [here](/maximo/docs/administration/organization/04-organization-activation.md) |
+
