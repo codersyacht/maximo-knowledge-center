@@ -1,1 +1,22 @@
 
+{
+    "api":
+    {
+            "name": "Set Organizaton Site Active",
+            "url": "/maximo/oslc/os/mxorganization/_Q0RZ,
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+        "spi:site": [
+            {
+                "spi:active": true,
+                "spi:siteid": "BL"
+            }
+        ]
+    }
+}
