@@ -22,11 +22,7 @@ C --> E[End]
 
 ### Create Company Set
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets|
-| Method | POST  |
-| Payload | [here](/maximo/administration/sets/api/create-company-payload.json) |
+[**API**](/maximo/api/administration/sets/create-company.json) |
 
 
 ## Success Metric
