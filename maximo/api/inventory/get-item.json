@@ -1,0 +1,78 @@
+
+{
+    "api":
+    {
+            "name": "Get Item",
+            "url": "/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-",
+            "method": "GET"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "response": 
+    {
+        "spi:status": "ACTIVE",
+        "spi:pluscisinhousecal": false,
+        "spi:itemsetid": "CDYISET",
+        "spi:plustistire": false,
+        "spi:plustposreq": false,
+        "spi:plusaisreplenishment": false,
+        "spi:attachonissue": false,
+        "spi:capitalized": false,
+        "itemcondition_collectionref": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-/itemcondition",
+        "spi:itemid": 483,
+        "spi:lottype_description": "Item without Lot",
+        "spi:outside": false,
+        "_rowstamp": "4445275",
+        "spi:itemorginfo": [
+            {
+                "spi:status": "ACTIVE",
+                "prefixes": {
+                    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                    "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+                    "oslc": "http://open-services.net/ns/core#"
+                },
+                "_rowstamp": "4445280",
+                "spi:category": "STK",
+                "localref": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-/itemorginfo/0-1107",
+                "spi:itemorginfoid": 1107,
+                "spi:taxexempt": false,
+                "spi:orgid": "CDY",
+                "spi:status_description": "Active",
+                "rdf:about": "http://childkey#SVRFTS9JVEVNT1JHSU5GTy9NQUNCT09LUFJPMTYvQ0RZSVNFVC9DRFk-",
+                "spi:statusdate": "2026-03-29T05:59:43+00:00"
+            }
+        ],
+        "spi:itemnum": "MACBOOKPRO16",
+        "spi:np_statusrolldown": false,
+        "spi:taxexempt": false,
+        "spi:statusdate": "2026-03-29T05:59:42+00:00",
+        "spi:itemtype": "ITEM",
+        "spi:conditionenabled": false,
+        "spi:description": "MacBookPro16",
+        "spi:lottype": "NOLOT",
+        "itemspec_collectionref": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-/itemspecclass",
+        "conversion_collectionref": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-/conversion",
+        "rdf:about": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-",
+        "prefixes": {
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "spi": "http://jazz.net/ns/ism/asset/smarter_physical_infrastructure#",
+            "oslc": "http://open-services.net/ns/core#"
+        },
+        "itemorginfo_collectionref": "http://localhost/maximo/oslc/os/mxitem/_TUFDQk9PS1BSTzE2L0NEWUlTRVQ-/itemorginfo",
+        "spi:rotating": true,
+        "spi:hardresissue": false,
+        "spi:iskit": false,
+        "spi:prorate": false,
+        "spi:iscrew": false,
+        "spi:inspectionrequired": false,
+        "spi:status_description": "Active",
+        "spi:statusiface": false,
+        "spi:pluscismte": false,
+        "spi:sparepartautoadd": false,
+        "spi:pluscsolution": false,
+        "spi:plustfluidind": false,
+        "spi:plusaismunition": false
+    }
+}
