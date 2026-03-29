@@ -21,7 +21,7 @@ C --> E[End]
 
 ### Create Item Set
 
-[**API**](/maximo/api/administration/sets/create-item.json)
+[**API**](/maximo/api/administration/sets/create-item-set.json)
 
 
 ## Success Metric
