@@ -32,7 +32,7 @@ D --> F
 
 ### Activate Site
 
-[**API**](/maximo/docs/administration/organization/05-organization-site-activation.md)
+[**API**](/maximo/api/administration/organization/set-organization-site-active.json)
 
 ## Success Criteria
 
