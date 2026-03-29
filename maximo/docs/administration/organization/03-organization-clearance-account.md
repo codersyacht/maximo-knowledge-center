@@ -27,6 +27,10 @@ B --> C[Save]
 
 [**API**](/maximo/api/administration/organization/set-clearance-account.json)
 
+## Success Metric
+
+Check if get organization has clearance account set. [**API**](/maximo/api/administration/organization/get-organization.json)
+
 ## Next Step
 
 |Action|Reference|
