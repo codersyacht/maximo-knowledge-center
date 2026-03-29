@@ -1,1 +1,17 @@
 
+{
+    "api":
+    {
+            "name": "Set Organization Active",
+            "url": "/maximo/oslc/os/mxorganization/_Q0RZ",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+        "spi:active": true
+    }
+}
