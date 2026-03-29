@@ -1,16 +1,33 @@
 {
-    "prefixes": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "oslc": "http://open-services.net/ns/core#"
+    "api":
+    {
+            "name": "Search Organization",
+            "url": "/maximo/api/oslc/os/mxorganization?oslc.where=orgid="CDY"",
+            "method": "GET"
     },
-    "oslc:responseInfo": {
-        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22CDY%22"
+    "headers":
+    {
+            "apikey": "",
     },
-    "rdfs:member": [
+    "response": 
+    {
+        "prefixes": 
         {
-            "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ"
-        }
-    ],
-    "rdf:about": "http://localhost/maximo/oslc/os/mxorganization"
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "oslc": "http://open-services.net/ns/core#"
+        },
+        "oslc:responseInfo": 
+        {
+            "rdf:about": "http://localhost/maximo/oslc/os/mxorganization?oslc.where=orgid=%22CDY%22"
+        },
+        "rdfs:member": 
+        [
+            {
+                "rdf:resource": "http://localhost/maximo/oslc/os/mxorganization/_Q0RZ"
+            }
+        ],
+        "rdf:about": "http://localhost/maximo/oslc/os/mxorganization"
+    }
+
 }
