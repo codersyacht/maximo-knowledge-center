@@ -33,7 +33,7 @@ H--> I[End]
 
 ### Create Organization
 
-**API** [Payload](/maximo/api/api/administration/organization/create-organization.json)
+[**API**](/maximo/api/api/administration/organization/create-organization.json)
 
 ## Success Metric
 API executed successfully.
@@ -43,21 +43,13 @@ Organization CDY created.
 
 **API**
 
-| Attribute  | Value |
-|--------|-------|
-| URL    | /maximo/api/oslc/os/mxorganization?oslc.where=orgid="CDY" |
-| Method | GET  |
-| Response | [here](/maximo/api/administration/organizations/get-organization-response.json) |
+[**API**](/maximo/api/administration/organizations/get-organization-response.json) |
 
 ### Get Specific Organization
 
 **API**
 
-| Attribute  | Value |
-|--------|-------|
-| URL    | /maximo/docs/oslc/os/mxorganization/_Q0RZ |
-| Method | GET  |
-| Response | [here](/maximo/api/administration/organizations/get-specific-organization-resppnse.json) |
+[**API**](/maximo/api/administration/organizations/get-specific-organization-resppnse.json) |
 
 
 ## Next Step
