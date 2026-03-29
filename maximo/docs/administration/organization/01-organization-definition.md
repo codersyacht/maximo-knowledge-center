@@ -43,7 +43,7 @@ Organization CDY created.
 
 [**API**](/maximo/api/administration/organization/find-organization-response.json)
 
-### Get Specific Organization
+### Get Organization
 
 [**API**](/maximo/api/administration/organization/get-organization-resppnse.json)
 
