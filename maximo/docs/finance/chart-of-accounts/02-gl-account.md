@@ -28,10 +28,10 @@ F --> G[Create GL Account]
 
 ### Create GL Account
 
-[**API**](/maximo/docs/finance/chart-of-accounts/create-gl-account.json)|
+[**API**](/maximo/api/finance/chart-of-accounts/create-gl-account.json)
 
 ## Next Step
 
 | Action | Reference |
 |----|----|
-|Create Organization|[here](/maximo/docs/administration/organizations/01-organization-definition.md)|
+|Create Organization|[here](/maximo/docs/administration/organization/01-organization-definition.md)|
