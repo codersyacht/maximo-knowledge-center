@@ -22,7 +22,7 @@ C --> E[End]
 
 ### Create Company Set
 
-[**API**](/maximo/api/administration/sets/create-company.json) |
+[**API**](/maximo/api/administration/sets/create-company-set.json)
 
 
 ## Success Metric
@@ -34,23 +34,15 @@ C --> E[End]
 
  ### Get Sets
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets?oslc.where=setid="CDYCSET" |
-| Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-company-set-response.json) |
+[**API**](/maximo/api/administration/sets/find-company-set.json)
 
 ### Get Specific Set
 
-| Field  | Value |
-|--------|-------|
-| URL    | /maximo/oslc/os/mxapisets/_Q0RZQ1NFVA-- |
-| Method | GET  |
-| Response | [here](/maximo/administration/sets/api/get-specific-company-set-response.json) | 
+[**API**](/maximo/api/administration/sets/get-company-set.json)
 
 ## Next Steps
 
 |Requirement| Refecence |
 |------------|-----------|
-|Configure Organization|[here](/maximo/administration/organizations/01-organization-definition.md)|
+|Configure Organization|[here](/maximo/docs/administration/organization/01-organization-definition.md)|
 
