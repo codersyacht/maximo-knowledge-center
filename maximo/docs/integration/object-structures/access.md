@@ -34,7 +34,7 @@ Click OK.
 
 Post which _Add/Modify Signature Options_ will be visible.
 
-Navigate to Security -> Security Groups. Search for the relevant group and select. Here we use _maxadmin_.
+Navigate to Security -> Security Groups (Manage). Search for the relevant group and select. Here we use _maxadmin_.
 
 Select Object Structure. Search for MXORGANIZATION.
 
