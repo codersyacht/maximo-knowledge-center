@@ -55,7 +55,7 @@ Set the permission of the SMP.
 cd /home/admin/apps
 ```
 ```cmd
-chmod 775 -R SMP
+chmod -R 775 SMP
 ```
 
 Content of the _/home/admin/apps/SMP/maximo_ folder.
@@ -115,7 +115,7 @@ cp -r /home/admin/apps/jdk17/* ./jre
 ```
 For Mac
 ```CMD
-cp /Users/jawahar/codersyacht/java/ibmjdk17/Contents/Home/* ./jre
+cp -r /Users/jawahar/codersyacht/java/ibmjdk17/Contents/Home/* ./jre
 ```
 
 **Set Java Path Specific For Maximo:**
