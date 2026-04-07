@@ -4,7 +4,7 @@
 
 ## Prerequisite
 
-Docker setup. To install docker follow the instructions [here](https://github.com/codersyacht/knowledge-center/blob/main/system/Docker_Installation_General.md)
+Install Podman.
 
 ## Install MSSQL
 
