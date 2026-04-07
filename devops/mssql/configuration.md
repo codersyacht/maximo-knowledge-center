@@ -5,7 +5,7 @@
 ## Maximo DB Configuration
 
 ```CMD
-docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
+podman exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
 ```
 
 ```CMD
