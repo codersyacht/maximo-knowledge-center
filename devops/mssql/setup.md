@@ -10,13 +10,20 @@
 
 ## Install MSSQL
 
-The following steps are required only if user wants to install MSSQL and configure it from the beginning. A pre-build image is available for Maximo. 
+Either existing container or a new container can be created.
+
+**Using Existing Container**
 
 ```CMD
 podman pull codersyacht/maximo-mssql:V1
 ```
 
-If the command is executed and completed, there is no need to following the below steps nor the next steps.
+If the command is executed and completed, there is no need to execute the below steps nor the next steps.
+
+**Manually Configuration**
+
+The following steps are required only if user wants to install MSSQL and configure it from the beginning. A pre-build image is available for Maximo. 
+
 
 ```CMD
 podman pull mcr.microsoft.com/mssql/server:2022-latest
