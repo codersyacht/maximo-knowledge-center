@@ -3,29 +3,54 @@
 
 **Prerequisite**
 
-[Change System Time](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/system-date.md)
+The following 2 prerequisites (Change System Time & Crete admin user) are only required if installation is made on an isolated Linux machine. Not required for Macbook installation.
 
-[Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
+- [Change System Time](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/system-date.md)
 
-[DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/configuration.md)
+- [Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
+
+Use either DB2 or MSSQL. If installation is on Macbook then install MSSQL only.
+
+- [DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/configuration.md)
+- [MSSQL Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mssql/setup.md)
+
 
 [Java Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
 
 [Java Path](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-path.md)
 
-**Initial Setup**
+## Initial Setup
+
+**Linux**
 
 The Maximo application need to be copied to _/home/admin/apps_. The present-working-directory should be in the following directory structure _/home/admin/apps/SMP_
 
 ```
 cd /home/admin/apps
 ```
+
+**Mac**
+
+In this example the home directory is /Users/jawahar/codersyacht. Use an approprate location based on the environment.
+
+**Extracting the SMP**
+
+If SMP filesystem is readily available, it can be used. It also be copied from a remote machine. Otherwise, it can be copied from the container.
+
+**Extracting SMP from container**
+
 ```CMD
 eval $(crc oc-env)
 ```
 ```CMD
 oc cp -n mas-max-manage max-max-manage-maxinst-5869bc54f7-lr4dd:/opt/IBM/SMP SMP
 ```
+
+**Copying SMP from remote machine.**
+```CMD
+scp -o StrictHostKeyChecking=no "admin@$9.30.146.6:/home/admin/apps/SMP.tar" /Users/jawahar/codersyacht/SMP.tar
+```
+All further steps are based on SMP folder existing in /home/admin/apps/SMP. If a different folder is used, change it accordingly.
 
 Set the permission of the SMP.
 ```cmd
@@ -86,8 +111,13 @@ mkdir -p java/jre
 cd java
 ```
 
+Note that the home directory for Java in Mac is /Users/jawahar/codersyacht/java/ibmjdk17/Contents/Home. The bwlow step is applicable for Linux. 
 ```CMD
 cp -r /home/admin/apps/jdk17/* ./jre
+```
+For Mac
+```CMD
+cp /Users/jawahar/codersyacht/java/ibmjdk17/Contents/Home/* ./jre
 ```
 
 **Set Java Path Specific For Maximo:**
@@ -105,6 +135,8 @@ Navigate to _/home/admin/apps/SMP/maximo/applications/maximo/properties_
 
 Update _maximo.properties_ with the following content.
 
+**DB2**
+
 ```PROP
 mxe.name=MXServer
 mxe.db.url=jdbc:db2://9.30.192.168:50000/MAXIMO
@@ -116,6 +148,45 @@ mxe.db.DB2sslConnection=false
 mxe.logging.CorrelationEnabled=0
 ```
 
+**MSSQL**
+
+Remove DB2 config
+```PROP
+mxe.db.url
+mxe.db.driver
+mxe.db.user
+mxe.db.password
+mxe.db.schemaowner
+mxe.db.DB2sslConnection
+```
+Add the following and modify the values accordingly:
+
+```PROP
+mxe.db.url=jdbc:sqlserver://localhost:1433;databaseName=Maximo;encrypt=true;trustServerCertificate=true;
+mxe.db.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+mxe.db.user=sa
+mxe.db.password=LabMachine4@Training
+mxe.db.schemaowner=dbo
+mxe.db.vendor=sqlserver
+mxe.db.dbproduct=sqlserver
+mxe.db.server.version=2022
+mxe.db.start=sqlserver
+mxe.db.sqlserver.varchar=MAXDATA
+mxe.db.sqlserver.longvarchar=MAXDATA
+
+# LOB types also stored in MAXDATA
+mxe.db.sqlserver.maxvarchar=MAXDATA
+mxe.db.sqlserver.dbclob=MAXDATA
+mxe.db.sqlserver.text=MAXDATA
+
+# Indexes → MAXINDEX
+mxe.db.sqlserver.index=MAXINDEX
+
+# Optional fallback (ignored if above are present)
+mxe.db.fileGroup=PRIMARY
+```
+
+
 **Generate DB Data (optional)**
 
 **Note:** This step is only required if DB is not populated. During container based deployment, if the tables are generated, then this step can be skipped.
@@ -126,13 +197,22 @@ Execute the following command:
 
 In live mode:
 
+**DB2**
 ```CMD
 ./maxinst.sh -sMAXINDEX -tMAXDATA
+```
+**MSSQL**
+```CMD
+./maxinst.sh -sPRIMARY -tPRIMARY
 ```
 In backendmode:
 
 ```CMD
 nohup ./maxinst.sh -sMAXINDEX -tMAXDATA > maxinst.log &
+```
+or
+```CMD
+nohup ./maxinst.sh -sPRIMARY -tPRIMARY > maxinst.log &
 ```
 
 Navigate to _/home/admin/apps/SMP/maximo/tools/maximo/log_ directory and monitor the log _Maxinst<Timestamp>.log_.
