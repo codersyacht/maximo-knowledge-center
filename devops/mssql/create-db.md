@@ -31,3 +31,6 @@ GO
 | Password             | LabMachine4@Training                                               |
 | JDBC URL             | jdbc:sqlserver://9.30.87.54:1433;databaseName=Maximo;              |
 
+## Next Step
+
+[Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mssql/configuration.md)
