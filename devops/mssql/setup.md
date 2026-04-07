@@ -67,3 +67,6 @@ SELECT FULLTEXTSERVICEPROPERTY('IsFullTextInstalled');
 GO
 ```
 Output should be 1.
+
+## Next Step
+[Create DB](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mssql/create-db.md)
