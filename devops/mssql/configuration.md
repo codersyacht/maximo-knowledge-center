@@ -56,3 +56,7 @@ GO
 ```CMD
 exit
 ```
+
+## Next Step
+
+[Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mssql/configuration.md)
