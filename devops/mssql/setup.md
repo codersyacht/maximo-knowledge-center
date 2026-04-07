@@ -4,9 +4,19 @@
 
 ## Prerequisite
 
-Install Podman.
+[Install Podman](https://podman.io/docs/installation)
+
+
 
 ## Install MSSQL
+
+The following steps are required only if user wants to install MSSQL and configure it from the beginning. A pre-build image is available for Maximo. 
+
+```CMD
+podman pull codersyacht/maximo-mssql:V1
+```
+
+If the command is executed and completed, there is no need to following the below steps nor the next steps.
 
 ```CMD
 podman pull mcr.microsoft.com/mssql/server:2022-latest
