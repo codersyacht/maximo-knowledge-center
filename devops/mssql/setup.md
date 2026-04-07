@@ -18,6 +18,10 @@ Either existing container or a new container can be created.
 podman pull codersyacht/maximo-mssql:V1
 ```
 
+```CMD
+podman run -d --name sql2022 --hostname sql2022 -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=LabMachine4@Training" -e "MSSQL_PID=Developer" -p 1433:1433 codersyacht/maximo-mssql:V1
+```
+
 If the command is executed and completed, there is no need to execute the below steps nor the next steps.
 
 **Manually Configuration**
