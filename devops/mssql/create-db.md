@@ -5,7 +5,7 @@
 Login to MSSQL command mode using the following command:
 
 ```CMD
-docker exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
+podman exec -it sql2022 /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "LabMachine4@Training" -No
 ```
 
 In SQL command mode, execute the following 3 commands.
