@@ -46,7 +46,7 @@ oc cp -n mas-max-manage max-max-manage-maxinst-5869bc54f7-lr4dd:/opt/IBM/SMP SMP
 
 **Copying SMP from remote machine.**
 ```CMD
-scp -o StrictHostKeyChecking=no "admin@$9.30.146.6:/home/admin/apps/SMP.tar" /Users/jawahar/codersyacht/SMP.tar
+scp -o StrictHostKeyChecking=no "admin@9.30.146.6:/home/admin/apps/SMP.tar" /Users/jawahar/codersyacht/SMP.tar
 ```
 All further steps are based on SMP folder existing in /home/admin/apps/SMP. If a different folder is used, change it accordingly.
 
