@@ -12,6 +12,7 @@
 
 Update server.xml and jvm.option.
 Copy the two files into <liberty-home>/usr/servers/manage.
+
 [server.xml](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/artifact/server.xml)
 
 [jvm.option](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/artifact/jvm.options)
