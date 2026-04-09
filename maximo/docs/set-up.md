@@ -2,9 +2,11 @@
 
 ### Author: Jawahar
 
-## Change maximo user
+## Change maximo user (Optional)
 
-Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/security/change-password.md)
+This is only required if maximo is hosted in OpenShift. For local instance this is not required. user name and password as maxadmin/maadmin works.
+
+Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/docs/security/change-password.md)
 
 ## Generate API Key
 
