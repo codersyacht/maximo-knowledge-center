@@ -10,8 +10,7 @@ Set clearance account for the orgaqnization
 
 |Action|Reference|
 |------|---------|
-| Configure GL Components. | [here](/maximo/finance/chart-of-accounts/01-gl-components.md) |
-| Configure GL Account. | [here](/maximo/finance/chart-of-accounts/02-gl-account.md) |
+| Configure GL Account. | [here](/maximo/docs/finance/chart-of-accounts/02-gl-account.md) |
 
 ## Process Diagram
 
