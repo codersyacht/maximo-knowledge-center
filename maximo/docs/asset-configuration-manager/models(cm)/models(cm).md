@@ -15,9 +15,9 @@
 
 ```mermaid
 graph LR
-A[Define Model] --> B[Create Build Item]
+A[Define Model] --> B[Define Build Item]
 B --> C[Select CM Item]
-C --> D{Define Build Item}
+C --> D{Define More Build Item}
 D -->|Yes|B
 D -->|No| E[Configuration]
 E --> F[Build Hierarchy]
