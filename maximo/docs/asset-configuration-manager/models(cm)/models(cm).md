@@ -34,7 +34,7 @@ G --> H[Exit]
 - Provide a Model name.
 - Save
 
-[API](maximo/api/asset-configuration-manager/models(cm)%20/create-model.json)
+[API](/maximo/api/asset-configuration-manager/models(cm)%20/create-model.json)
   
 
 ## Next Step
