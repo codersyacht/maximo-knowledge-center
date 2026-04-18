@@ -31,7 +31,7 @@ B --> C[Exit]
 - Provide a Part name.
 - Save
 
-[API](/maximo/api/asset-configuration-manager/models(cm)%20/create-model.json)
+[API](/maximo/api/asset-configuration-manager/cm-item-master-(cm)/define-cm-item-master.json)
   
 
 ## Next Step
