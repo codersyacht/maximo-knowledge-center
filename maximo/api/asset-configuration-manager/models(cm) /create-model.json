@@ -1,1 +1,19 @@
 
+{
+    "api":
+    {
+            "name": "Create Model",
+            "url": "/maximo/oslc/os/plusamxmodel",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": "",
+    },
+    "payload": 
+    {
+      "spi:model": "BING",
+      "spi:itemsetid": "CDYISET"
+  
+    }
+}
