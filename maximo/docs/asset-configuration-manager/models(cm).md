@@ -20,6 +20,9 @@ B --> C[Select CM Item]
 C --> D{Crete Build Item}
 D -->|Yes|B
 D -->|No| E[Configuration]
+E --> F[Build Hierarchy]
+F --> G[Save]
+G --> H[Exit]
 ```
 
 ## Execution Steps
