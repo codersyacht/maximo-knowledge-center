@@ -1,0 +1,20 @@
+{
+    "api":
+    {
+            "name": "Define CM Item",
+            "url": "/maximo/oslc/os/plusamxcmitem",
+            "method": "POST"
+    },
+    "headers":
+    {
+            "apikey": ""
+    },
+    "payload": 
+    {
+          "spi:itemsetid": "CDYISET", 
+          "spi:item": "CMX1",
+          "spi:part": "CMX1",
+          "spi:description": "CMX1"
+    }
+
+}
