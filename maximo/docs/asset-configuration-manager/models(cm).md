@@ -15,6 +15,7 @@
 
 ```mermaid
 [A]Define Model -> B[Select Build Item]
+```
 
 ## Execution Steps
 
