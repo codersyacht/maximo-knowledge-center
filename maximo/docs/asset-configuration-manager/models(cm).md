@@ -27,6 +27,10 @@ G --> H[Exit]
 
 ## Execution Steps
 
+- Navigate to Asset Configuration Manager (CM) -> Models (CM)
+- New Model
+- Provide a Model name.
+- Save
 
 ## Next Step
 
