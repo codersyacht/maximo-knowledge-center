@@ -13,7 +13,7 @@
 
 | Action  | Reference |
 |--------|-------|
-|Create CM Item.|[here](/maximo/docs/administration/sets/01-item-set.md)|
+|Create CM Item.|[here](/maximo/docs/asset-configuration-manager/cm-item-master-(cm)/define-cm-item-master.md)|
 
 
 ## Process Diagram
