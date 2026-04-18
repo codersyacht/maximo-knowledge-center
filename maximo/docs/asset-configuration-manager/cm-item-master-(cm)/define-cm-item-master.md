@@ -18,7 +18,7 @@
 
 ```mermaid
 graph LR
-A[Define CM Item] --> B[Sace]
+A[Define CM Item] --> B[Save]
 B --> C[Exit]
 ```
 
