@@ -27,7 +27,7 @@ G --> H[Exit]
 
 ## Execution Steps
 
-### Create Model
+### Define Model
 
 - Navigate to Asset Configuration Manager (CM) -> Models (CM)
 - New Model
