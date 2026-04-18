@@ -17,7 +17,7 @@
 graph LR
 A[Define Model] --> B[Create Build Item]
 B --> C[Select CM Item]
-C --> D{Crete Build Item}
+C --> D{Define Build Item}
 D -->|Yes|B
 D -->|No| E[Configuration]
 E --> F[Build Hierarchy]
