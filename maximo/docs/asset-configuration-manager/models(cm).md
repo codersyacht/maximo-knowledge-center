@@ -14,7 +14,8 @@
 ## Process Diagram
 
 ```mermaid
-[A]Define Model --> B[Select Build Item]
+graph LR
+A[Define Model] --> B[Select Build Item]
 ```
 
 ## Execution Steps
