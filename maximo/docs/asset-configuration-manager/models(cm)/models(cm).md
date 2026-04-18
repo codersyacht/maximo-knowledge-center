@@ -9,6 +9,11 @@
 
 ## Prerequisite
 
+## Prerequisite
+
+| Action  | Reference |
+|--------|-------|
+|Create CM Item.|[here](/maximo/docs/administration/sets/01-item-set.md)|
 
 
 ## Process Diagram
