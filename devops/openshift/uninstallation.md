@@ -29,3 +29,9 @@ cd /home/admin/
 ```
 rm -rf ./crc
 ```
+```CMD
+cd /home/admin/bin
+```
+```CMD
+rm crc
+```
