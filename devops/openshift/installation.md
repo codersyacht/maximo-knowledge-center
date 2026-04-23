@@ -28,7 +28,8 @@ Two files are required to install OpenShift local.
 
 ## Download crc-linux-amd64.tar.xz
 
-**Note: **
+**Note:**
+
 Due to a recently observed issue in using the latest CRC, recommending to use CRC version 2.54.0. In the latest CRC version Operators are not displayed in the UI under catalog though the catalogs are loaded and operators can be installed. CRC git issue has been raised.
 
 **Download CRC 2.54.0.**
