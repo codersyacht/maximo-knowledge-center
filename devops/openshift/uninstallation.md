@@ -24,6 +24,9 @@ crc stop
 crc delete
 ```
 ```CMD
+crc cleanup
+```
+```CMD
 cd /home/admin/
 ```
 ```
