@@ -38,7 +38,7 @@ Navigate to _System Properties_ under _Platform Configuration_
 | -------------- | ------------------ |
 | mail.smtp.host | smtp.gmail.com     |
 | mail.smtp.port | 465                |
-| mxe.adminEmai  | `<valid email id>` |
+| mxe.adminEmail | `<valid email id>` |
 
 - Navigate to Database Configuration under Platform Configuration. Select "_Manage Admin Mode_".
 - Set _Number of Administrative Sessions Allowed_ and _Number of Minutes for User Logout_ to 5.
