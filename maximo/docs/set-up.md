@@ -22,6 +22,7 @@ Enable access to the following object structures.
 - MXGLCOMP
 - MXCOA
 - MXASSET
+- MXAPIASSET
   
 Follow the instructions [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/docs/integration/object-structures/access.md)
 
