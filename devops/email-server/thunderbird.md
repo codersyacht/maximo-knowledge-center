@@ -16,10 +16,10 @@ Installation of Thunderbird Email client.
 
 ```mermaid
 graph LR
-A[Begin] -->B [Install Sthunderbird]
-B --> C [Configure Email Account]
+A[Begin] -->B[Install Sthunderbird]
+B --> C[Configure Email Account]
 C-->D{Completed?}
-D--> |No| B 
+D--> |No|B 
 D--> |Yes| E[End]
 ```
 
