@@ -19,10 +19,10 @@ A[Begin] --> B[Install DMS]
 B --> C[Configure Hostname]
 C --> D[Configure DomainName]
 D --> E[Configure Volumes]
-F --> G[Create User Account]
-G --> H{Completed?}
-H --> |No| G 
-H --> |Yes| I[End]
+E --> F[Create User Account]
+F --> G{Completed?}
+G --> |No| F 
+G --> |Yes| H[End]
 ```
 
 ## Execution Steps
