@@ -72,5 +72,5 @@ telnet localhost 3025
 
 |Action|Reference|
 |--|--|
-| Thunderbird Mail Client Installation |[here](/devops/email/thunderbird.m)|
+| Thunderbird Mail Client Installation |[here](/devops/email-server/thunderbird.m)|
 
