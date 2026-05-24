@@ -70,4 +70,7 @@ telnet localhost 3025
 
 ## Next Steps
 
-Install Email Client [Thunderbird](/devops/email/thunderbird.md).
+|Action|Reference|
+|--|--|
+| Thunderbird Mail Client Installation |[here](/devops/email/thunderbird.m)|
+
