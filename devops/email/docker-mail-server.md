@@ -1,15 +1,15 @@
 
 
 ```CMD
-mkdir -p /Users/jawahar/codersyacht/dms
+mkdir -p /Users/jawahar/codersyacht/docker-mailserver
 ```
 
 ```CMD
-chmod -R 777 /Users/jawahar/codersyacht/dms
+chmod -R 777 /Users/jawahar/codersyacht/docker-mailserver
 ```
 
 ```CMD
-cd /Users/jawahar/codersyacht/dms
+cd /Users/jawahar/codersyacht/docker-mailserver
 ```
 
 ```CMD
