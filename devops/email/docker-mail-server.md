@@ -17,7 +17,9 @@ docker volume create maximo-config
 ```
 
 ```CMD
-docker run -d --name maximo-dms -p 3025:25 -p 3143:143 --hostname maximo --domainname maximo.com -v maximo-config:/Users/jawahar/codersyacht/docker-mailserver/  mailserver/docker-mailserver:latest
+docker run -d --name maximo-dms -p 3025:25 -p 3143:143 --hostname maximo --domainname maximo.com --v dms-config:/tmp/docker-mailserver/ 
+  -v dms-data:/var/mail/
+  -v dms-state:/var/mail-state/ \  mailserver/docker-mailserver:latest
 ```
 
 ```CMD
