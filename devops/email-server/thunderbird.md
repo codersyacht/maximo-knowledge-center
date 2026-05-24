@@ -4,6 +4,7 @@
 
 ## Introduction
 
+Installation of Thunderbird Email client.
 
 ## Prerequisite
 
@@ -15,10 +16,10 @@
 
 ```mermaid
 graph LR
-A[Begin]-->B[Choose Item Set]
-B-->C[Create Item]
+A[Begin] -->B [Install Sthunderbird]
+B --> C [Configure Email Account]
 C-->D{Completed?}
-D--> |No| A 
+D--> |No| B 
 D--> |Yes| E[End]
 ```
 
