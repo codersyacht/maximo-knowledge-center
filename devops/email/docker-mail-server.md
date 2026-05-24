@@ -15,14 +15,13 @@
 
 ```mermaid
 graph LR
-A[Begin] --> B[Install DMS]
-B --> C[Configure Hostname]
-C --> D[Configure DomainName]
-D --> E[Configure Volumes]
-E --> F[Create User Account]
-F --> G{Completed?}
-G --> |No| F 
-G --> |Yes| H[End]
+
+A[Begin] --> B[Configure Doman and Hostname]
+B --> C[Install DMS]
+C --> D[Create User Account]
+E --> F{Completed?}
+F --> |No| E 
+F --> |Yes| G[End]
 ```
 
 ## Execution Steps
