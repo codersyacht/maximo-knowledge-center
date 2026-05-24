@@ -7,6 +7,9 @@
 
 ## Prerequisite
 
+|Action|Reference|
+|--|--|
+| Email Server Configuration |[here](/devops/email-server/docker-mail-server.md)|
 
 ## Process Diagram
 
