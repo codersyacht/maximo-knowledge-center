@@ -2,6 +2,23 @@
 
 ### Author: Mohamed Jawahar Hussain
 
+## Introduction
+
+
+## Prerequisite
+
+
+## Process Diagram
+
+```mermaid
+graph LR
+A[Begin]-->B[Choose Item Set]
+B-->C[Create Item]
+C-->D{Completed?}
+D--> |No| A 
+D--> |Yes| E[End]
+```
+
 ## Installation
 
 - Download Firefix Thunderbird [here](https://download.mozilla.org/?product=thunderbird-151.0-SSL&os=osx&lang=en-US)
