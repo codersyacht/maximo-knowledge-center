@@ -5,6 +5,10 @@ mkdir -p /Users/jawahar/codersyacht/dms
 ```
 
 ```CMD
+chmod -R 777 /Users/jawahar/codersyacht/dms
+```
+
+```CMD
 cd /Users/jawahar/codersyacht/dms
 ```
 
