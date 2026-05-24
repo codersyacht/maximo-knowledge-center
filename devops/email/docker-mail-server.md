@@ -41,7 +41,33 @@ docker run -d --name maximo-dms -p 3025:25 -p 3143:143 --hostname maximo --domai
 ```CMD
 docker exec -it maximo-dms setup email add md.jawahar@maximo.com password
 ```
-
 ```CMD
 docker exec -it maximo-dms setup email add azmi@maximo.com password
 ```
+
+## Success Metric
+
+The Docker Email Server container should be up and running.
+
+```CMD
+docker ps
+```
+
+```
+jawahar@MacBookPro codersyacht % docker ps
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED             STATUS             PORTS                                                                                                                                       NAMES
+df478f467058   mailserver/docker-mailserver:latest   "/usr/bin/dumb-init …"   About an hour ago   Up About an hour   110/tcp, 465/tcp, 587/tcp, 993/tcp, 995/tcp, 4190/tcp, 0.0.0.0:3025->25/tcp, [::]:3025->25/tcp, 0.0.0.0:3143->143/tcp, [::]:3143->143/tcp   maximo-dms
+```
+
+Should be able to connect to both SMTP and IMAP port.
+
+```CMD
+telnet localhost 3143
+```
+```CMD
+telnet localhost 3025
+```
+
+## Next Steps
+
+Install Email Client [Thunderbird](/devops/email/thunderbird.md).
