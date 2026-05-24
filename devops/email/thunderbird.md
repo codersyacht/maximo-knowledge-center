@@ -19,7 +19,24 @@ Click _Setup Anorther Account - Email_.
 | Full Name | Jawahar Hussain |
 | Email Address | md.jawahar@maximo.com |
 | Protocol | IMAP |
+| Hostname | maximo.com |
 | Port | 3143 |
 | Connection Security | None |
 | Authentication Method | Normal Password |
-| Username |md.jawahar@maximo.com |
+| Username | md.jawahar@maximo.com |
+
+Continue.
+
+|Attribute | Value |
+|---|---|
+| Protocol | SMTP |
+| Hostname | maximo.com |
+| Port | 3025 |
+| Connection Security | None |
+| Authentication Method | Normal Password |
+| Username | md.jawahar@maximo.com |
+
+Click Test.
+The result should be The following settings were found by probing the given server:.
+Click Continue.
+Provide password at password prompt. If the password is _password_.
