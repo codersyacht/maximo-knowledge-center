@@ -19,9 +19,9 @@ graph LR
 A[Begin] --> B[Configure Doman and Hostname]
 B --> C[Install DMS]
 C --> D[Create User Account]
-E --> F{Completed?}
-F --> |No| E 
-F --> |Yes| G[End]
+D --> E{Completed?}
+E --> |No| D 
+E --> |Yes| F[End]
 ```
 
 ## Execution Steps
