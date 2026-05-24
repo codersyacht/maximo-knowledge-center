@@ -16,4 +16,10 @@ Click _Setup Anorther Account - Email_.
 
 |Attribute | Value |
 |---|---|
-|Full Name|Jawahar Hussain|
+| Full Name | Jawahar Hussain |
+| Email Address | md.jawahar@maximo.com |
+| Protocol | IMAP |
+| Port | 3143 |
+| Connection Security | None |
+| Authentication Method | Normal Password |
+| Username |md.jawahar@maximo.com |
