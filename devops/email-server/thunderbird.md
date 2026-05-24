@@ -23,7 +23,7 @@ D--> |No|C
 D--> |Yes| E[End]
 ```
 
-## Installation
+## Installation 
 
 - Download Firefix Thunderbird [here](https://download.mozilla.org/?product=thunderbird-151.0-SSL&os=osx&lang=en-US)
 - Install Thunderbird by clicking Thunderbird.dmg. 
@@ -89,3 +89,11 @@ Continue.
 - Click Test.
 - The result should be The following settings were found by probing the given server:.
 - Click Continue. Provide password at password prompt. If email server was created using this instruction, the the password is password.
+
+## Success Criteria
+
+Able to Send, Receive and Reply to emails within the same doman and existing accounts.
+
+## Next Steps
+
+NA
