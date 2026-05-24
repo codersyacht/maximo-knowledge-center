@@ -16,7 +16,7 @@
 ```mermaid
 graph LR
 
-A[Begin] --> B[Configure Doman and Hostname]
+A[Begin] --> B[Configure Domain]
 B --> C[Install DMS]
 C --> D[Create User Account]
 D --> E{Completed?}
