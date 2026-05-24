@@ -65,4 +65,6 @@ Continue.
 | Authentication Method | Normal Password |
 | Username | azmi@maximo.com |
 
-
+- Click Test.
+- The result should be The following settings were found by probing the given server:.
+- Click Continue. Provide password at password prompt. If email server was created using this instruction, the the password is password.
