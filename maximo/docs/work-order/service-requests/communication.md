@@ -34,7 +34,6 @@ graph LR
   |Message|New Service Request with ticket id: 1001 has been created.|
 
 - Click Send Button.
-- 
 
 ## Success Metric
 
