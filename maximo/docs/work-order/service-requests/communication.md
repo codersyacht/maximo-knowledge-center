@@ -21,22 +21,25 @@ graph LR
 
 ## Execution Steps
 
-### Define Item
+- Create a new Service Request or open an existing service request.
+- On left hand side bar, select create -> Communication.
+- In the Create Communication pop up window, set the following. Note that when the NOTIFICATION template is selected To, Send From, Subject and Message will be populated.
 
-[**API**](/maximo/api/inventory/create-item.json)
+  |Attribute|Value|
+  |--|--|
+  |Template|NOTIFICATION|
+  |To|azmi@maximo.com|
+  |Send From|md.jawahar@maximo.com|
+  |Subject|Service Request 1001|
+  |Message|New Service Request with ticket id: 1001 has been created.|
+
+- Click Send Button.
+- 
 
 ## Success Metric
 
-API executed successfully.
-Item created.
-
-### Find Item 
-
-[**API**](/maximo/api/inventory/find-item.json)
-
-### Get Item
-
-[**API**](/maximo/api/inventory/get-item.json)
+- Following message appears: _BMXAA0260I - Communication has been sent._
+- Email received in inbox of azmi@maximo.com
 
 ## Next Steps
 
