@@ -23,6 +23,8 @@ D--> |Yes| E[End]
 
 ## Execution Steps
 
+### Configuring E-mail Listener
+
 |Attribute|Value|
 |--|--|
 |E-mail Address|md.jawahar@maximo.com|
@@ -40,6 +42,30 @@ D--> |Yes| E[End]
 |Protocol|imap|
 |Protocol|3143|
 |Enable STARTTLS?|Yes|
+
+### E-mail Format
+
+```
+
+#MAXIMO_EMAIL_BEGIN
+LSNRACTION=CHANGESTATUS
+;
+LSNRAPPLIESTO=SR
+;
+CLASS=SR
+;
+TICKETID=SRNUM
+;
+STATUS=INPROG
+;
+SITEID=BEDFORD
+;
+LOCATION=CONF100
+;
+ASSET=DISPL1
+;
+#MAXIMO_EMAIL_END
+```
 
 ## Next Steps
 
