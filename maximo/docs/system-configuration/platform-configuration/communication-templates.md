@@ -34,8 +34,8 @@
 |Applies To| SR|
 |Accessible From| ALL |
 |Send From| md.jawahar@maximo.com |
-|Subject|WorkOrder Notification|
-|Message|Work Order Notification|
+|Subject|Service Request :ticketid|
+|Message|New Service Request with ticket id: :ticketid has been created.|
 
 Navigate to Recipient tab. Click + symbol next to _Role(s) for Communication Template NOTIFICATION_ Add the following
 Role: maxadmin
