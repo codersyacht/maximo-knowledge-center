@@ -29,7 +29,8 @@
 
 |Attributes|Value|
 |-----------|----|
-|Template|Notification|
+|Template|NOTIFICATION|
+|Description|NOTIFICATION|
 |Applies To| SR|
 |Accessible From| ALL |
 |Send From| md.jawahar@maximo.com |
