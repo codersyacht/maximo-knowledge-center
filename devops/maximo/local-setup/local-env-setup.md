@@ -145,6 +145,27 @@ mxe.db.schemaowner=MAXIMO
 mxe.db.DB2sslConnection=false
 mxe.logging.CorrelationEnabled=0
 ```
+**Oracle**
+
+Remove DB2 config
+
+```PROP
+mxe.db.url
+mxe.db.driver
+mxe.db.user
+mxe.db.password
+mxe.db.schemaowner
+mxe.db.DB2sslConnection
+```
+Add the following and modify the values accordingly:
+
+```PROP
+mxe.db.url=jdbc:oracle:thin:@maximo:1521/OMDB
+mxe.db.driver=oracle.jdbc.OracleDriver
+mxe.db.user=MAXIMO
+mxe.db.password=LabMachine4@Training
+mxe.db.schemaowner=MAXIMO
+```
 
 **MSSQL**
 
