@@ -34,11 +34,16 @@ Server restart is required.
 
 Navigate to _System Properties_ under _Platform Configuration_
 
-| Key            | Value              |
-| -------------- | ------------------ |
-| mail.smtp.host | smtp.gmail.com     |
-| mail.smtp.port | 465                |
-| mxe.adminEmail | `<valid email id>` |
+| Syastem Property | Value |
+|------------------|-------|
+| |Attributes|Value| md.jawahar@maximo.com|
+|mxe.esigresetemailfrom|md.jawahar@maximo.com|
+|mail.smtp.host|maximo.com|
+|mail.smtp.port|3025|
+|mail.smtp.ssl.enable|false|
+|mail.smtp.starttls.enable|false|
+|mxe.smtp.user|md.jawahar@maximo.com|
+|mxe.adminEmail|md.jawahar@maximo.com|
 
 - Navigate to Database Configuration under Platform Configuration. Select "_Manage Admin Mode_".
 - Set _Number of Administrative Sessions Allowed_ and _Number of Minutes for User Logout_ to 5.
