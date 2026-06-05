@@ -34,8 +34,22 @@ Make the following entry:
 127.0.0.1       maximo maximo.com
 ```
 
+**Podman**
+
 ```CMD
-docker run -d --name maximo-dms -p 3025:25 -p 3143:143 --hostname maximo --domainname maximo.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+podman run -d --name maximo-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=maximo -e DOMAINNAME=maximo.com -v dms-data:/var/mail  -v dms-state:/var/mail-state dms-config:/tmp/docker-mailserver/  mailserver/docker-mailserver:latest
+```
+```CMD
+podman exec -it maximo-dms setup email add md.jawahar@maximo.com password
+```
+```CMD
+podman exec -it maximo-dms setup email add azmi@maximo.com password
+```
+
+**Docker**
+
+```CMD
+docker run -d --name maximo-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname maximo --domainname maximo.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 
 ```CMD
