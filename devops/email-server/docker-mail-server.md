@@ -18,7 +18,7 @@ If Docker Email server is already installed, remove the container.
 Replace docker with podman if docker runtime is used.
 
 ```CMD
-docker rm -f cdy-dms
+docker rm -f codersyacht-dms
 ```
 ```CMD
 docker volume rm dms-data dms-state dms-config
@@ -42,33 +42,33 @@ E --> |Yes| F[End]
 Edit /etc/hosts file in the system where the docker email server is intended to be installed.
 Make the following entry:
 ```
-127.0.0.1       cdy cdy.com
+127.0.0.1       codersyacht codersyacht.com
 ```
 
 
 **Docker**
 
 ```CMD
-docker run -d --name cdy-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname mail.cdy.com --domainname cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+docker run -d --name codersyacht-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname mail.codersyacht.com --domainname codersyacht.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 
 ```CMD
-docker exec -it cdy-dms setup email add md.jawahar@cdy.com password
+docker exec -it codersyacht-dms setup email add md.jawahar@codersyacht.com password
 ```
 ```CMD
-docker exec -it cdy-dms setup email add azmi@cdy.com password
+docker exec -it codersyacht-dms setup email add azmi@codersyacht.com password
 ```
 
 **Podman**
 
 ```CMD
-podman run -d --name cdy-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=mail.cdy.com -e DOMAINNAME=cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+podman run -d --name codersyacht-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=mail.codersyacht.com -e DOMAINNAME=codersyacht.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 ```CMD
-podman exec -it cdy-dms setup email add md.jawahar@cdy.com password
+podman exec -it codersyacht-dms setup email add md.jawahar@codersyacht.com password
 ```
 ```CMD
-podman exec -it cdy-dms setup email add azmi@cdy.com password
+podman exec -it codersyacht-dms setup email add azmi@codersyacht.com password
 ```
 
 
