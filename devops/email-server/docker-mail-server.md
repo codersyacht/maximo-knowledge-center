@@ -13,6 +13,17 @@ Installation of Docker Email server.
 |--|--|
 | Docker Installation |[here](/maximo/docs/administration/sets/01-item-set.md)|
 
+If Docker Email server is already installed, remove the container. 
+
+Replace docker with podman if docker runtime is used.
+
+```CMD
+docker rm -f maximo-dms
+```
+```CMD
+docker volume rm dms-data dms-state dms-config
+```
+
 ## Process Diagram
 
 ```mermaid
@@ -31,37 +42,41 @@ E --> |Yes| F[End]
 Edit /etc/hosts file in the system where the docker email server is intended to be installed.
 Make the following entry:
 ```
-127.0.0.1       maximo maximo.com
+127.0.0.1       cdy cdy.com
+```
+
+
+**Docker**
+
+```CMD
+docker run -d --name cdy-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname cdy --domainname cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+```
+
+```CMD
+docker exec -it cdy-dms setup email add md.jawahar@cdy.com password
+```
+```CMD
+docker exec -it cdy-dms setup email add azmi@cdy.com password
 ```
 
 **Podman**
 
 ```CMD
-podman run -d --name maximo-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=maximo -e DOMAINNAME=maximo.com -v dms-data:/var/mail  -v dms-state:/var/mail-state dms-config:/tmp/docker-mailserver/  mailserver/docker-mailserver:latest
+podman run -d --name cdy-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=cdy -e DOMAINNAME=cdy.com -v dms-data:/var/mail  -v dms-state:/var/mail-state dms-config:/tmp/docker-mailserver/  mailserver/docker-mailserver:latest
 ```
 ```CMD
-podman exec -it maximo-dms setup email add md.jawahar@maximo.com password
+podman exec -it cdy-dms setup email add md.jawahar@cdy.com password
 ```
 ```CMD
-podman exec -it maximo-dms setup email add azmi@maximo.com password
+podman exec -it cdy-dms setup email add azmi@cdy.com password
 ```
 
-**Docker**
-
-```CMD
-docker run -d --name maximo-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname maximo --domainname maximo.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
-```
-
-```CMD
-docker exec -it maximo-dms setup email add md.jawahar@maximo.com password
-```
-```CMD
-docker exec -it maximo-dms setup email add azmi@maximo.com password
-```
 
 ## Success Metric
 
 The Docker Email Server container should be up and running.
+
+Replace docker with podman if docker runtime is used.
 
 ```CMD
 docker ps
