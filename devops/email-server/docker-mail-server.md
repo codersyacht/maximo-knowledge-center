@@ -42,7 +42,7 @@ E --> |Yes| F[End]
 Edit /etc/hosts file in the system where the docker email server is intended to be installed.
 Make the following entry:
 ```
-127.0.0.1       codersyacht codersyacht.com
+127.0.0.1       codersyacht.com mail.codersyacht.com
 ```
 
 
