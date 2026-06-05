@@ -38,7 +38,7 @@ Navigate to _System Properties_ under _Platform Configuration_
 |------------------|-------|
 | |Attributes|Value| maxadmin@codersyacht.com|
 |mxe.esigresetemailfrom|maxadmin@codersyacht.com|
-|mail.smtp.host|mail.maximo.com|
+|mail.smtp.host|mail.codersyacht.com|
 |mail.smtp.port|3025|
 |mail.smtp.ssl.enable|false|
 |mail.smtp.starttls.enable|false|
