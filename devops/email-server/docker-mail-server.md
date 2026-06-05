@@ -18,7 +18,7 @@ If Docker Email server is already installed, remove the container.
 Replace docker with podman if docker runtime is used.
 
 ```CMD
-docker rm -f maximo-dms
+docker rm -f cdy-dms
 ```
 ```CMD
 docker volume rm dms-data dms-state dms-config
