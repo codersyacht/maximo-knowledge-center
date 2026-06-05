@@ -38,24 +38,24 @@ Click _Setup Anorther Account - Email_.
 |Attribute | Value |
 |---|---|
 | Full Name | Jawahar Hussain |
-| Email Address | md.jawahar@cdy.com |
+| Email Address | md.jawahar@codersyacht.com |
 | Protocol | IMAP |
-| Hostname | mail.cdy.com |
+| Hostname | mail.codersyacht.com |
 | Port | 3143 |
 | Connection Security | None |
 | Authentication Method | Normal Password |
-| Username | md.jawahar@cdy.com |
+| Username | md.jawahar@codersyacht.com |
 
 Continue.
 
 |Attribute | Value |
 |---|---|
 | Protocol | SMTP |
-| Hostname | mail.cdy.com |
+| Hostname | mail.codersyacht.com |
 | Port | 3025 |
 | Connection Security | None |
 | Authentication Method | Normal Password |
-| Username | md.jawahar@cdy.com |
+| Username | md.jawahar@codersyacht.com |
 
 - Click Test.
 - The result should be The following settings were found by probing the given server:.
@@ -67,9 +67,9 @@ Add another account.
 |Attribute | Value |
 |---|---|
 | Full Name | Amirul Azmi |
-| Email Address | azmi@cdy.com |
+| Email Address | azmi@codersyacht.com |
 | Protocol | IMAP |
-| Hostname | mail.cdy.com |
+| Hostname | mail.codersyacht.com |
 | Port | 3143 |
 | Connection Security | None |
 | Authentication Method | Normal Password |
@@ -80,11 +80,11 @@ Continue.
 |Attribute | Value |
 |---|---|
 | Protocol | SMTP |
-| Hostname | mail.cdy.com |
+| Hostname | mail.codersyacht.com |
 | Port | 3025 |
 | Connection Security | None |
 | Authentication Method | Normal Password |
-| Username | azmi@cdy.com |
+| Username | azmi@codersyacht.com |
 
 - Click Test.
 - The result should be The following settings were found by probing the given server:.
