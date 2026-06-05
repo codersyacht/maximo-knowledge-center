@@ -49,7 +49,7 @@ Make the following entry:
 **Docker**
 
 ```CMD
-docker run -d --name cdy-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname cdy --domainname cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+docker run -d --name cdy-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname mail.cdy.com --domainname cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 
 ```CMD
@@ -62,7 +62,7 @@ docker exec -it cdy-dms setup email add azmi@cdy.com password
 **Podman**
 
 ```CMD
-podman run -d --name cdy-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=cdy -e DOMAINNAME=cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+podman run -d --name cdy-dms -p 3025:25  -p 3143:143 -p 3993:993 -e OVERRIDE_HOSTNAME=mail.cdy.com -e DOMAINNAME=cdy.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 ```CMD
 podman exec -it cdy-dms setup email add md.jawahar@cdy.com password
