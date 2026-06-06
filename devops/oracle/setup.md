@@ -18,7 +18,7 @@ podman run -d --name appdb -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@T
 podman logs -f appdb
 ```
 ```CMD
-podman exec -it appdbo sqlplus / as sysdba
+podman exec -it appdb sqlplus / as sysdba
 ```
 ```CMD
 ALTER PLUGGABLE DATABASE FREEPDB1 CLOSE IMMEDIATE;
