@@ -15,10 +15,10 @@ podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 podman run -d --name appdb -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 ```CMD
-podman logs -f oracle-maximo
+podman logs -f appdb
 ```
 ```CMD
-podman exec -it oracle-maximo sqlplus / as sysdba
+podman exec -it appdbo sqlplus / as sysdba
 ```
 ```CMD
 ALTER PLUGGABLE DATABASE FREEPDB1 CLOSE IMMEDIATE;
@@ -48,19 +48,22 @@ ALTER SYSTEM SET open_cursors = 1000 SCOPE = BOTH;
 ALTER SYSTEM SET cursor_sharing = FORCE SCOPE = BOTH;
 ```
 ```CMD
-CREATE TABLESPACE maxdata DATAFILE 'maxdata.dbf' SIZE 1000M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
+CREATE TABLESPACE oradata DATAFILE 'oradata.dbf' SIZE 1000M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
 ```
 ```CMD
-CREATE TABLESPACE maxindex DATAFILE 'maxindex.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
+CREATE TABLESPACE oraindex DATAFILE 'oraindex.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
 ```
 ```CMD
-CREATE USER maximo  IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE maxdata TEMPORARY TABLESPACE maxtemp QUOTA UNLIMITED ON maxdata QUOTA UNLIMITED ON maxindex;
+CREATE TABLESPACE oratemp DATAFILE 'oratemp.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
 ```
 ```CMD
-GRANT ALL PRIVILEGES TO maximo;
+CREATE USER oraadmin IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE oradata TEMPORARY TABLESPACE oratemp QUOTA UNLIMITED ON oradata QUOTA UNLIMITED ON oraindex QUOTA UNLIMITED ON oratemp;
 ```
 ```CMD
-GRANT DBA TO maximo;
+GRANT ALL PRIVILEGES TO a;
+```
+```CMD
+GRANT DBA TO appdb;
 ```
 ```CMD
 @?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO;
