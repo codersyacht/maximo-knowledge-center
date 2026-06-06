@@ -72,6 +72,6 @@ GRANT DBA TO oraadmin;
 @?/ctx/admin/defaults/drdefus.sql;
 ```
 ```CMD
-GRANT EXECUTE ON ctxsys.ctx_ddl TO maximo;
+GRANT EXECUTE ON ctxsys.ctx_ddl TO oraadmin;
 ```
 
