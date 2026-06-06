@@ -1,4 +1,13 @@
 
+## Prerequisite
+
+```CMD
+podman machine init --cpus 4 --memory 4096 --disk-size 40
+```
+```CMD
+podman machine start
+```
+
 ```CMD
 podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
