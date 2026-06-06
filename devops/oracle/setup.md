@@ -63,7 +63,7 @@ CREATE USER oraadmin IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE ora
 GRANT ALL PRIVILEGES TO oraadmin;
 ```
 ```CMD
-GRANT DBA TO appdb;
+GRANT DBA TO oraadmin;
 ```
 ```CMD
 @?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO;
