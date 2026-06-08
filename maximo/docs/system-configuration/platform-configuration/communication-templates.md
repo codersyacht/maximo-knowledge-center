@@ -10,13 +10,13 @@
 
 | Syastem Property | Value |
 |------------------|-------|
-|mxe.esigresetemailfrom|maxadmin@maximo.com|
+|mxe.esigresetemailfrom|maxadmin@codersyacht.com|
 |mail.smtp.host|mail.codersyacht.com|
 |mail.smtp.port|3025|
 |mail.smtp.ssl.enable|false|
 |mail.smtp.starttls.enable|false|
-|mxe.smtp.user|maxadmin@maximo.com|
-|mxe.adminEmail|maxadmin@maximo.com|
+|mxe.smtp.user|maxadmin@codersyacht.com|
+|mxe.adminEmail|maxadmin@codersyacht.com|
 
 ## Process Diagram
 
@@ -32,7 +32,7 @@
 |Description|NOTIFICATION|
 |Applies To| SR|
 |Accessible From| ALL |
-|Send From| md.jawahar@maximo.com |
+|Send From| maxadmin@codersyacht.com |
 |Subject|Service Request :ticketid|
 |Message|New Service Request with ticket id: :ticketid has been created.|
 
