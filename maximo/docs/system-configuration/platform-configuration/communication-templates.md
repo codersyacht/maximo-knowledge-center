@@ -10,14 +10,13 @@
 
 | Syastem Property | Value |
 |------------------|-------|
-| |Attributes|Value| md.jawahar@maximo.com|
-|mxe.esigresetemailfrom|md.jawahar@maximo.com|
-|mail.smtp.host|maximo.com|
+|mxe.esigresetemailfrom|maxadmin@maximo.com|
+|mail.smtp.host|mail.codersyacht.com|
 |mail.smtp.port|3025|
 |mail.smtp.ssl.enable|false|
 |mail.smtp.starttls.enable|false|
-|mxe.smtp.user|md.jawahar@maximo.com|
-|mxe.adminEmail|md.jawahar@maximo.com|
+|mxe.smtp.user|maxadmin@maximo.com|
+|mxe.adminEmail|maxadmin@maximo.com|
 
 ## Process Diagram
 
