@@ -44,6 +44,7 @@ Navigate to _System Properties_ under _Platform Configuration_
 |mail.smtp.starttls.enable|false|
 |mxe.smtp.user|maxadmin@codersyacht.com|
 |mxe.adminEmail|maxadmin@codersyacht.com|
+|mxe.smtp.password|password|
 
 - Navigate to Database Configuration under Platform Configuration. Select "_Manage Admin Mode_".
 - Set _Number of Administrative Sessions Allowed_ and _Number of Minutes for User Logout_ to 5.
