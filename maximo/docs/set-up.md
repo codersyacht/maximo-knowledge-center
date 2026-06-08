@@ -67,4 +67,8 @@ Server restart is required.
 - Click _Turn Admin Mode On_.
 Provide user _password_ and the _reason for change_.
 
+### Disable all cron tasks
 
+```SQL
+UPDATE CRONTASKINSTANCE SET ACTIVE = 0;
+```
