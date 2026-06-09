@@ -28,8 +28,8 @@ Not applicable
 |Access to Inactive Sites|Enable|
 |System Account For Manage|Enable|
 
-Under Authentication choose User Name as Same as User ID, Password as Custom.
-Enter New Password and Confirm Password.
+- Under Authentication choose User Name as Same as User ID, Password as Custom.
+- Enter New Password and Confirm Password.
 
-Under the 2. Access & license, select all applications.
-Match the default application settings and other settings as that of maxadmin.
+- Under the 2. Access & license, select all applications.
+- Match the default application settings and other settings as that of maxadmin.
