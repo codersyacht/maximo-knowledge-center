@@ -8,7 +8,17 @@
 
 ## Prerequisite
 
+Two users with e-mail ids mapped to the respective user account.
+In this example the users are maxadmin (default user) and jawahar. The email id are:
 
+|User|Email Id|
+|----|--------|
+|maxadmin|maxadmin@codersyacht.com|
+|jawahar|md.jawahar@codersyacht.com|
+
+|Action|Reference|
+|------|---------|
+|Create new user||
 
 ## Process Diagram
 
