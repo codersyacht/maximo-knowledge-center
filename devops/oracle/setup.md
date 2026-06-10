@@ -131,22 +131,14 @@ ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 ALTER SESSION SET CONTAINER = MAXIMO;
 
 ```
-```CMD
-ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 
-```
 ```CMD
 @?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO
 ```
 ```CMD
 SELECT comp_name, status FROM dba_registry WHERE comp_name = 'Oracle Text';
 ```
-```SQL
-SELECT comp_name, status FROM dba_registry WHERE comp_name = 'Oracle Text';
-```
-```CMD
-@?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO;
-```
+
 ```
 BEGIN
   ctx_ddl.create_preference('MAXIMO_STORAGE', 'BASIC_STORAGE');
@@ -161,6 +153,10 @@ END;
 ```CMD
 GRANT EXECUTE ON ctxsys.ctx_ddl TO maximo;
 ```
+```CMD
+ALTER SESSION SET CONTAINER = MAXIMO;
+```
+
 ```CMD
 call ctx_ddl.drop_preference('global_lexer');
 call ctx_ddl.drop_preference('default_lexer');
