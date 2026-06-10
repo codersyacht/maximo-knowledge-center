@@ -117,15 +117,48 @@ ALTER PLUGGABLE DATABASE MAXIMO CLOSE;
 ```CMD
 ALTER PLUGGABLE DATABASE MAXIMO OPEN;
 ```
+```CMD
+CONNECT maximo/"LabMachine4@Training"@//localhost:1521/MAXIMO
+```
+```CMD
+CONNECT / AS SYSDBA
+```
+```CMD
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 
+```
+```CMD
+ALTER SESSION SET CONTAINER = MAXIMO;
 
+```
+```CMD
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+
+```
+```CMD
+@?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO
+```
+```CMD
+SELECT comp_name, status FROM dba_registry WHERE comp_name = 'Oracle Text';
+```
+```SQL
+SELECT comp_name, status FROM dba_registry WHERE comp_name = 'Oracle Text';
+```
 ```CMD
 @?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO;
 ```
-```CMD
-@?/ctx/admin/defaults/drdefus.sql;
+```
+BEGIN
+  ctx_ddl.create_preference('MAXIMO_STORAGE', 'BASIC_STORAGE');
+  ctx_ddl.set_attribute('MAXIMO_STORAGE', 'I_TABLE_CLAUSE', 'tablespace MAXDATA LOB(token_info) store as (tablespace MAXLOBS enable storage in row)');
+  ctx_ddl.set_attribute('MAXIMO_STORAGE', 'I_INDEX_CLAUSE', 'tablespace MAXINDX compress 2');
+  ctx_ddl.set_attribute('MAXIMO_STORAGE', 'K_TABLE_CLAUSE', 'tablespace MAXINDX');
+  ctx_ddl.set_attribute('MAXIMO_STORAGE', 'R_TABLE_CLAUSE', 'tablespace MAXDATA LOB(data) store as (tablespace MAXLOBS cache)');
+  ctx_ddl.set_attribute('MAXIMO_STORAGE', 'N_TABLE_CLAUSE', 'tablespace MAXINDX');
+END;
+/
 ```
 ```CMD
-GRANT EXECUTE ON ctxsys.ctx_ddl TO oraadmin;
+GRANT EXECUTE ON ctxsys.ctx_ddl TO maximo;
 ```
 
