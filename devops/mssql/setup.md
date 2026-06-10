@@ -14,6 +14,8 @@ Either existing container or a new container can be created.
 
 **Using Existing Container**
 
+* podman run -d --name sql2022 --hostname sql2022  -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=LabMachine4@Training"  -p 1433:1433  mcr.microsoft.com/azure-sql-edge:latest
+
 ```CMD
 podman pull codersyacht/maximo-mssql:V1
 ```
