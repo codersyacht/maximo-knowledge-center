@@ -8,6 +8,8 @@ podman machine init --cpus 4 --memory 4096 --disk-size 40
 podman machine start
 ```
 
+## Install Oracle Container
+
 ```CMD
 podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
@@ -17,15 +19,23 @@ podman run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@T
 ```CMD
 podman logs -f ORADB
 ```
+
+## Connect as SYSDBA
+
 ```CMD
 podman exec -it ORADB sqlplus / as sysdba
 ```
+
+## Delete Existing Default DB FREEPDB1 (Optional Step)
+
 ```CMD
 ALTER PLUGGABLE DATABASE FREEPDB1 CLOSE IMMEDIATE;
 ```
 ```CMD
 DROP PLUGGABLE DATABASE FREEPDB1 INCLUDING DATAFILES;
 ```
+## Create & Configure Database Maximo
+
 ```CMD
 CREATE PLUGGABLE DATABASE MAXIMO ADMIN USER pdbadmin IDENTIFIED BY password FILE_NAME_CONVERT=('/opt/oracle/oradata/FREE/pdbseed/', '/opt/oracle/oradata/FREE/appdb/');
 ```
@@ -35,43 +45,7 @@ ALTER PLUGGABLE DATABASE MAXIMO OPEN READ WRITE;
 ```CMD
 ALTER PLUGGABLE DATABASE ALL SAVE STATE;
 ```
-```CMD
-ALTER SESSION SET CONTAINER = MAXIMO;
-```
-```CMD
-ALTER SYSTEM SET nls_length_semantics = CHAR SCOPE = BOTH;
-```
-```CMD
-ALTER SYSTEM SET open_cursors = 1000 SCOPE = BOTH;
-```
-```CMD
-ALTER SYSTEM SET cursor_sharing = FORCE SCOPE = BOTH;
-```
-```CMD
-CREATE TABLESPACE MAXDATA DATAFILE 'maxdata.dbf' SIZE 1000M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
-```
-```CMD
-CREATE TABLESPACE MAXINDEX DATAFILE 'maxindex.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
-```
-```CMD
-CREATE TEMPORARY TABLESPACE MAXTEMP TEMPFILE 'maxtemp.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
-```
-```
-CREATE TABLESPACE MAXLOBS DATAFILE 'maxlobs.dbf' SIZE 512M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
-```
-```CMD
-CREATE USER maximo IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE MAXDATA TEMPORARY TABLESPACE MAXTEMP QUOTA UNLIMITED ON MAXDATA QUOTA UNLIMITED ON MAXINDEX QUOTA UNLIMITED ON MAXLOBS;
-```
-```CMD
-GRANT ALL PRIVILEGES TO maximo;
-```
-```CMD
-GRANT DBA TO maximo;
-```
 
-```CMD
-ALTER SESSION SET CONTAINER = CDB$ROOT;
-```
 ```CMD
 ALTER SYSTEM SET processes = 500 SCOPE=SPFILE;
 ```
@@ -91,13 +65,13 @@ STARTUP;
 ALTER SESSION SET CONTAINER = MAXIMO;
 ```
 ```CMD
-ALTER SYSTEM SET nls_length_semantics = CHAR SCOPE=SPFILE;
+ALTER SYSTEM SET nls_length_semantics = CHAR SCOPE = BOTH;
 ```
 ```CMD
-ALTER SYSTEM SET open_cursors = 1000 SCOPE=BOTH;
+ALTER SYSTEM SET open_cursors = 1000 SCOPE = BOTH;
 ```
 ```CMD
-ALTER SYSTEM SET cursor_sharing = FORCE SCOPE=BOTH;
+ALTER SYSTEM SET cursor_sharing = FORCE SCOPE = BOTH;
 ```
 ```CMD
 ALTER SYSTEM SET undo_retention = 900 SCOPE=BOTH;
@@ -111,26 +85,43 @@ ALTER SYSTEM SET nls_language = 'AMERICAN' SCOPE=SPFILE;
 ```CMD
 ALTER SYSTEM SET nls_territory = 'AMERICA' SCOPE=SPFILE;
 ```
+
+## Create Tablespaces for Maximo
+
 ```CMD
-ALTER PLUGGABLE DATABASE MAXIMO CLOSE;
+CREATE TABLESPACE MAXDATA DATAFILE 'maxdata.dbf' SIZE 1000M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
 ```
 ```CMD
-ALTER PLUGGABLE DATABASE MAXIMO OPEN;
+CREATE TABLESPACE MAXINDEX DATAFILE 'maxindex.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
 ```
 ```CMD
-CONNECT maximo/"LabMachine4@Training"@//localhost:1521/MAXIMO
+CREATE TEMPORARY TABLESPACE MAXTEMP TEMPFILE 'maxtemp.dbf' SIZE 500M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED;
+```
+```
+CREATE TABLESPACE MAXLOBS DATAFILE 'maxlobs.dbf' SIZE 512M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
+```
+
+## Create User maximo & Grant Access
+
+```CMD
+CREATE USER maximo IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE MAXDATA TEMPORARY TABLESPACE MAXTEMP QUOTA UNLIMITED ON MAXDATA QUOTA UNLIMITED ON MAXINDEX QUOTA UNLIMITED ON MAXLOBS;
 ```
 ```CMD
-CONNECT / AS SYSDBA
+GRANT ALL PRIVILEGES TO maximo;
 ```
+```CMD
+GRANT DBA TO maximo;
+```
+
+## Install Oracle Text
+
 ```CMD
 ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
-
 ```
-```CMD
-ALTER SESSION SET CONTAINER = MAXIMO;
 
-```
+//```CMD
+//ALTER SESSION SET CONTAINER = MAXIMO;
+//```
 
 ```CMD
 @?/ctx/admin/catctx.sql change_on_install SYSAUX TEMP NO
@@ -154,8 +145,10 @@ END;
 GRANT EXECUTE ON ctxsys.ctx_ddl TO maximo;
 ```
 ```CMD
-ALTER SESSION SET CONTAINER = MAXIMO;
+grant select_catalog_role to maximo;
 ```
+
+## Configure multi-language lexers + finalize
 
 ```CMD
 call ctx_ddl.drop_preference('global_lexer');
@@ -197,16 +190,10 @@ call ctx_ddl.add_sub_lexer('global_lexer','italian','italian_lexer','it');
 call ctx_ddl.add_sub_lexer('global_lexer','spanish','spanish_lexer','es');
 call ctx_ddl.add_sub_lexer('global_lexer','portuguese','portu_lexer',null);
 ```
-
-```CMD
-alter session set "_ORACLE_SCRIPT" = true;
-```
 ```CMD
 @?/ctx/admin/defaults/drdefus.sql;
 ```
-```CMD
-grant select_catalog_role to maximo
-```
+## Commit
 
 ```CMD
 commit;
