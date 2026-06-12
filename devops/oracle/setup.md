@@ -27,6 +27,14 @@ docker pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 **Linux**
+
+```CMD
+docker pull docker.io/codersyacht/maximo-oracle-linux:v1
+```
+```CMD
+docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training docker.io/codersyacht/maximo-oracle-linux:v1
+```
+
 ```CMD
 docker pull container-registry.oracle.com/database/free:latest
 ```
