@@ -4,10 +4,10 @@
 ## Prerequisite
 
 ```CMD
-podman machine init --cpus 4 --memory 4096 --disk-size 40
+docker machine init --cpus 4 --memory 4096 --disk-size 40
 ```
 ```CMD
-podman machine start
+docker machine start
 ```
 
 ## Install Oracle Container
@@ -15,28 +15,28 @@ podman machine start
 
 **Mac**
 ```CMD
-podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
+docker pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 ```CMD
-podman run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
+docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 **Linux**
 ```CMD
-podman pull container-registry.oracle.com/database/free:latest
+docker pull container-registry.oracle.com/database/free:latest
 ```
 ```CMD
-podman run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:latest
+docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:latest
 ```
 ### Review Logs
 
 ```CMD
-podman logs -f ORADB
+docker logs -f ORADB
 ```
 
 ### Connect as SYSDBA
 
 ```CMD
-podman exec -it ORADB sqlplus / as sysdba
+docker exec -it ORADB sqlplus / as sysdba
 ```
 
 ### Delete Existing Default DB FREEPDB1 (Optional Step)
@@ -207,7 +207,27 @@ call ctx_ddl.add_sub_lexer('global_lexer','portuguese','portu_lexer',null);
 @?/ctx/admin/defaults/drdefus.sql;
 ```
 ### Commit
-
 ```CMD
 commit;
+```
+```CMD
+exit
+```
+
+### Commit the Container and upload to docker hub
+
+```CMD
+docker commit ORADB maximo-oracle-linux:v1
+```
+```CMD
+docker tag maximo-oracle-linux:v1 codersyacht/maximo-oracle-linux:v1
+```
+```CMD
+docker rmi maximo-oracle-linux:v1
+```
+```CMD
+docker images
+```
+```CMD
+docker push codersyacht/maximo-oracle-linux:v1
 ```
