@@ -1,4 +1,6 @@
 
+### Author: Mohamed Jawahar Hussain
+
 ## Prerequisite
 
 ```CMD
@@ -10,23 +12,34 @@ podman machine start
 
 ## Install Oracle Container
 
+
+**Mac**
 ```CMD
 podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 ```CMD
 podman run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
+**Linux**
+```CMD
+podman pull container-registry.oracle.com/database/free:latest
+```
+```CMD
+podman run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:latest
+```
+### Review Logs
+
 ```CMD
 podman logs -f ORADB
 ```
 
-## Connect as SYSDBA
+### Connect as SYSDBA
 
 ```CMD
 podman exec -it ORADB sqlplus / as sysdba
 ```
 
-## Delete Existing Default DB FREEPDB1 (Optional Step)
+### Delete Existing Default DB FREEPDB1 (Optional Step)
 
 ```CMD
 ALTER PLUGGABLE DATABASE FREEPDB1 CLOSE IMMEDIATE;
@@ -34,7 +47,7 @@ ALTER PLUGGABLE DATABASE FREEPDB1 CLOSE IMMEDIATE;
 ```CMD
 DROP PLUGGABLE DATABASE FREEPDB1 INCLUDING DATAFILES;
 ```
-## Create & Configure Database Maximo
+### Create & Configure Database Maximo
 
 ```CMD
 CREATE PLUGGABLE DATABASE MAXIMO ADMIN USER pdbadmin IDENTIFIED BY password FILE_NAME_CONVERT=('/opt/oracle/oradata/FREE/pdbseed/', '/opt/oracle/oradata/FREE/appdb/');
@@ -86,7 +99,7 @@ ALTER SYSTEM SET nls_language = 'AMERICAN' SCOPE=SPFILE;
 ALTER SYSTEM SET nls_territory = 'AMERICA' SCOPE=SPFILE;
 ```
 
-## Create Tablespaces for Maximo
+### Create Tablespaces for Maximo
 
 ```CMD
 CREATE TABLESPACE MAXDATA DATAFILE 'maxdata.dbf' SIZE 1000M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
@@ -101,7 +114,7 @@ CREATE TEMPORARY TABLESPACE MAXTEMP TEMPFILE 'maxtemp.dbf' SIZE 500M AUTOEXTEND 
 CREATE TABLESPACE MAXLOBS DATAFILE 'maxlobs.dbf' SIZE 512M AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
 ```
 
-## Create User maximo & Grant Access
+### Create User maximo & Grant Access
 
 ```CMD
 CREATE USER maximo IDENTIFIED BY "LabMachine4@Training" DEFAULT TABLESPACE MAXDATA TEMPORARY TABLESPACE MAXTEMP QUOTA UNLIMITED ON MAXDATA QUOTA UNLIMITED ON MAXINDEX QUOTA UNLIMITED ON MAXLOBS;
@@ -113,7 +126,7 @@ GRANT ALL PRIVILEGES TO maximo;
 GRANT DBA TO maximo;
 ```
 
-## Install Oracle Text
+### Install Oracle Text
 
 ```CMD
 ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
@@ -148,7 +161,7 @@ GRANT EXECUTE ON ctxsys.ctx_ddl TO maximo;
 grant select_catalog_role to maximo;
 ```
 
-## Configure multi-language lexers + finalize
+### Configure multi-language lexers + finalize
 
 ```CMD
 call ctx_ddl.drop_preference('global_lexer');
@@ -193,7 +206,7 @@ call ctx_ddl.add_sub_lexer('global_lexer','portuguese','portu_lexer',null);
 ```CMD
 @?/ctx/admin/defaults/drdefus.sql;
 ```
-## Commit
+### Commit
 
 ```CMD
 commit;
