@@ -212,7 +212,8 @@ call ctx_ddl.add_sub_lexer('global_lexer','portuguese','portu_lexer',null);
 ```CMD
 @?/ctx/admin/defaults/drdefus.sql;
 ```
-### Commit
+### Commit & Exit SQLplus
+
 ```CMD
 commit;
 ```
