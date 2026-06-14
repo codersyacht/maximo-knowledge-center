@@ -235,7 +235,7 @@ exit
 docker commit ORADB maximo-oracle-linux:base
 ```
 ```CMD
-docker tag maximo-oracle-linux:v1 codersyacht/maximo-oracle-linux:base
+docker tag maximo-oracle-linux:base codersyacht/maximo-oracle-linux:base
 ```
 ```CMD
 docker rmi maximo-oracle-linux:base
