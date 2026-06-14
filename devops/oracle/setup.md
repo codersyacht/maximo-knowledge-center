@@ -232,17 +232,17 @@ exit
 ### Commit the Container and upload to docker hub
 
 ```CMD
-docker commit ORADB maximo-oracle-linux:v1
+docker commit ORADB maximo-oracle-linux:base
 ```
 ```CMD
-docker tag maximo-oracle-linux:v1 codersyacht/maximo-oracle-linux:v1
+docker tag maximo-oracle-linux:v1 codersyacht/maximo-oracle-linux:base
 ```
 ```CMD
-docker rmi maximo-oracle-linux:v1
+docker rmi maximo-oracle-linux:base
 ```
 ```CMD
 docker images
 ```
 ```CMD
-docker push codersyacht/maximo-oracle-linux:v1
+docker push codersyacht/maximo-oracle-linux:base
 ```
