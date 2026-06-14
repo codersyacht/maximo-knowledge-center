@@ -29,10 +29,10 @@ docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@T
 **Linux**
 
 ```CMD
-docker pull docker.io/codersyacht/maximo-oracle-linux:v1
+docker pull docker.io/codersyacht/maximo-oracle-linux:base
 ```
 ```CMD
-docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training docker.io/codersyacht/maximo-oracle-linux:v1
+docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training docker.io/codersyacht/maximo-oracle-linux:base
 ```
 
 ```CMD
