@@ -226,6 +226,15 @@ call ctx_ddl.add_sub_lexer('global_lexer','portuguese','portu_lexer',null);
 commit;
 ```
 ```CMD
+ALTER SESSION SET CONTAINER = CDB$ROOT;
+```
+```CMD
+ALTER PLUGGABLE DATABASE ALL CLOSE;
+```
+```CMD
+SHUTDOWN IMMEDIATE;
+```
+```CMD
 exit
 ```
 
