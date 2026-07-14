@@ -49,7 +49,7 @@ Make the following entry:
 **Docker**
 
 ```CMD
-docker run -d --name codersyacht-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname mail.codersyacht.com --domainname codersyacht.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
+docker run -d --name codersyacht-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostname mail.codersyacht.com --domainname codersyacht.com -e OVERRIDE_HOSTNAME=mail.codersyacht.com -v dms-config:/tmp/docker-mailserver/ -v dms-data:/var/mail/ -v dms-state:/var/mail-state/ mailserver/docker-mailserver:latest
 ```
 
 ```CMD
