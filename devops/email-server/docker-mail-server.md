@@ -56,7 +56,7 @@ docker run -d --name codersyacht-dms -p 3025:25 -p 3143:143 -p 3993:993 --hostna
 docker exec -it codersyacht-dms setup email add md.jawahar@codersyacht.com password
 ```
 ```CMD
-docker exec -it codersyacht-dms setup email add azmi@codersyacht.com password
+docker exec -it codersyacht-dms setup email add maxadmin@codersyacht.com password
 ```
 
 **Podman**
