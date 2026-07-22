@@ -12,7 +12,7 @@ cd /home/admin/apps
 ```
 
 ```CMD
-wget -O java.tgz https://github.com/ibmruntimes/semeru17-certified-binaries/releases/download/jdk-17.0.16%2B8_openj9-0.53.0/ibm-semeru-certified-jdk_x64_linux_17.0.16.0.tar.gz
+wget -O java.tgz https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-certified-jdk_x64_linux_25.0.3.0.tar.gz
 ```
 
 ```CMD
