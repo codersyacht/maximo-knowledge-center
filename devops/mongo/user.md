@@ -10,7 +10,7 @@ mongosh --host codehub.dev.fyre.ibm.com --port 27017 admin
 ```
 With TLS:
 ```CMD
-mongosh --tls --host codehub.dev.fyre.ibm.com --port 27017 --tlsCAFile mongodb-cert.crt admin
+mongosh --host codehub.dev.fyre.ibm.com --tls --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt admin
 ```
 
 **Create mongodb user**
