@@ -71,5 +71,5 @@ mongosh --host codehub.dev.fyre.ibm.com --tls --tlsCAFile /etc/ssl/mongo/mongodb
 with authentication:
 
 ```CMD
-mongosh --tls --host codehub1.fyre.ibm.com --port 27017 --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt --authenticationDatabase "admin" -u "admin" -p "password" admin
+mongosh --tls --host codehub.dev.fyre.ibm.com --port 27017 --tlsCAFile /etc/ssl/mongo/mongodb-cert.crt --authenticationDatabase "admin" -u "admin" -p "password" admin
 ```
