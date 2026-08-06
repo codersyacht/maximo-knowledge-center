@@ -21,10 +21,10 @@ docker machine start
 
 **Mac**
 ```CMD
-docker pull container-registry.oracle.com/database/free:23.26.2.0-arm64
+podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 ```CMD
-docker run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
+podman run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 **Linux**
 
