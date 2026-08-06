@@ -24,7 +24,7 @@ docker machine start
 docker pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 ```CMD
-docker run -d --name ORADB -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
+docker run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training  container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 **Linux**
 
