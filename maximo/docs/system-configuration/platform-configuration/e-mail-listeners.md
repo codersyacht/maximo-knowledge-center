@@ -22,10 +22,6 @@ In this example the users are maxadmin (default user) and jawahar. The email id 
 |maxadmin|maxadmin@codersyacht.com|
 |jawahar|md.jawahar@codersyacht.com|
 
-|Action|Reference|
-|------|---------|
-|Create new user||
-
 ## Process Diagram
 
 ```mermaid
