@@ -8,6 +8,12 @@
 
 ## Prerequisite
 
+
+Edit /etc/hosts file in the system where the docker email server is intended to be installed. Make the following entry:
+```
+9.60.155.138    codersyacht.com mail.codersyacht.com
+```
+
 Two users with e-mail ids mapped to the respective user account.
 In this example the users are maxadmin (default user) and jawahar. The email id are:
 
