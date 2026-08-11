@@ -34,14 +34,7 @@ In this example the users are maxadmin (default user) and jawahar. The email id 
 
 ## Process Diagram
 
-```mermaid
-graph LR
-A[Begin]-->B[Choose Item Set]
-B-->C[Create Item]
-C-->D{Completed?}
-D--> |No| A 
-D--> |Yes| E[End]
-```
+NA
 
 ## Execution Steps
 
