@@ -39,12 +39,12 @@ D--> |Yes| E[End]
 
 |Attribute|Value|
 |--|--|
-|E-mail Address|md.jawahar@maximo.com|
-|Description|md.jawahar@maximo.com|
+|E-mail Address|md.jawahar@codersyacht.com|
+|Description|md.jawahar@codersyacht.com|
 |E-mail password|password|
-|Mail Server|maximo.com|
+|Mail Server|mail.codersyacht.com|
 |E-mail Folder|Inbox|
-|Administrator E-mail|md.jawahar@maximo.com|
+|Administrator E-mail|md.jawahar@codersyacht.com|
 |Preprocessor|psdi.common.emailstner.Preprocessor|
 |Object Key Delimiter|##|
 |Workflow Process|LSNRBP|
