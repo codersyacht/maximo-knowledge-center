@@ -7,6 +7,10 @@
 
 ## Prerequisite
 
+Edit /etc/hosts file in the system where the docker email server is intended to be installed. Make the following entry:
+```
+9.60.155.138    codersyacht.com mail.codersyacht.com
+```
 
 | Syastem Property | Value |
 |------------------|-------|
