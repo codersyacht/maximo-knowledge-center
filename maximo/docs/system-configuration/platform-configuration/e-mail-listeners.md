@@ -14,6 +14,16 @@ Edit /etc/hosts file in the system where the docker email server is intended to 
 9.60.155.138    codersyacht.com mail.codersyacht.com
 ```
 
+| Syastem Property | Value |
+|------------------|-------|
+|mxe.esigresetemailfrom|maxadmin@codersyacht.com|
+|mail.smtp.host|mail.codersyacht.com|
+|mail.smtp.port|3025|
+|mail.smtp.ssl.enable|false|
+|mail.smtp.starttls.enable|false|
+|mxe.smtp.user|maxadmin@codersyacht.com|
+|mxe.adminEmail|maxadmin@codersyacht.com|
+
 Two users with e-mail ids mapped to the respective user account.
 In this example the users are maxadmin (default user) and jawahar. The email id are:
 
