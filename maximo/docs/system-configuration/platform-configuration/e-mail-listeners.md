@@ -14,7 +14,7 @@ Edit /etc/hosts file in the system where the docker email server is intended to 
 9.60.155.138    codersyacht.com mail.codersyacht.com
 ```
 
-| Syastem Property | Value |
+| System Property | Value |
 |------------------|-------|
 |mxe.esigresetemailfrom|maxadmin@codersyacht.com|
 |mail.smtp.host|mail.codersyacht.com|
