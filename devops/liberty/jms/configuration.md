@@ -66,7 +66,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
             <feature>mdb-3.2</feature>
     </featureManager>
 
-    <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9090" httpsPort="9453" />
+    <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9091" httpsPort="9454" />
     <applicationManager autoExpand="true"/>
 
     <jmsQueueConnectionFactory jndiName="jms/maximo/int/cf/intcf" connectionManagerRef="mifjmsconfact">
