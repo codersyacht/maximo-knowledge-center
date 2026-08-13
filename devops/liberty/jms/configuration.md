@@ -15,7 +15,7 @@ Feature install the folllowing on the Liberty Server.
 - jmsMdb-3.2
 - mdb-3.2
 
- Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/liberty/admin/Feature-Installation.md) to install the above features. 
+ Follow the instruction [here](devops/liberty/admin/feature-Installation.md) to install the above features. 
 
 
 
