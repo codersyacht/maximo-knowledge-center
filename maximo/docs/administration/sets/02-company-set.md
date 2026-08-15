@@ -11,14 +11,7 @@ No prerequisite required.
 
 ## Process Diagram
 
-```mermaid
-graph LR
-A[Define Company] --> B[Select Company Set]
-B --> C[Select Company Currency]
-C --> D[Select Type]
-D --> E[Save]
-E --> F[Exit]
-```
+
 
 ## Execution Steps
 
