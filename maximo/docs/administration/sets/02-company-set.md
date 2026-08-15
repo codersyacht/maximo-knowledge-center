@@ -11,7 +11,12 @@ No prerequisite required.
 
 ## Process Diagram
 
-
+```mermaid
+graph LR
+A[Begin] -->B[ Choose Set Type as Company]
+B --> C[Create Company Set]
+C --> E[End]
+```
 
 ## Execution Steps
 
