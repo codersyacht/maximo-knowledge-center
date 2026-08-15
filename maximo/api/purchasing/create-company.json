@@ -1,0 +1,33 @@
+{
+  "api":
+  {
+            "name": "Create Company",
+            "url": "/maximo/oslc/os/mxvendormstr",
+            "method": "POST"
+  },
+  "headers":
+  {
+            "apikey": ""
+  },
+  "payload":
+        {
+            "spi:companysetid": "CDYCSET",
+            "spi:currencycode": "USD",
+            "spi:name": "Apple",
+            "spi:company": "Apple",
+            "spi:type_description": "Vendor",
+            "spi:type": "V",
+            "spi:changeby": "MAXADMIN",
+            "spi:vendorsendsinv": false,
+            "spi:ecommerceenabled": false,
+            "spi:punchoutenabled": false,
+            "spi:autoapproveinv": false,
+            "spi:disabled": false,
+            "spi:vendorsendsstatus": false,
+            "spi:plusamntloc": false,
+            "spi:autosendpocancel": false,
+            "spi:vendorsendsasn": false,
+            "spi:autoreceiveonasn": false,
+            "spi:inspectionrequired": false
+        }
+}
