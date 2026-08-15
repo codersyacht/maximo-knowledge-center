@@ -24,7 +24,7 @@ graph LR
 A[Define Company] --> B[Select Currency]
 B --> C[Select Company Set]
 C --> D[Save]
-D --> EExit]
+D --> E[Exit]
 ```
 
 ## Execution Steps
