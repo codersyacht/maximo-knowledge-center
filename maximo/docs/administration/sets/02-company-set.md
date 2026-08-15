@@ -13,9 +13,11 @@ No prerequisite required.
 
 ```mermaid
 graph LR
-A[Begin] -->B[ Choose Set Type as Company]
-B --> C[Create Company Set]
-C --> E[End]
+A[Define Company] --> B[Select Company Set]
+B --> C[Select Company Currency]
+C --> D[Select Type]
+D --> E[Save]
+E --> F[Exit]
 ```
 
 ## Execution Steps
