@@ -1,12 +1,12 @@
 
 
-# Models
+# Create Company
 
 ### Author: Mohamed Jawahar Hussain
 
 ## Introduction
 
-
+A company is a vendor from whom the prganization purchases items.
 
 ## Prerequisite
 
