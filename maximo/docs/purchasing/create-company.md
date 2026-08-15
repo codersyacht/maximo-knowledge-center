@@ -21,27 +21,27 @@
 
 ```mermaid
 graph LR
-A[Define Model] --> B[Define Build Item]
-B --> C[Select CM Item]
-C --> D{Define More Build Item}
-D -->|Yes|B
-D -->|No| E[Configuration]
-E --> F[Build Hierarchy]
-F --> G[Save]
-G --> H[Exit]
+A[Define Company] --> B[Select Currency]
+B --> C[Select Company Set]
+C --> D[Save]
+D --> EExit]
 ```
 
 ## Execution Steps
 
 ### Define Model
 
-- Navigate to Asset Configuration Manager (CM) -> Models (CM)
-- New Model
-- Provide a Model name.
+- Navigate to Purchasing -> Company Master.
+- New Company Master.
+- Provide a Company Name and Description.
+- Select Currency and Company Set.
 - Save
 
-[API](/maximo/api/asset-configuration-manager/models(cm)%20/create-model.json)
+[API](/maximo/api/purchasing/create-company.json)
   
 
 ## Next Step
 
+| Action  | Reference |
+|--------|-------|
+|Add Company to Org|[here](/maximo/docs/purchasing/set-company-to org.md)|
