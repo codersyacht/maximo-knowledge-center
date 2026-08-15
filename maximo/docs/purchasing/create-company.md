@@ -49,6 +49,3 @@ F --> G[Exit]
 
 NA
 
-| Action  | Reference |
-|--------|-------|
-|Create Company Set.|[here](/maximo/docs/administration/sets/02-company-set.md)|
