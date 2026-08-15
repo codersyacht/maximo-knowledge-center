@@ -44,4 +44,5 @@ D --> E[Exit]
 
 | Action  | Reference |
 |--------|-------|
+|Add Company to Org.|[here](/maximo/docs/purchasing/set-company-to org.md)|
 |Add Company to Org|[here](/maximo/docs/purchasing/set-company-to org.md)|
