@@ -18,6 +18,7 @@ Copy the two files into <liberty-home>/usr/servers/manage.
 [jvm.option](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/local-setup/artifact/jvm.options)
 
 [Maximo Local Setup](/devops/maximo/local-setup/local-env-setup.md)
+
 [Maximo Ear Build](/devops/maximo/local-setup/build-ear.md)
 
 **Maximo Application Deployment**
