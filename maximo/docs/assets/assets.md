@@ -32,3 +32,9 @@ C --> E[Activate the asset]
 - Choose a rotating item if this is a rotating asset.
 - Save.
 - Change Status to active.
+
+[API]()
+
+## Success Criteria
+
+Asset is successfully created.
