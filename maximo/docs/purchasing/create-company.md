@@ -24,9 +24,7 @@ graph LR
 A[Define Company] --> B[Select Currency]
 B --> C[Select Company Set]
 C --> D[Save]
-D --> E[Add Company Master to Organisation]
-E --> F[Select Organisation]
-F --> G[Exit]
+D --> E[Exit]
 ```
 
 ## Execution Steps
@@ -38,9 +36,6 @@ F --> G[Exit]
 - Provide a Company Name and Description.
 - Select Currency and Company Set.
 - Save
-- Click Add Company Master to Organisation in the side navigation.
-- Select organisation and click ok.
-- Exit.
 
 [API](/maximo/api/purchasing/create-company.json)
   
@@ -48,4 +43,6 @@ F --> G[Exit]
 ## Next Step
 
 NA
-
+| Action  | Reference |
+|--------|-------|
+|Add Company to Organization|[here](/maximo/docs/purchasing/add-company-to-org.md)|
