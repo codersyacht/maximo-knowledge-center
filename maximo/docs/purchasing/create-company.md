@@ -10,8 +10,6 @@ A company is a vendor from whom the prganization purchases items.
 
 ## Prerequisite
 
-## Prerequisite
-
 | Action  | Reference |
 |--------|-------|
 |Create Company Set.|[here](/maximo/docs/administration/sets/02-company-set.md)|
