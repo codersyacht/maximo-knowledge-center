@@ -10,4 +10,4 @@ Create a standalone asset.
 
 |Action | Reference|
 |-------|----------|
-|Define Item|/maximo/docs/inventory/item-definition.md|
+|Define Item|[here](/maximo/docs/inventory/item-definition.md)|
