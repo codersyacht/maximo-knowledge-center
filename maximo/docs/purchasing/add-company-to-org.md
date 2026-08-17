@@ -23,8 +23,8 @@ Add the newly created company to the organization.
 graph LR
 A --> B[Select Company]
 B --> C[Add Company Master to Organisation]
-D --> E[Select Organisation]
-F --> G[Exit]
+C --> D[Select Organisation]
+D --> E[Exit]
 ```
 
 ## Execution Steps
