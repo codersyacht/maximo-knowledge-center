@@ -5,7 +5,7 @@ Prerequisite [Install Java](https://github.com/codersyacht/maximo-knowledge-cent
 **Setting Java Path in Linux:**
 
 ```CMD
-export JAVA_HOME=/home/admin/apps/jdk17
+export JAVA_HOME=/home/admin/apps/jdk25
 ```
 ```CMD
 export PATH=$JAVA_HOME/bin:$PATH  
@@ -14,5 +14,5 @@ export PATH=$JAVA_HOME/bin:$PATH
 **Setting Java Path in Mac:**
 
 ```CMD
-export JAVA_HOME=/Users/jawahar/codersyacht/Java/ibmjdk17/Contents/Home
+export JAVA_HOME=/Users/jawahar/codersyacht/Java/ibmjdk25/Contents/Home
 ```
