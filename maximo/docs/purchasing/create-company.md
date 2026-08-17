@@ -42,7 +42,6 @@ D --> E[Exit]
 
 ## Next Step
 
-NA
 | Action  | Reference |
 |--------|-------|
 |Add Company to Organization|[here](/maximo/docs/purchasing/add-company-to-org.md)|
