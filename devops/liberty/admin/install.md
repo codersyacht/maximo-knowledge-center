@@ -37,17 +37,18 @@ cd /home/admin/apps/wlp/bin
 ```CMD
 ./server create manage
 ```
-``
+```CMD
 cd ../usr/servers/manage/
 ```
-```
+```CMD
 mkdir lib
 ```
-```
+```CMD
 cd lib
 ```
-```
+```CMD
 curl -L -o wmq.jmsra.rar https://repo1.maven.org/maven2/com/ibm/mq/wmq.jmsra/9.3.2.0/wmq.jmsra-9.3.2.0.rar
 ```
+```CMD
 cd ..
 ```
