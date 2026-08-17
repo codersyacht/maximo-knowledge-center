@@ -16,6 +16,7 @@ Create a standalone asset.
 ## Process Diagram
 
 ```mermaid
+graph LR
 A[Define Asset] --> B{Is Rotating?}
 B --> |No| C[Save Asset]
 B --> |Yes| D[select Rotating Item]
