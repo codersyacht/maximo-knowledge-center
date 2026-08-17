@@ -8,10 +8,10 @@ The following 2 prerequisites (Change System Time & Crete admin user) are only r
 - [Change System Time](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/system-date.md)
 - [Create admin user](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/system/02-Linux-User-Creation.md)
 
-Use either DB2 or MSSQL. If installation is on Macbook then install MSSQL only.
+Use either DB2 or Oracle. If installation is on Macbook then install MSSQL only.
 
-- [DB2 Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/configuration.md)
-- [MSSQL Configuration](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mssql/setup.md)
+- [DB2 Configuration](/devops/db2/configuration.md)
+- [Oracle Configuration](/devops/oracle/setup.md)
 
 Configure Java 
 - [Java Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/java/java-install.md)
