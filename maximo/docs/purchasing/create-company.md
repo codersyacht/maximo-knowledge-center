@@ -29,7 +29,7 @@ D --> E[Exit]
 
 ## Execution Steps
 
-### Define Model
+### Define Company
 
 - Navigate to Purchasing -> Company Master.
 - New Company Master.
