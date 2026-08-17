@@ -18,7 +18,7 @@ Download Liberty Server.
 For Maximo use Liberty Server Web Profile 8.
 
 ```CMD
-wget -O webprofile-8.zip https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/24.0.0.11/wlp-webProfile8-24.0.0.11.zip
+wget -O webprofile-8.zip https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-webProfile8-26.0.0.5.zip
 ```
 ```CMD
 unzip webprofile-8.zip
