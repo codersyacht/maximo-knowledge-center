@@ -28,7 +28,7 @@ C --> D[Exit]
 
 ## Execution Steps
 
-### Define Model
+### Adding Company to Organization
 
 - Navigate to Purchasing -> Company Master.
 - Choose Company.
