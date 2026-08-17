@@ -21,10 +21,9 @@ Add the newly created company to the organization.
 
 ```mermaid
 graph LR
-A --> B[Select Company]
-B --> C[Add Company Master to Organisation]
-C --> D[Select Organisation]
-D --> E[Exit]
+A[Select Company] --> B[Add Company Master to Organisation]
+B --> C[Select Organisation]
+C --> D[Exit]
 ```
 
 ## Execution Steps
