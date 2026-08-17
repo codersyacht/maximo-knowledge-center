@@ -216,7 +216,7 @@ Execute the following command:
 
 In live mode:
 
-**DB2**
+**DB2 or Oracle**
 ```CMD
 ./maxinst.sh -sMAXINDEX -tMAXDATA
 ```
