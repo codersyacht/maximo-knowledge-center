@@ -36,7 +36,7 @@ C --> D[Exit]
 - Select organisation and click ok.
 - Exit.
 
-[API](/maximo/api/purchasing/create-company.json)
+[API](/maximo/api/purchasing/add-company-to-org.json)
   
 
 ## Next Step
