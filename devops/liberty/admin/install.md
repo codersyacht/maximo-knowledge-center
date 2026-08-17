@@ -39,15 +39,15 @@ cd /home/admin/apps/wlp/bin
 ```
 ``
 cd ../usr/servers/manage/
-``
+```
 ```
 mkdir lib
 ```
 ```
 cd lib
 ```
-curl -L -o wmq.jmsra.rar https://repo1.maven.org/maven2/com/ibm/mq/wmq.jmsra/9.3.2.0/wmq.jmsra-9.3.2.0.rar
 ```
+curl -L -o wmq.jmsra.rar https://repo1.maven.org/maven2/com/ibm/mq/wmq.jmsra/9.3.2.0/wmq.jmsra-9.3.2.0.rar
 ```
 cd ..
 ```
