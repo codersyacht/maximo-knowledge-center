@@ -1,0 +1,45 @@
+{
+  "api":
+  {
+            "name": "Set Company to Org",
+            "url": "/maximo/oslc/os/mxvendor",
+            "method": "POST"
+  },
+  "headers":
+  {
+            "apikey": ""
+  },
+  "payload":
+        {
+            "spi:companysetid": "CDYCSET",
+            "spi:changeby": "MAXADMIN",
+            "spi:vendorsendsinv": false,
+            "spi:orgid": "CDY",
+            "spi:currencycode": "USD",
+            "spi:ecommerceenabled": false,
+            "spi:punchoutenabled": false,
+            "spi:autoapproveinv": false,
+            "spi:disabled": false,
+            "spi:vendorsendsstatus": false,
+            "spi:plusamntloc": false,
+            "spi:name": "Apple",
+            "spi:payonreceipt": false,
+            "spi:autosendpocancel": false,
+            "spi:apsuspenseacc": "1000-100-100-100",
+            "spi:apcontrolacc": "1000-100-100-100",
+            "spi:toolcontrolaccount": "1000-100-100-100",
+            "spi:rbniacc": "1000-100-100-100",
+            "spi:vendorsendsasn": false,
+            "spi:company": "Apple",
+            "spi:autoreceiveonasn": false,
+            "spi:inspectionrequired": false,
+            "spi:type_description": "Vendor",
+            "spi:type": "V",
+            "spi:useparentremitto": false,
+            "spi:inclusive1": true,
+            "spi:inclusive2": true,
+            "spi:inclusive3": true,
+            "spi:inclusive4": true,
+            "spi:inclusive5": true
+        }
+}
