@@ -41,5 +41,5 @@ C --> D[Exit]
 
 ## Next Step
 
-NA
+Not Applicable.
 
