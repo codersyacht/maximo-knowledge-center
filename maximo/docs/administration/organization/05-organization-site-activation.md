@@ -11,8 +11,8 @@ Activate the organization site.
 
 |Action|Reference|
 |--|--|
-|Orgazation Configured|[here](/maximo/docs/administration/organization/01-organization-definition.md)|
-|Site Configured|[here](/maximo/docs/administration/organization/02-site-definition.md)|
+|Define Organization|[here](/maximo/docs/administration/organization/01-organization-definition.md)|
+|Define Site|[here](/maximo/docs/administration/organization/02-site-definition.md)|
 
 ## Process Diagram
 
