@@ -4,8 +4,7 @@
 User Account Creation. <br>
 The complete installation is performed under Linux user **_admin_** context. The logged in user should be **_admin_** and the user home directory should be /home/admin. 
 The admin user should have sudo rights with password prompt not required.
-To create the admin user with the above mentioned settings, follow the link below: <br>
-https://github.com/codersyacht/private/blob/main/system/Linux_User_Creation.md
+To create the admin user with the above mentioned settings, follow the link [here](/devops/system/user-management.md)
 
 **1. Install yum utis.**
 
