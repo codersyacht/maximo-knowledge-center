@@ -44,6 +44,11 @@ eval $(crc oc-env)
 oc cp -n mas-max-manage max-max-manage-maxinst-5869bc54f7-lr4dd:/opt/IBM/SMP SMP
 ```
 
+**Stop OpenShift**
+```CMD
+crc stop
+```
+
 **Copying SMP from remote machine.**
 ```CMD
 scp -o StrictHostKeyChecking=no "admin@9.30.146.6:/home/admin/apps/SMP.tar" /Users/jawahar/codersyacht/SMP.tar
