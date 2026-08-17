@@ -38,3 +38,7 @@ C --> E[Activate the asset]
 ## Success Criteria
 
 Asset is successfully created.
+
+## Next Step
+
+NA
