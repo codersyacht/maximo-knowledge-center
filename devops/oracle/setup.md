@@ -20,6 +20,11 @@ docker machine start
 
 
 **Mac**
+
+**Note:**
+Run the below two commands to use the preconfigured Oracle container. In such case you do not need to run any further steps. You may exit.
+Run the third command if you want to set up oracle from the beginning. Follow all the following steps further.
+
 ```CMD
 podman run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training docker.io/codersyacht/maximo-oracle-mac:base
 ```
@@ -30,6 +35,10 @@ podman pull container-registry.oracle.com/database/free:23.26.2.0-arm64
 podman run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMachine4@Training container-registry.oracle.com/database/free:23.26.2.0-arm64
 ```
 **Linux**
+
+**Note:**
+Run the below two commands to use the preconfigured Oracle container. In such case you do not need to run any further steps. You may exit.
+Run the third command if you want to set up oracle from the beginning. Follow all the following steps further.
 
 ```CMD
 docker pull docker.io/codersyacht/maximo-oracle-linux:base
