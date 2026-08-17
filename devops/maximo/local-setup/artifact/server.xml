@@ -42,4 +42,5 @@
 	<ssl id="controllerConnectionConfig" sslProtocol="TLSv1.2"/>
 	<ssl id="memberConnectionConfig" sslProtocol="TLSv1.2"/>
 	<applicationManager autoExpand="true"/>
+	<variable name="wmqJmsClient.rar.location" value="${server.config.dir}/lib/wmq.jmsra.rar" />
 </server>
