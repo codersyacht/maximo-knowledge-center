@@ -9,15 +9,12 @@ Oracle 23 Installation and Configuration for Maximo.
 
 ## Prerequisite
 
-```CMD
-docker machine init --cpus 4 --memory 4096 --disk-size 40
-```
-```CMD
-docker machine start
-```
+**Linux**
+
+[Install Docker](/devops/system/docker-installation.md)
+
 
 ## Install Oracle Container
-
 
 **Mac**
 
