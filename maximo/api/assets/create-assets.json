@@ -11,10 +11,11 @@
   },
   "payload":
         {
-            "spi:itemnum": "IPhone17",
-            "spi:description": "IPhone17",
-            "spi:itemsetid": "CDYISET",
+            "spi:itemnum": "IPhone15",
+            "spi:description": "IPhone15-001",
             "spi:siteid": "BL",
-            "spi:rotating": false
-        }
+            "spi:assetnum": "IPhone15-001",
+            "spi:active": true
+
+}
 }
