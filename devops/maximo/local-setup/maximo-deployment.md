@@ -33,4 +33,4 @@ Login to the application using the following url: _http://codehub1.fyre.ibm.com:
 
 ## Next Steps
 
-Follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/maximo/set-up.md)
+Follow the instruction [here](/maximo/docs/set-up.md)
