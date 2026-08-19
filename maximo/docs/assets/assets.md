@@ -33,7 +33,7 @@ C --> E[Activate the asset]
 - Save.
 - Change Status to active.
 
-[API](/maximo/api/assets/create-assets.json)
+[API](/maximo/api/assets/create-asset.json)
 
 ## Success Criteria
 
