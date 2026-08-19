@@ -29,7 +29,7 @@ C --> D[Exit]
 - Choose a Type as Operating.
 - Save.
 
-[API](/maximo/api/assets/create-locations.json)
+[API](/maximo/api/assets/create-location.json)
 
 ## Success Criteria
 
