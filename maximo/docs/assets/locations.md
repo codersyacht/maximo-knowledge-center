@@ -33,7 +33,7 @@ C --> D[Exit]
 
 ## Success Criteria
 
-Asset is successfully created.
+Location is successfully created.
 
 ## Next Step
 
