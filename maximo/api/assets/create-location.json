@@ -1,0 +1,24 @@
+{
+  "api":
+  {
+            "name": "Create Location",
+            "url": "/maximo/oslc/os/mxapilocations",
+            "method": "POST"
+  },
+  "headers":
+  {
+            "apikey": ""
+  },
+  "payload":
+        {
+            "spi:status": "OPERATING",
+            "spi:disabled": false,
+            "spi:location": "EGL",
+            "spi:orgid": "CDY",
+            "spi:status_description": "Operating",
+            "spi:type_description": "Operating Location",
+            "spi:type": "OPERATING",
+            "spi:siteid": "BL"
+
+        }
+}
