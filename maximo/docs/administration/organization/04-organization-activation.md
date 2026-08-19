@@ -26,7 +26,7 @@ D --> E
 
 ## Execution Steps
 
-[**API**](/maximo/api/administration/organization/set-organization-active.jjson)
+[**API**](/maximo/api/administration/organization/set-organization-active.json)
 
 ## Success Criteria
 
