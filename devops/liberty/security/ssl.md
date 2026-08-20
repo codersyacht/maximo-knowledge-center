@@ -1,7 +1,7 @@
 
 
 ```CMD
-openssl req -newkey rsa:2048 -new -x509 -days 3650 -nodes -subj '/C=IN/ST=KA/L=BL/O=Personal/OU=Personal/emailAddress=md.jawahar@ibm.com/CN=localhost' -out liberty.crt -keyout liberty.key
+openssl req -newkey rsa:2048 -new -x509 -days 3650 -nodes -subj '/C=IN/ST=KA/L=BL/O=Personal/OU=Personal/emailAddress=md.jawahar@ibm.com/CN=localhost' -addext "basicConstraints=critical,CA:true" -addext "keyUsage=digitalSignature,keyEncipherment,keyCertSign" -addext "extendedKeyUsage=serverAuth" -addext "subjectAltName=DNS:localhost,IP:127.0.0.1" -out liberty.crt -keyout liberty.key
 ```
 
 ```CMD
