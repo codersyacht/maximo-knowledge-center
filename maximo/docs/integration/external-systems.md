@@ -36,5 +36,35 @@ F --> G[Save]
 G --> H[Enable External System]
 H --> I[Enable Publish Channel]
 ```
+## Execution Steps
 
+- Navigate to Integration -> External Systems.
+- Select new External Systems.
+
+Provide the following values in the System tab.
+
+|Attribute|Value|
+|-------|--------|
+|System|external system|
+|Description|external system|
+|Outbound Sequential Queue|jms/maximo/int/queues/sqout|
+|Endpoint|publish|
+
+- Under Publish Channel tab, select the publish channel. Select the publish endpoint.
+- Select Enable.
+- Under System tab, select Enable.
+- Save.
+
+## Success Criteria
+
+- External System configuration is successful. 
+- If the JMS Consumer cron task is configured, the following behaviour will be seen.
+  - When a new item is created, the JSON message of the object will be sent to the sqout JMS queue.
+  - The message should be visible under Integration -> Message Tracking.
+
+## Next Action
+
+|Action |Reference|
+|-------|--------|
+|Configure JMS Consumer|[here]()|
 
