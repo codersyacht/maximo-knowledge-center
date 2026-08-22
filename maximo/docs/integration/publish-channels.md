@@ -10,7 +10,7 @@ Create a publish channel. It is the configuration responsible for posting messag
 
 |Action|Reference|
 |------|---------|
-|Configure Endpoint|[here]()|
+|Configure Endpoint|[here](/maximo/docs/integration/endpoints.md)|
 
 ## Process Diagram
 
@@ -52,4 +52,4 @@ Publish Channel created and enabled.
 
 |Action|Reference|
 |------|---------|
-|Configure External System|[here]()|
+|Configure External System|[here]()/maximo/docs/integration/external-systems.md|
