@@ -21,6 +21,6 @@ D --> E[Enable Publish JSON]
 E --> F[Save]
 F --> G[Enable Message Tracking & Store Message]
 G --> H[Enable Event Listener]
-H --> [I] End
+H --> I[End]
 ```
 
