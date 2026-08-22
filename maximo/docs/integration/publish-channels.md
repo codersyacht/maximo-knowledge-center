@@ -52,4 +52,4 @@ Publish Channel created and enabled.
 
 |Action|Reference|
 |------|---------|
-|Configure External System|[here]()/maximo/docs/integration/external-systems.md|
+|Configure External System|[here](/maximo/docs/integration/external-systems.md)|
