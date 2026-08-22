@@ -40,14 +40,15 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 
     <messagingEngine>
         <fileStore path="/home/admin/apps/wlp/usr/servers/jmsserver/jmsstore" fileStoreSize="4096" logFileSize="1024"/>
-        <queue id="sqoutbd" maintainStrictOrder="true" maxMessageDepth="100000" failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
-        <queue id="sqinbd" maintainStrictOrder="true" maxMessageDepth="200000" failedDeliveryPolicy="KEEP_TRYING" maxRedeliveryCount="-1"/>
+        <queue id="sqinbd" maintainStrictOrder="true" maxMessageDepth="200000"/>
+        <queue id="sqoutbd" maintainStrictOrder="true" maxMessageDepth="200000"/>
         <queue id="cqinerrbd" maxMessageDepth="100000" exceptionDestination="cqinerrbd"/>
         <queue id="cqinbd" maxMessageDepth="100000" exceptionDestination="cqinerrbd"/>
         <queue id="cqouterrbd" maxMessageDepth="100000" exceptionDestination="cqouterrbd"/>
         <queue id="cqoutbd" maxMessageDepth="100000" exceptionDestination="cqouterrbd"/>
         <queue id="notferrbd" maxMessageDepth="100000" exceptionDestination="notferrbd"/>
         <queue id="notfbd" maxMessageDepth="100000" exceptionDestination="notferrbd"/>
+        <queue id="external" maxMessageDepth="100000" exceptionDestination="notferrbd"/>
     </messagingEngine>
 
  </server>
@@ -57,13 +58,18 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
 <server description="jmsclient">
 
     <featureManager>
-            <feature>webProfile-8.0</feature>
-            <feature>jaxrs-2.1</feature>
-            <feature>servlet-4.0</feature>
-            <feature>wasJmsClient-2.0</feature>
-            <feature>jndi-1.0/feature>
-            <feature>jmsMdb-3.2</feature>
-            <feature>mdb-3.2</feature>
+                <feature>javaMail-1.6</feature>
+                <feature>jdbc-4.2</feature>
+                <feature>jaxws-2.2</feature>
+                <feature>jndi-1.0</feature>
+                <feature>wasJmsClient-2.0</feature>
+                <feature>ssl-1.0</feature>
+                <feature>webProfile-8.0</feature>
+                <feature>wmqJmsClient-2.0</feature>
+                <feature>jmsMdb-3.2</feature>
+                <feature>ejbRemote-3.2</feature>
+                <feature>ejbHome-3.2</feature>
+                <feature>jsonp-1.1</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint" host="*"  httpPort="9091" httpsPort="9454" />
@@ -81,7 +87,7 @@ Most basic element for configuring JMS server in Liberty is as follows. This is 
     <jmsQueue jndiName="jms/maximo/int/queues/cqouterr"><properties.wasJms queueName="cqouterrbd"/></jmsQueue>
     <jmsQueue jndiName="jms/maximo/int/queues/notf"><properties.wasJms queueName="notfbd"/></jmsQueue>
     <jmsQueue jndiName="jms/maximo/int/queues/notferr"><properties.wasJms queueName="notferrbd"/></jmsQueue>
-
+   <jmsQueue jndiName="jms/maximo/int/queues/external"><properties.wasJms queueName="external"/></jmsQueue>
 
     <jmsActivationSpec id="maximo-all/mboejb/JMSContQueueProcessor-1" maxEndpoints="5"><properties.wasJms destinationLookup="jms/maximo/int/queues/cqin"
     maxConcurrency="5" maxBatchSize="20" connectionFactoryLookup="jms/maximo/int/cf/intcf"/></jmsActivationSpec>
