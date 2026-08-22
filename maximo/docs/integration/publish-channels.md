@@ -14,7 +14,7 @@ Not applicable
 
 ```mermaid
 graph LR
-[A]Define Publish Channel --> B[Select Operation]
+A[Define Publish Channel] --> B[Select Operation]
 B --> C[Select Object Structure]
 C --> D[Select Adapter]
 D --> E[Enable Publish JSON]
