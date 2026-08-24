@@ -24,3 +24,16 @@ A[Define Enterprise Service] --> B[Select Operation]
 B --> C[Select MXITEM]
 C --> D[Save]
 ```
+
+## Execution Steps
+
+- Navigate to Integration --> Enterprise Services. Select New Enterprise Services.
+- Provide The following values:
+
+|Attribute|Value|
+|---|----|
+|Enterprise Service|consumer|
+|Operation|Sync|
+|Object Structure|MXITEM|
+
+- Save.
