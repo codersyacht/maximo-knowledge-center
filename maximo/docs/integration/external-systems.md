@@ -27,17 +27,6 @@ External System consists of configuration to interact with external system. It c
 ```mermaid
 graph LR
 A[Define External System] --> B{Is Sequential?}
-B --> |Yes| C[Select Outbound Sequential Queue]
-B --> |No| D[Select Outbound Continuous Queue]
-C --> E[Enterprise Service]
-D --> E
-E --> F[Save]
-```
-**Consuming Message for Internal Processing**
-
-```mermaid
-graph LR
-A[Define External System] --> B{Is Sequential?}
 B --> |Yes| C[Select Inbound Sequential Queue]
 B --> |No| D[Select Inbound Continuous Queue]
 C --> E[Select N]
@@ -46,6 +35,17 @@ E --> F[Publish Channel & Endpoint]
 F --> G[Save]
 G --> H[Enable External System]
 H --> I[Enable Publish Channel]
+```
+**Consuming Message for Internal Processing**
+
+```mermaid
+graph LR
+A[Define External System] --> B{Is Sequential?}
+B --> |Yes| C[Select Outbound Sequential Queue]
+B --> |No| D[Select Outbound Continuous Queue]
+C --> E[Enterprise Service]
+D --> E
+E --> F[Save]
 ```
 
 ## Execution Steps
