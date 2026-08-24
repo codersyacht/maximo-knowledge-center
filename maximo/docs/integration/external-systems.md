@@ -50,6 +50,8 @@ E --> F[Save]
 
 ## Execution Steps
 
+**Publishing Message to external System**
+
 - Navigate to Integration -> External Systems.
 - Select new External Systems.
 
@@ -67,12 +69,37 @@ Provide the following values in the System tab.
 - Under System tab, select Enable.
 - Save.
 
+**Consuming Message for Internal Processing**
+
+- Navigate to Integration -> External Systems.
+- Select new External Systems.
+
+Provide the following values in the System tab.
+
+|Attribute|Value|
+|-------|--------|
+|System|external system|
+|Description|external system|
+|In Sequential Queue|jms/maximo/int/queues/sqin|
+
+- Under Enterprise Services tab, select the enterprise services consumer.
+- Select Enable.
+- Under System tab, select Enable.
+- Save.
+
+
 ## Success Criteria
+
+**Publishing Message to external System**
 
 - External System configuration is successful. 
 - If the JMS Consumer cron task is configured, the following behaviour will be seen.
   - When a new item is created, the JSON message of the object will be sent to the sqout JMS queue.
   - The message should be visible under Integration -> Message Tracking.
+
+**Consuming Message for Internal Processing**
+
+The following JMS messages posted to the jms/maximo/int/queues/sqin queue will be consumed by the JMS Consumer cron task and Item object will be created.
 
 ## Next Action
 
