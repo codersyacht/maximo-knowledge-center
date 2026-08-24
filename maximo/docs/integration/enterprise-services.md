@@ -37,3 +37,13 @@ C --> D[Save]
 |Object Structure|MXITEM|
 
 - Save.
+
+## Success Metric
+
+Enterprise Services created successfully.
+
+## Next Step
+
+|Action|Reference|
+|------|---------|
+|Configure External System|[here](/maximo/docs/integration/external-systems.md)|
