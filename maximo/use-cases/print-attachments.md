@@ -9,9 +9,7 @@ Configure and execute print attachments.
 
 ## Prerequisites
 
-|Action|Reference|
-|-------|--------|
-|||
+Maximo manage installed and running successfully.
 
 ## Process Diagram
 
@@ -28,11 +26,18 @@ Configure and execute print attachments.
 
 **Customise Server Bundle**
 
+Configure url for doclink by editing the server.xml of the liberty server.
+
 ```XML
 <server>
     <webApplication id="doclinks" contextRoot="/doclinks" location="/tmp/doclinks" name="doclinks" />
 </server>
 ```
+
+If the manage is hosted in openshift, follow the instruction[here](/maximo/core/workspace/customise-server-bundle.md)
+
+If standalone liberty server is used, update the server.xml directly and restart the server.
+
 
 **Manage Attachment Folders**
 
