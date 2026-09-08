@@ -34,7 +34,7 @@ Configure url for doclink by editing the server.xml of the liberty server.
 </server>
 ```
 
-If the manage is hosted in openshift, follow the instruction[here](/maximo/core/workspace/customise-server-bundle.md)
+If the manage is hosted in openshift, follow the instruction[here] (/maximo/core/workspace/customise-server-bundle.md)
 
 If standalone liberty server is used, update the server.xml directly and restart the server.
 
