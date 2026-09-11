@@ -45,7 +45,7 @@ wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/fi
 Execute the following command from /home/admin/apps/ocp.
 
 ```CMD
-wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
+wget -O  crc-linux-amd64.tar.xz https://developers.redhat.com/content-gateway/rest/mirror/pub/cgw/crc/latest/crc-linux-amd64.tar.xz
  ```
 
 The above command will download crc-linux-amd64.tar.xz.
