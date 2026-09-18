@@ -19,12 +19,9 @@ mkdir -p /root/installables/db2
 cd /root/installables/db2
 ```
 
-If the DB2 installable package is available in box, the following command can be used to copy.
-```CMD
-wget -O DB2_Svr_11.5_Linux_x86-64.tar.gz https://ibm.box.com/shared/static/js24c9dbdf1dom2mmxfwn58m9ln4jclb.gz
-```
+[https://www.ibm.com/support/pages/db2-version-121-mod-5-fix-pack-0-linux-unix-and-windows](https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EInformation%20Management&product=ibm/Information+Management/DB2&release=All&platform=Linux+64-bit,x86_64&function=all)
 
-In this example the installable **/root/installables/db2/DB2_Svr_11.5_Linux_x86-64.tar.gz**
+Select the latest DB2 Server Fix Pack. In this example DB2-linuxx64-server_dec-12.1.5.0-FP000 is used. Download and save the compressed file as DB2_Svr_12.1.5_linuxx64..tar.gz in /root/installables/db2.
 
 **3. DB2 installation.**
 
@@ -33,7 +30,7 @@ Login in to the remote machine using root.
 explode the compressed file and begin installation.
 
 ```CMD
-tar -xvf DB2_Svr_11.5_Linux_x86-64.tar.gz
+tar -xvf DB2_Svr_12.1.5_linuxx64..tar.gz
 ```
 ```CMD
 cd server_dec/
