@@ -42,6 +42,10 @@ Create a file called db2server.rsp. Sample file is available in the following li
 [DB2 response file](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/artifacts/db2server.rsp)
 
 ```CMD
+yum install -y libxcrypt-compat
+```
+
+```CMD
 ./db2setup -r /root/installables/db2/server_dec/db2server.rsp -f sysreq
 ```
 If successfully installed the following message will appear.
