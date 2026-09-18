@@ -78,7 +78,7 @@ Updating global profile registry :.......Success
 
 **Logging in as db2inst1**
 
-If the db2server.rsp was used without any modification, the default DB2 user name is _db2inst1_ and the password is _LabMachine4@Training_.
+If the db2server.rsp was used without any modification, the default DB2 user name is _db2inst1_ and the password is _Db2UnbreakableV12Engine_.
 
 Login to the machine as db2inst1
 
