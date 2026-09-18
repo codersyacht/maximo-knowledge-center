@@ -33,6 +33,15 @@ podman run -d --name oracleserver -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=LabMac
 ```
 **Linux**
 
+```CMD
+sudo sysctl -w net.ipv4.ip_forward=1
+```
+```CMD
+sudo systemctl stop firewalld
+```
+```CMD
+sudo systemctl disable firewalld
+```
 **Note:**
 Run the below two commands to use the preconfigured Oracle container. In such case you do not need to run any further steps. You may exit.
 Run the third command if you want to set up oracle from the beginning. Follow all the following steps further.
