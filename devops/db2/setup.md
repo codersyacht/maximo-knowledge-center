@@ -4,7 +4,7 @@
 
 In this setup the version used is **DB2 Server v12.1.5.0** <br>
 
-**2. Download the installables to the machine where it need to be installed.**
+**2. Download the installables to the machine where it needs to be installed.**
 
 Login to the machine where DB2 need to be installed as **root** user.
 
@@ -25,7 +25,7 @@ Select the latest DB2 Server Fix Pack. In this example DB2-linuxx64-server_dec-1
 
 Login in to the remote machine using root. 
 
-explode the compressed file and begin installation.
+Extract the compressed file and begin installation.
 
 ```CMD
 tar -xvf DB2_Svr_12.1.5_linuxx64..tar.gz
