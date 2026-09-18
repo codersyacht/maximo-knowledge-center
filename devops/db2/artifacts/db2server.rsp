@@ -303,7 +303,7 @@ DB2_INST.ENABLE_SHARED_GROUP = NO              ** YES or NO
 ** Use a generated SGID if no value provided - highly recommended.
 *DB2_INST.SGID            =                 ** Unsigned integer
 DB2_INST.HOME_DIRECTORY   =                 ** char(64) no spaces. Valid for root installation only
-DB2_INST.PASSWORD         = LabMachine4@Training
+DB2_INST.PASSWORD         = Db2UnbreakableV12Engine
 
 ** If PURESCALE is selected or installed, the default instance type will be
 ** DSF.
@@ -420,7 +420,7 @@ DB2_INST.START_DURING_INSTALL = YES         ** YES or NO. Default is YES.
 
 ** Make sure the user name specified for FENCED_USERNAME is not locked and its
 ** password has not expired.
-DB2_INST.FENCED_USERNAME  =         ** char(8)  no spaces, no upper case letters
+DB2_INST.FENCED_USERNAME  = db2fenc1        ** char(8)  no spaces, no upper case letters
 
 ** If no value is provided for FENCED_UID keyword, the DB2 installer will
 ** generate one for you. This is highly recommended.
@@ -433,7 +433,7 @@ DB2_INST.FENCED_GROUP_NAME = db2fsdm1       ** char(30)  no spaces
 *DB2_INST.FENCED_HOME_DIRECTORY =           ** char(64) no spaces
 
 ** This FENCED_PASSWORD is required if the fenced user ID is a new user
-*DB2_INST.FENCED_PASSWORD =                 ** char(8)
+DB2_INST.FENCED_PASSWORD = Db2UnbreakableV12Engine                 ** char(8)
 
 ** Text Search Configuration
 ** -------------------------
