@@ -39,7 +39,7 @@ tar -xvf DB2_Svr_11.5_Linux_x86-64.tar.gz
 cd server_dec/
 ```
 Create a file called db2server.rsp. Sample file is available in the following link. Modify as required. <br>
-[DB2 response file](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/artifacts/db2server.rsp)
+[DB2 response file](devops/db2/artifacts/db2server.rsp)
 
 ```CMD
 yum install -y libxcrypt-compat
