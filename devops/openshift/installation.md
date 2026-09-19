@@ -148,6 +148,14 @@ crc config set skip-check-daemon-systemd-unit true        # Only if it's require
 crc setup
 ```
 
+If docker is already installed, run the following command:
+
+```CMD
+sudo iptables -I DOCKER-USER -i crc -j ACCEPT
+sudo iptables -I DOCKER-USER -o crc -j ACCEPT
+```
+
+
 On successful installation the following message will be displayed.
 ```
 Your system is correctly setup for using CRC. Use 'crc start' to start the instance.
