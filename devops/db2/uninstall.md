@@ -18,3 +18,8 @@ Install Path                       Level   Fix Pack   Special Install Number   I
 ---------------------------------------------------------------------------------------------------------------------
 /opt/ibm/db2/V11.5               11.5.0.0        0                            Fri Sep 18 00:30:30 2026 EDT             0
 ```
+
+Execute the following as root user:
+```CMD
+/opt/ibm/db2/V11.5/instance/db2idrop db2inst1
+```
