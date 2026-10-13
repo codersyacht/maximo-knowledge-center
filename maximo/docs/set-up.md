@@ -73,3 +73,10 @@ Provide user _password_ and the _reason for change_.
 ```SQL
 UPDATE CRONTASKINSTANCE SET ACTIVE = 0;
 ```
+
+To enable back all the default cron tasks:
+
+```SQL
+UPDATE CRONTASKINSTANCE SET ACTIVE = 1 WHERE CRONTASKINSTANCEID IN 
+(93, 137, 294, 158, 161, 189, 284, 312, 314, 279, 292, 300, 10, 15, 16, 61, 62, 63, 82, 83, 85, 86, 319, 381, 392, 394, 398, 406, 410, 412, 516, 519, 459, 479, 482, 499, 502, 505, 508, 511, 514, 515, 520, 521, 522, 539, 598, 599, 600, 605)
+```
