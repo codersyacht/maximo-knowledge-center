@@ -4,7 +4,7 @@
 - Click _Add API Key +_
 - Search for user MAXADMIN and select the user MAXADMIN.
 - Click Create button. The API Key will be created.
-- Click _Copy Key_ to copy the APU key. The key will be like _sphcr522mpt8uqviglvm1tbpsruhessku6j9dgrt_
+- Click _Copy Key_ to copy the APU key. The key will be like _p3vo63i3u00id04ffoou8ligqvpn46aof19531ek_.
 
 ## Testing the API Key
 
