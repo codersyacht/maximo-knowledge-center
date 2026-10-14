@@ -33,7 +33,19 @@ Navigate to Endpoints and select New endpoint.
 |DESTJNDINAME|jms/maximo/int/queues/external|
 |CONFACTORYJNDINAME|jms/maximo/int/cf/intcf|
 
+Click Test and provice the following in the Test Data section:
+
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<test>hello</test>
+```
+
 ## Success Metric
+
+Test should return the following:
+```
+BMXAA1241I - The end point test was successful for end point PUBLISH.
+```
 
 Publish Channel successfully defined.
 
