@@ -15,4 +15,5 @@ Post message to an external JMS queue when a work order is created.
 
 ## Execution Steps
 
+The endpoint is the external system to which message is to be posted.
 Complete endpoint definition by following the instruction [here](/maximo/docs/integration/endpoints.md)
