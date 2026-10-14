@@ -69,9 +69,9 @@ Provide the following values in the System tab.
 - Under System tab, select Enable.
 - Save.
 
-Configure and enable JMSQSEQCONSUMER cron task.
+Configure and enable JMSQSEQCONSUMER cron task (instance: SEQQOUT).
 
-|Properties|Value|
+|Attribute|Value|
 |-------|--------|
 |MESSAGEPROCESSOR| psdi.iface.jms.QueueToDestManagerProcessor|
 |QUEUENAME|jms/maximo/int/queues/sqout|
@@ -96,6 +96,13 @@ Provide the following values in the System tab.
 - Under System tab, select Enable.
 - Save.
 
+Configure and enable JMSQSEQCONSUMER cron task (instance: SEQQIN).
+
+|Attribute|Value|
+|-------|--------|
+|MESSAGEPROCESSOR| psdi.iface.jms.QueueToDestManagerProcessor|
+|QUEUENAME|jms/maximo/int/queues/sqin|
+|TARGETNAME|0|
 
 ## Success Criteria
 
