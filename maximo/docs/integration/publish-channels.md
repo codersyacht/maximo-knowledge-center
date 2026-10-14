@@ -37,7 +37,7 @@ H --> I[End]
 |Publish Channel |publisher|
 |Description |publisher|
 |Object Structure|MXITEM|
-|Publish Channel|Enable|
+|Publish JSON|Enable|
 |Adapter|Maximo|
 
 - Save the configuration.
