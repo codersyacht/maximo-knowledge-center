@@ -19,3 +19,5 @@ The endpoint is the external system to which message is to be posted.
 Complete endpoint definition by following the instruction [here](/maximo/docs/integration/endpoints.md)
 
 Configure the Publish channel that defines which object to publish. Follow the instructions [here](/maximo/docs/integration/publish-channels.md)
+
+Configure the External System binding the Endpoint and the Publish Channel following the instructions [here](/maximo/docs/integration/external-systems.md)
