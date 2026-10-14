@@ -1,0 +1,18 @@
+# Integration - Post Message to External System
+
+### Author: Mohamed Jawahar Hussain
+
+## Introduction
+
+Post message to an external JMS queue when a work order is created.
+
+## Prerequisite
+
+- JMS Server configured and running.
+- Maximo configured to function as JMS client.
+
+## Process Diagram
+
+## Execution Steps
+
+Complete endpoint definition by following the instruction [here](/maximo/docs/integration/endpoints.md)
