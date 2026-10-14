@@ -20,15 +20,6 @@ External System consists of configuration to interact with external system. It c
 |-------|--------|
 |Enterprise Service|[here](/maximo/docs/integration/enterprise-services.md)|
 
-Configure and enable JMSQSEQCONSUMER cron task.
-
-|Properties|Value|
-|-------|--------|
-|MESSAGEPROCESSOR| psdi.iface.jms.QueueToDestManagerProcessor|
-|QUEUENAME|jms/maximo/int/queues/sqout|
-|TARGETNAME|0|
-
-
 ## Process Diagram
 
 **Publishing Message to external System**
@@ -77,6 +68,15 @@ Provide the following values in the System tab.
 - Select Enable.
 - Under System tab, select Enable.
 - Save.
+
+Configure and enable JMSQSEQCONSUMER cron task.
+
+|Properties|Value|
+|-------|--------|
+|MESSAGEPROCESSOR| psdi.iface.jms.QueueToDestManagerProcessor|
+|QUEUENAME|jms/maximo/int/queues/sqout|
+|TARGETNAME|0|
+
 
 **Consuming Message for Internal Processing**
 
