@@ -27,7 +27,7 @@ cd /home/admin/apps/wlp/bin
 **Core dumps**
 
 ```CMD
-./server dump defaultServer --include=system
+./server javadump defaultServer --include=system
 ```
 
 ## Success Metric
