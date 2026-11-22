@@ -14,8 +14,8 @@ metadata:
   namespace: openshift-marketplace
 spec:
   description: Online Catalog Source for IBM Maximo Application Suite
-  displayName: IBM Maximo Operators (v9-250624-amd64)
-  image: 'icr.io/cpopen/ibm-maximo-operator-catalog:v9-250624-amd64'
+  displayName: IBM Maximo Operators (v9-261105-amd64)
+  image: 'icr.io/cpopen/ibm-maximo-operator-catalog:v9-261105-amd64'
   priority: 90
   publisher: IBM
   sourceType: grpc
