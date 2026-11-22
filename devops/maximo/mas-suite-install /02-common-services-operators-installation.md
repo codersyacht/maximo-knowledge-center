@@ -2,7 +2,7 @@
 
 Note:
 Common Services Operators is used in the lower versions on Openshft. This is primarily used in Maximo 9.1 installation. For higher versions refer to 
-[cert-manager operator installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-cert-manager-operators-installation.md).
+[cert-manager operator installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-cert-manager-operator-installation.md).
 
 Create a project called ibm-common-services
 
