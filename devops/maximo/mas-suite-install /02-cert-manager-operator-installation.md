@@ -50,60 +50,25 @@ spec:
 This will install 2 operators.
 
 ```CMD
-oc get operators -n ibm-common-services
+oc get operators -n cert-manager
 ```
 ```
-NAME                                               AGE
-ibm-common-service-operator.ibm-common-services    2m54s
-ibm-namespace-scope-operator.ibm-common-services   2m15s
-ibm-odlm.ibm-common-services                       108s
+NAME                                              AGE
+openshift-cert-manager-operator.cert-manager      2d23h
 ```
+
 Ensure the status of these operators are successful. This can be viewed in the openshift console's _Installed Operator_ section.
 
-Install OperandRequest
-
-```YAML
-apiVersion: operator.ibm.com/v1alpha1
-kind: OperandRequest
-metadata:
-  name: common-service
-  namespace: ibm-common-services
-spec:
-  requests:
-    - operands:
-        - name: ibm-cert-manager-operator
-        - name: ibm-licensing-operator
-      registry: common-service
-```
-
-```CMD
-oc apply -f 04-ibm-cert-manager-operandrequest.yaml
-```
-
-This will install the following 2 additional operators.
-
-```
-NAME                                               AGE
-ibm-cert-manager-operator.ibm-common-services      2m44s
-ibm-licensing-operator-app.ibm-common-services     2m44s
-```
 
 ### Success Criteria
 
 ```CMD
-[admin@maxserver1 mas-suite-install]$ oc get pods -n ibm-common-services
+[admin@maxserver1 mas-suite-install]$ oc get pods -n cert-manager
 ```
 ```
 NAME                                                    READY   STATUS    RESTARTS   AGE
-cert-manager-cainjector-867d59f9fb-b2mpq                1/1     Running   0          5m27s
-cert-manager-controller-f57b446b-vb4kq                  1/1     Running   0          5m28s
-cert-manager-webhook-57f7d9c76d-khw9q                   1/1     Running   0          5m26s
-ibm-cert-manager-operator-b8444d8df-qvqbx               1/1     Running   0          6m32s
-ibm-common-service-operator-7755b7c7cc-wcb24            1/1     Running   0          9m22s
-ibm-common-service-webhook-6d7598c75-dzntj              1/1     Running   0          8m32s
-ibm-licensing-operator-647fc96798-k64mc                 1/1     Running   0          6m35s
-ibm-licensing-service-instance-76c57c4dfc-jprj8         0/1     Running   0          63s
-ibm-namespace-scope-operator-6d8fc45f44-grl7f           1/1     Running   0          8m45s
-operand-deployment-lifecycle-manager-86b7889f88-ckpth   1/1     Running   0          7m36s
-secretshare-865b7f7cd5-8xhz9                            1/1     Running   0          8m27s
+cert-manager-597b95cb84-md79m                               1/1     Running   12 (13m ago)   2d23h
+cert-manager-cainjector-5c57bbd4fc-x6dfm                    1/1     Running   4              2d23h
+cert-manager-operator-controller-manager-7cd865d946-t62z5   1/1     Running   3              2d23h
+cert-manager-webhook-5dbbbf75cc-z8thn                       1/1     Running   11 (15m ago)   2d23h
 ```
