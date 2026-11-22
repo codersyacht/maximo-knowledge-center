@@ -1,8 +1,8 @@
 ## Cert Manager Operators Installation
 
-Note:
+**Note:**
 Cert Manager Operator is used in the higher versions on Openshft. This is primarily used in Maximo 9.2 installation. For older versions refer to 
-[common service operator installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-common-services-operators-installation.md)
+[common service operator installation](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-common-services-operators-installation.md).
 
 Create a project called cert-manager
 
